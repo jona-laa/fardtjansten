@@ -24,3 +24,16 @@
     margin-right: 15px;
   }
 }
+
+@media print {
+  .contact {
+    text-align: left;
+
+    .supporting-content {
+      margin: 20px 0 !important;
+    }
+    h3 {
+      margin-left: 0;
+    }
+  }
+}

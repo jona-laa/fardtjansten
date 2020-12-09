@@ -2,3 +2,4 @@ node_modules
 .editorconfig
 dist
 backlog.md
+.DS_Store

@@ -2,6 +2,7 @@
   * DOM object - Box-menu
 */
 const articleContainer = document.querySelector('main');
+const breadcrumbs = document.querySelector('.breadcrumbs');
 
 /*
   * Query Parameter for article id
@@ -28,3 +29,5 @@ aboutArticles.forEach(article => {
             </div>
     `;
 });
+
+breadcrumbs.innerHTML += ` > ${aboutArticles[0].title}`;

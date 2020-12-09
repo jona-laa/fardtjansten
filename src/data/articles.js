@@ -31,7 +31,7 @@ const articles = [
     sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
         category: "about",
         status: null
-    }, 
+    },
     {
         id: 3,
         title: "Hur ansöker man om färdtjänst?",
@@ -215,7 +215,27 @@ const articles = [
     sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
         category: "news",
         status: "important"
+    },
+
+
+
+    // ##### BOOK #####
+    {
+        id: 14,
+        title: "Ring och Boka",
+        text: `
+                <p>Växeln öppen dygnet runt</p>
+                <h3><i class="fas fa-phone"></i>Telefon</h3>
+                <a href="tel:012345678">01 - 234 56 79</a>
+                <div class="supporting-content">
+                    <p>Att tänka på inför:</p>
+                    <ul>
+                        <li>Ha ditt kundnummer tillgängligt.</li>
+                        <li>Boka din resa i god tid.</li>
+                    </ul>
+                </div>
+            `,
+        category: "call contact",
+        status: null
     }
 ];
-
-console.log('Hello from Articles')

@@ -29,6 +29,16 @@
     list-style-position: inside;
   }
 
+  .supporting-content {
+    margin: 20px auto 10px;
+    max-width: 400px;
+    text-align: left;
+
+    ul {
+      margin: 0;
+    }
+  }
+
   .print-btn {
     margin-top: 10px;
     float: right;
@@ -82,10 +92,21 @@
 
   .article {
     border: none;
-    
+
     h2 {
       text-align: left;
     }
   }
 
+  // .contact {
+  //   text-align: left;
+
+  //   .supporting-content {
+  //     margin: 20px 0 !important;
+
+  //     h3 {
+  //       margin-left: 0 !important;
+  //     }
+  //   }
+  // }
 }
