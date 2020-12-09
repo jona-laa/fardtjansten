@@ -24,16 +24,19 @@ const createArticles = (articles) => {
   });
 };
 
-
-
+/*
+  * Listen for filter bar input
+*/
 filterBar.addEventListener('input', () => {
   filterContent();
 });
 
-
-
+/*
+  * Filter "about" articles with input string
+*/
 const filterContent = () => {
   const filtered = aboutArticles.filter(article => article.title.toLowerCase().includes(filterBar.value.toLowerCase()) || article.text.toLowerCase().includes(filterBar.value.toLowerCase()));
+
   if (filterBar.value == "") {
     aboutContainer.innerHTML = "";
     createArticles(aboutArticles)
@@ -43,8 +46,9 @@ const filterContent = () => {
   }
 };
 
-
-
+/*
+  * Load "about" articles on page load
+*/
 window.addEventListener("load",
   createArticles(aboutArticles)
 );
