@@ -28,3 +28,21 @@
   text-align: center;
   margin: 30px auto -25px;
 }
+
+.filter-content {
+  text-align: center;
+  margin: 50px auto -30px;
+
+  input {
+    border: none;
+    box-shadow: 0px 1px 3px lightgray;
+    font-size: 20px;
+    max-width: 300px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  ::placeholder {
+    color: hsl(0, 0%, 85%);
+  }
+}

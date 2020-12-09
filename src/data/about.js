@@ -2,6 +2,7 @@
   * DOM object - Box-menu
 */
 const aboutContainer = document.querySelector('.box-menu');
+const filterBar = document.querySelector('#filterbar');
 
 /*
   * Filters articles array for "about" articles
@@ -11,12 +12,66 @@ const aboutArticles = articles.filter(article => article.category == "about");
 /*
   * Append articles to the DOM
 */
-aboutArticles.forEach(article => {
+const createArticles = (articles) => {
+  articles.forEach(article => {
     aboutContainer.innerHTML += `
-            <a href="artikel.html?id=${article.id}">
-                <div class="box-menu_box border-about rounded">
-                    <span class="about-link">${article.title}</span>
-                </div>
-            </a>
-    `;
+              <a href="artikel.html?id=${article.id}">
+                  <div class="box-menu_box border-about rounded">
+                      <span class="about-link">${article.title}</span>
+                  </div>
+              </a>
+      `;
+  });
+};
+
+
+
+filterBar.addEventListener('input', () => {
+  filterContent();
 });
+
+
+
+const filterContent = () => {
+  const filtered = aboutArticles.filter(article => article.title.toLowerCase().includes(filterBar.value.toLowerCase()) || article.text.toLowerCase().includes(filterBar.value.toLowerCase()));
+  if (filterBar.value == "") {
+    aboutContainer.innerHTML = "";
+    createArticles(aboutArticles)
+  } else {
+    aboutContainer.innerHTML = "";
+    createArticles(filtered);
+  }
+};
+
+
+
+window.addEventListener("load",
+  createArticles(aboutArticles)
+);
+
+
+
+
+
+
+// For searchbar
+// filterBar.addEventListener('input', () => {
+//   filterContent();
+// });
+
+
+// const filterContent = () => {
+//   const filtered = articles.filter(article => article.title.toLowerCase().includes(filterBar.value.toLowerCase()));
+//   if (filterBar.value == "") {
+//     aboutContainer.innerHTML = "";
+//     createArticles(aboutArticles)
+//   } else {
+//     aboutContainer.innerHTML = "";
+//     createArticles(filtered);
+//   }
+// };
+
+
+// window.addEventListener("load",
+//   createArticles(aboutArticles)
+// );

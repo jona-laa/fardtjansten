@@ -19,7 +19,7 @@ const articles = [
     {
         id: 2,
         title: "Vem får färdtjänst?",
-        text: `<p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        text: `<p class="article-text">Lorem brödsmulor metspö ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <ul class="article-list">
                     <li>Stora svårigheter att förflytta sig.</li>
                     <li>Har svårt att använda valig kollektivtrafik.</li>
