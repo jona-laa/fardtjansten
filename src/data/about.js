@@ -3,6 +3,7 @@
 */
 const aboutContainer = document.querySelector('.box-menu');
 const filterBar = document.querySelector('#filterbar');
+const filterFeedback = document.querySelector('.filter-feedback');
 
 /*
   * Filters articles array for "about" articles
@@ -35,12 +36,17 @@ filterBar.addEventListener('input', () => {
   * Filter "about" articles with input string
 */
 const filterContent = () => {
+  filterFeedback.innerHTML = "";
+
   const filtered = aboutArticles.filter(article => article.title.toLowerCase().includes(filterBar.value.toLowerCase()) || article.text.toLowerCase().includes(filterBar.value.toLowerCase()));
 
   if (filterBar.value == "") {
     aboutContainer.innerHTML = "";
     createArticles(aboutArticles)
   } else {
+    if (filtered.length < 1) {
+      filterFeedback.innerHTML = `<p>Inga träffar på "${filterBar.value}"</p>`;
+    }
     aboutContainer.innerHTML = "";
     createArticles(filtered);
   }
