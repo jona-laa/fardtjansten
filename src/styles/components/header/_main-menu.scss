@@ -1,0 +1,186 @@
+/* Brand Logotype */
+.brand {
+  color: $black;
+  user-select: none;
+  text-decoration: none;
+  font-size: 32px;
+  @include flex(row);
+  align-items: center;
+
+  @include maxWidth(1400px) {
+    font-size: 28px;
+  }
+
+  img {
+    margin-right: 10px;
+    max-width: 50px;
+    vertical-align: middle;
+
+    @include maxWidth(1400px) {
+      max-width: 40px;
+    }
+  }
+
+  @include maxWidth(600px) {
+    font-size: 24px;
+
+    img {
+      max-width: 30px;
+    }
+  }
+}
+
+nav {
+  @include flex(row);
+  align-items: center;
+  max-width: 1600px;
+  margin: auto;
+  width: 100%;
+
+  @include maxWidth(1400px) {
+    @include flex();
+  }
+
+  /* Main Menu */
+  .menu {
+    margin-left: 100px;
+    @include flex(row);
+
+    @include maxWidth(1400px) {
+      margin: 10px auto 0;
+    }
+
+    @include minWidth(961px) {
+      display: flex !important;
+    }
+
+    @include maxWidth(960px) {
+      background-color: $white;
+      display: none;
+      padding: 0px 15px 50px;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      height: 100vh;
+      opacity: 0.97;
+    }
+
+    @include maxWidth(600px) {
+      top: 50px;
+    }
+
+    li {
+      margin-right: 50px;
+
+      @include maxWidth(1400px) {
+        margin-right: 25px;
+      }
+
+      @include maxWidth(960px) {
+        margin-top: 10px;
+        line-height: 30px;
+      }
+
+      a {
+        color: $black;
+        font-size: 22px;
+        text-decoration: none;
+
+        @include maxWidth(1400px) {
+          font-size: 20px;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .current {
+        font-weight: 600;
+        text-decoration: underline;
+      }
+
+      .logout-btn {
+        font-size: 16px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        @include maxWidth(960px) {
+          font-size: 20px;
+          position: initial;
+        }
+
+        i {
+          font-size: 16px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
+
+#search {
+  position: absolute;
+  top: 25px;
+  right: 200px;
+
+  @include maxWidth(1400px) {
+    top: 67.5px;
+    right: 160px;
+  }
+
+  @include maxWidth(960px) {
+    top: 20px;
+    right: 50px;
+  }
+
+  @include maxWidth(600px) {
+    top: 12px;
+  }
+
+  .fa-search {
+    color: $black;
+    font-size: 18px;
+    position: absolute;
+    padding: 10px;
+    z-index: 1;
+
+    @include maxWidth(960px) {
+      padding: 10px;
+    }
+  }
+
+  input {
+    border: none;
+    box-shadow: 0px 1px 3px lightgray;
+    display: none;
+    max-width: 150px;
+    padding: 10px;
+    padding-left: 35px;
+    position: absolute;
+    font-size: 16px;
+
+    @include maxWidth(960px) {
+      padding: 10px;
+      padding-left: 35px;
+    }
+  }
+}
+
+/* Mobile Menu Icon */
+#main-menu-toggle {
+  display: none;
+
+  @include maxWidth(960px) {
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 17px;
+  }
+
+  @include maxWidth(600px) {
+    left: 15px;
+    top: 12px;
+  }
+}

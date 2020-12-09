@@ -1,0 +1,13 @@
+/* Buttons */
+.btn {
+  // border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $font-M;
+  padding: 10px 30px;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

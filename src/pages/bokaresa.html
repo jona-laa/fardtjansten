@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <meta name="description" content="Färdtjänsten">
+    <meta property="og:image" content="../images/FT_logo.jpg" />
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Färdtjänsten</title>
+</head>
+
+<body id="home">
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <!-- Logotype -->
+                <a href="../index.html">
+                    <div class="brand">
+                        <img src="../images/FT_logo.png" alt="Färdtjänsten Logotyp">
+                        Färdtjänsten
+                    </div>
+                </a>
+                <nav>
+                    <!-- Mobile meny - Hidden on default -->
+                    <a href="" onClick=event.preventDefault() id="main-menu-toggle" aria-label="Toggle Mobile Menu">
+                        <svg viewBox="0 0 100 80" width="40" height="40">
+                            <rect width="90" height="12" fill="#000"></rect>
+                            <rect y="30" width="90" height="12" fill="#000"></rect>
+                            <rect y="60" width="90" height="12" fill="#000"></rect>
+                        </svg>
+                    </a>
+
+                    <!-- Main Menu -->
+                    <ul id="menu-main-menu" class="menu">
+                        <li><a href="../index.html" class="menu-link">Start</a></li>
+                        <li><a href="./boka.html" class="menu-link">Boka Färdtjänst</a></li>
+                        <li><a href="omfardtjanst.html" class="menu-link">Om Färdtjänst</a></li>
+                        <li><a href="./kundtjanst.html" class="menu-link">Kundtjänst</a></li>
+                        <li><a href="./minasidor.html" class="menu-link current">Mina Sidor</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Search Bar -->
+                <div id="search">
+                    <a href="#" onclick="elementDisplay(searchBar, 'block'), elementFocus(searchBar)" class="menu-link"
+                        aria-label="Toggle Search Box">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <input id="searchbar" type="text" autocomplete="on">
+                </div>
+            </div>
+        </header>
+        <div class="breadcrumbs"><a href="../index.html">Start</a> > <a href="minasidor.html">Mina Sidor</a> > Boka Resa
+        </div>
+
+        <!-- Page Title "Banner" -->
+        <div class="title-banner col-main">
+            <h1>Boka Ny Resa</h1>
+        </div>
+
+        <main>
+            <!-- Login Form -->
+            <form action="" class="rounded border-main">
+                <fieldset>
+                    <legend>Resedetaljer</legend>
+
+                    <label for="travel-from">Från</label><br>
+                    <input type="text" id="travel-from" name="fravel-from" autocomplete="true"><br>
+
+                    <label for="travel-to">Till</label><br>
+                    <input type="text" id="travel-to" name="travel-to" autocomplete="true"><br>
+
+                    <label for="travel-date">Datum för avresa</label><br>
+                    <input type="date" id="travel-date" name="travel-date"><br>
+
+                    <label for="travel-time">Tid för avresa</label><br>
+                    <input type="time" id="travel-time" name="travel-time"><br>
+
+                    <label for="book-return">Boka med returresa</label><br>
+                    <div class="return">
+                        <input type="checkbox" id="book-return" name="book-return"><br>
+                    </div>
+
+                    <label for="return-date">Datum för returresa</label><br>
+                    <input type="date" id="return-date" name="return-date"><br>
+
+                    <label for="return-time">Tid för returresa</label><br>
+                    <input type="time" id="return-time" name="return-time"><br>
+
+                    <label for="companions">Medresenärer / Ledsagare</label><br>
+                    <input type="number" min="0" max="2" id="companions" name="companions"><br>
+
+                    <label for="aid">Hjälpmedel</label><br>
+                    <select name="aid" id="aid">
+                        <option value="-">-</option>
+                        <option value="rullstol">Rullstol</option>
+                        <option value="rullator">Rullator</option>
+                        <option value="permobil">Permobil</option>
+                    </select>
+
+                    <input type="submit" value="Boka" class="submit-btn col-main">
+                </fieldset>
+
+                <!-- <div class="login-help">
+                    <h3>Har du problem med inloggningen?</h3>
+                    <p>Om du har glömt ditt lösenord, eller av någon anledning har problem med att logga in, kontaktar
+                        du färdtjänstens <a href="kundtjanst.html">kundtjänst</a>.</p>
+                </div> -->
+            </form>
+
+            <!-- Tillbaka -->
+            <div class="go-back">
+                <a onclick="window.history.back()" class="go-back_link"><i class="fas fa-arrow-left"></i>Tillbaka</a>
+            </div>
+        </main>
+
+    </div>
+
+    <footer>
+        <div class="footer-groups">
+            <!-- Genvägar -->
+            <div class="footer-group">
+                <div>
+                    <h3>Genvägar</h3>
+                    <ul>
+                        <li><a href="../index.html">Start <i class="fas fa-angle-double-right"></i></a></li>
+                        <li><a href="./boka.html">Boka färdtjänst <i class="fas fa-angle-double-right"></i></a></li>
+                        <li><a href="#">Om Färdtjänst <i class="fas fa-angle-double-right"></i></a></li>
+                        <li><a href="./kundtjanst.html">Kundtjänst <i class="fas fa-angle-double-right"></i></a></li>
+                        <li><a href="./minasidor.html">Mina Sidor <i class="fas fa-angle-double-right"></i></a></li>
+                        <li><a href="./tillganglighet.html">Tillgänglighetsredogörelse <i
+                                    class="fas fa-angle-double-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Externa Länkar -->
+            <div class="footer-group">
+                <div>
+                    <h3>Externa Länkar</h3>
+                    <ul>
+                        <li><i class="fas fa-external-link-alt"></i> <a href="http://www.sl.se"
+                                target="_blank">SL.se</a></li>
+                        <li><i class="fas fa-external-link-alt"></i> <a
+                                href="http://www.funkaportalen.se/guide/Stod-service/Resor/" target="_blank">Stiftelsen
+                                Funka - Resor</a></li>
+                        <li><i class="fas fa-external-link-alt"></i> <a
+                                href="https://www.sll.se/verksamhet/kollektivtrafik/fardtjansten/"
+                                target="_blank">Region Stockholm -
+                                Färdtjänsten</a></li>
+                        <li><i class="fas fa-external-link-alt"></i> <a
+                                href="https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-1997736-om-fardtjanst_sfs-1997-736"
+                                target="_blank">Lagen om färdtjänst</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Kundtjänst -->
+            <div class="footer-group">
+                <div>
+                    <h3>Kundtjänst</h3>
+                    <ul>
+                        <li>Helgfri vardag klockan 7—20</li>
+                        <li><i class="fas fa-phone"></i> <a class="underline" href="tel:01-2345678">01 — 234 56 78</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Bokning -->
+                <div class="margin-top">
+                    <h3>Bokning</h3>
+                    <ul>
+                        <li>Växeln öppen dygnet runt</li>
+                        <li><i class="fas fa-phone"></i> <a class="underline" href="tel:01-2345679">01 — 234 56 79</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

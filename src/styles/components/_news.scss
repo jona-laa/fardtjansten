@@ -1,0 +1,52 @@
+.news {
+  margin-top: 50px;
+  article {
+    background-color: $white;
+    margin: 0 auto 20px;
+    max-width: 720px;
+    padding: $div-padding;
+
+    @include maxWidth(600px) {
+      padding: 30px 20px;
+    }
+
+    .alert-icon {
+      color: $col-alert;
+      font-size: 45px;
+      margin-right: 20px;
+      vertical-align: middle;
+    }
+
+    .expand-btn {
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      background-color: transparent;
+      border: none;
+      text-align: left;
+      width: 100%;
+      line-height: 45px;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .expand-icon {
+        font-size: 45px;
+        margin-right: 20px;
+        float: right;
+      }
+    }
+
+    .article-content {
+      display: none;
+
+      div {
+        margin-top: 20px;
+      }
+
+      h3 {
+        display: none;
+      }
+    }
+  }
+}

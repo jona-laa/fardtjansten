@@ -1,0 +1,19 @@
+header {
+  background-color: $white;
+  padding: 10px 20px;
+
+  .header-content {
+    max-width: 1600px;
+    margin: auto;
+    @include flex(row);
+
+    @include maxWidth(1400px) {
+      @include flex();
+      align-items: center;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+$div-padding: 50px;
+
+.container {
+  min-height: calc(100vh - 350px);
+  padding-bottom: 100px;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.border-about {
+  border-left: 20px solid $col-about;
+}
+
+.border-main {
+  border-left: 20px solid $col-main;
+}
+
+.border-call {
+  border-left: 20px solid $col-call;
+}
+
+.border-service {
+  border-left: 20px solid $col-service;
+}
+
+.border-reoccurring {
+  border-left: 20px solid $col-reoccurring;
+}
+
+.border-profile {
+  border-left: 20px solid $col-profile;
+}
+
+.border-logout {
+  border-left: 20px solid $col-logout;
+} 
+
+.border-booked {
+  border-left: 20px solid $col-booked;
+}
+
+.important {
+  border-left: 20px solid $col-alert;
+}
+
+.col-about {
+  background-color: $col-about;
+}
+
+.col-service {
+  background-color: $col-service;
+}
+
+.col-main {
+  background-color: $col-main;
+}
+
+.col-booked {
+  background-color: $col-booked;
+}
+
+.col-reoccurring {
+  background-color: $col-reoccurring;
+}
+
+.col-profile {
+  background-color: $col-profile;
+}
