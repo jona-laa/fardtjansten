@@ -89,3 +89,14 @@ expandBtn.forEach(btn => {
     }
   })
 });
+
+
+
+// Make searchbar listen for enter -> Load search results based on input value
+searchBar.addEventListener('keyup', (event) => {
+  console.log('keyup')
+  if (event.keyCode === 13) {
+    console.log('enter pressed')
+    window.location.assign(`http://localhost:3000/pages/sokresultat.html?search=${searchBar.value}`)
+  }
+});

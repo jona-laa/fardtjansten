@@ -3,7 +3,7 @@
 */
 const aboutContainer = document.querySelector('.box-menu');
 const filterBar = document.querySelector('#filterbar');
-const filterFeedback = document.querySelector('.filter-feedback');
+const filterFeedback = document.querySelector('.feedback');
 
 /*
   * Filters articles array for "about" articles
@@ -58,30 +58,3 @@ const filterContent = () => {
 window.addEventListener("load",
   createArticles(aboutArticles)
 );
-
-
-
-
-
-
-// For searchbar
-// filterBar.addEventListener('input', () => {
-//   filterContent();
-// });
-
-
-// const filterContent = () => {
-//   const filtered = articles.filter(article => article.title.toLowerCase().includes(filterBar.value.toLowerCase()));
-//   if (filterBar.value == "") {
-//     aboutContainer.innerHTML = "";
-//     createArticles(aboutArticles)
-//   } else {
-//     aboutContainer.innerHTML = "";
-//     createArticles(filtered);
-//   }
-// };
-
-
-// window.addEventListener("load",
-//   createArticles(aboutArticles)
-// );
