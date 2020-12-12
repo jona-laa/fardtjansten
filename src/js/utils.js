@@ -78,12 +78,15 @@ expandBtn.forEach(btn => {
     if (articleText.style.display === "block") {
       articleText.style.display = "none";
       btn.setAttribute('aria-expanded', 'false');
+      articleText.setAttribute('aria-hidden', 'true');
 
       btn.lastElementChild.classList.remove('fa-minus');
       btn.lastElementChild.classList.add('fa-plus');
     } else {
       articleText.style.display = "block";
       btn.setAttribute('aria-expanded', 'true');
+      articleText.setAttribute('aria-hidden', 'false');
+
       btn.lastElementChild.classList.remove('fa-plus');
       btn.lastElementChild.classList.add('fa-minus');
     }
@@ -91,12 +94,9 @@ expandBtn.forEach(btn => {
 });
 
 
-
 // Make searchbar listen for enter -> Load search results based on input value
 searchBar.addEventListener('keyup', (event) => {
-  console.log('keyup')
-  if (event.keyCode === 13) {
-    console.log('enter pressed')
+  if (searchBar.value != "" && event.keyCode === 13) {
     window.location.assign(`http://localhost:3000/pages/sokresultat.html?search=${searchBar.value}`)
   }
 });
