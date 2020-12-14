@@ -5,6 +5,10 @@ footer {
   padding: 50px;
   width: 100%;
 
+  @include maxWidth(960px) {
+    padding-top: 30px;
+  }
+
   .footer-groups {
     @include flex(row, wrap);
     margin: 0 auto;
@@ -18,6 +22,10 @@ footer {
       font-size: 20px;
       font-weight: 600;
       margin-bottom: 5px;
+
+      @include maxWidth(960px) {
+        margin-top: 20px;
+      }
     }
 
     i {

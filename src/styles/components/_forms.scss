@@ -23,6 +23,10 @@ form {
     max-width: 350px;
   }
 
+  ::placeholder {
+    color: $col-alert;
+  }
+
   input,
   select {
     font-size: 18px;
@@ -38,6 +42,10 @@ form {
   .return {
     max-width: 350px;
     margin: auto;
+
+    .return-input {
+      display: none;
+    }
   }
 
   #book-return {

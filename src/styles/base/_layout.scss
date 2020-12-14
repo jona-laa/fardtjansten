@@ -11,39 +11,82 @@ $div-padding: 50px;
 
 .border-about {
   border-left: 20px solid $col-about;
+  @include maxWidth(600px) {
+    border-left: 15px solid $col-about;
+  }
 }
 
 .border-main {
   border-left: 20px solid $col-main;
+  @include maxWidth(600px) {
+    border-left: 15px solid $col-main;
+  }
 }
 
 .border-call {
   border-left: 20px solid $col-call;
+  @include maxWidth(600px) {
+    border-left: 15px solid $col-call;
+  }
 }
 
 .border-service {
   border-left: 20px solid $col-service;
+  @include maxWidth(600px) {
+    border-left: 15px solid $col-service;
+  }
 }
 
 .border-reoccurring {
   border-left: 20px solid $col-reoccurring;
+  @include maxWidth(600px) {
+    border-left: 15px solid $col-reoccurring;
+  }
 }
 
 .border-profile {
   border-left: 20px solid $col-profile;
+  @include maxWidth(600px) {
+    border-left: 15px solid $col-profile;
+  }
 }
 
 .border-logout {
   border-left: 20px solid $col-logout;
-} 
+  @include maxWidth(600px) {
+    border-left: 15px solid $col-logout;
+  }
+}
 
 .border-booked {
   border-left: 20px solid $col-booked;
+  @include maxWidth(600px) {
+    border-left: 15px solid $col-booked;
+  }
 }
 
 .important {
   border-left: 20px solid $col-alert;
+  @include maxWidth(600px) {
+    border-left: 15px solid $col-alert;
+  }
 }
+// $border-colors: (
+//   about: $col-about,
+//   main: $col-main,
+//   call: $col-call,
+//   service: $col-service,
+//   reoccurring: $col-reoccurring,
+//   profile: $col-profile,
+//   logout: $col-logout,
+//   booked: $col-booked
+// );
+
+// @each $key, $value in $border-colors {
+//   .border-#{key} {
+//     border-left: 20px solid $value;
+//   }
+// }
 
 .col-about {
   background-color: $col-about;
@@ -67,4 +110,14 @@ $div-padding: 50px;
 
 .col-profile {
   background-color: $col-profile;
+}
+
+.col-confirm {
+  background-color: $col-confirm;
+  color: $white;
+}
+
+.col-delete {
+  background-color: $col-delete;
+  color: $white;
 }

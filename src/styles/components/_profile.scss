@@ -1,0 +1,31 @@
+.profile {
+  .section-heading {
+    display: none;
+  }
+
+  .profile_container {
+    background-color: $white;
+    margin: 50px auto;
+    max-width: 500px;
+    padding: $div-padding;
+    padding-bottom: 30px;
+
+    @include maxWidth(750px) {
+      margin: 30px 10px;
+      padding: 50px 20px;
+    }
+
+    .profile-info_heading {
+      font-size: 22px;
+      font-weight: 600px;
+      margin-bottom: 15px;
+    }
+
+    .profile-info {
+      font-size: 20px;
+      font-weight: 300;
+      margin-left: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}

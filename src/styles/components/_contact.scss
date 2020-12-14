@@ -11,6 +11,10 @@
 
   a {
     font-weight: 300;
+
+    &:hover {
+      font-weight: 400;
+    }
   }
 
   h3 {

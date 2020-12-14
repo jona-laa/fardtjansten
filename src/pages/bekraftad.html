@@ -11,7 +11,7 @@
     <meta name="description" content="Färdtjänsten">
     <meta property="og:image" content="../images/FT_logo.jpg" />
     <link rel="stylesheet" href="../css/style.css">
-    <title>Färdtjänsten - Bokade Resor</title>
+    <title>Färdtjänsten - Bokning Bekräftad</title>
 </head>
 
 <body id="home">
@@ -60,23 +60,15 @@
         <div class="breadcrumbs"><a href="../index.html">Start</a> > <a href="minasidor.html">Mina Sidor</a> > Bokade
             Resor</div>
 
-
-        <!-- Page Title "Banner" -->
-        <div class="title-banner col-booked">
-            <h1>Bokade Resor</h1>
-        </div>
-
-        <!-- Page Description -->
-        <div class="page-descr">
-            Här hittar du dina aktiva bokningar.
-        </div>
-
         <main>
-            <!-- Bokade Resor -->
-            <section class="booked">    
-                <h2 class="section-heading">Bokade Resor</h2>
-                <!-- Bookings will render here -->
-            </section>
+            <!-- Bokning Bekräftad -->
+            <article class="article confirmed rounded border-booked">
+                <h2 class="article-heading"><i class="far fa-check-circle"></i>Bokning Bekräftad</h2>
+                <p class="article-text" id="confirmed-greeting">Tack för din bokning!</p>
+                <p class="article-text" id="confirmed-ref"></p>
+                <br>
+                <a href="minasidor.html" class="article-link centered">Tillbaka till Mina Sidor <i class="fas fa-angle-double-right"></i></a>
+            </article>
         </main>
 
     </div>
@@ -148,7 +140,7 @@
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-latest.js"></script>
-    <script src="../data/booked.js"></script>
+    <script src="../data/confirmed.js"></script>
     <script src="../js/main.js"></script>
 </body>
 

@@ -25,7 +25,7 @@ const filtered = articles.filter(article => article.title.toLowerCase().includes
 filtered.forEach(article => {
     aboutContainer.innerHTML += `
               <a href="artikel.html?id=${article.id}">
-                  <div class="box-menu_box border-about rounded">
+                  <div class="box-menu_box border-${article.category} rounded">
                       <span class="about-link">${article.title}</span>
                   </div>
               </a>
