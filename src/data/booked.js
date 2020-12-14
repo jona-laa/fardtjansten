@@ -11,7 +11,13 @@ const sectionBooked = document.querySelector('.booked');
 const existingBookings = JSON.parse(localStorage.getItem("booked"));
 
 const createBookings = (bookings) => {
-    bookings.forEach(booking => {
+    const sortedBookings = bookings.sort((a, b) => {
+        const c = new Date(`${a.date}T${a.time}`);
+        const d = new Date(`${b.date}T${b.time}`);
+        return c - d;
+    });
+
+    sortedBookings.forEach(booking => {
         sectionBooked.innerHTML +=
             `<div class="booked-item border-booked rounded">
                 <div class="booked-item_ref">Bokningsreferens: #${booking.id}</div>
