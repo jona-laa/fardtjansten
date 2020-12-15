@@ -18,6 +18,7 @@ const travelAid = document.querySelector('#travel-aid');
 const bookBtn = document.querySelector('#book-btn');
 const feedback = document.querySelector('.feedback');
 const travelWeekdays = document.querySelector('.travel-weekdays');
+
 let update = false;
 
 
@@ -27,7 +28,6 @@ let update = false;
 */
 const queryParam = location.search.split('=')[1];
 
-console.log(queryParam);
 
 
 /*
@@ -73,21 +73,31 @@ const createBooking = () => {
  */
 const updateBooking = () => {
     console.log('update me')
+    const existingBookings = JSON.parse(localStorage.getItem("reoccurring"));
+    
+    existingBookings.forEach(booking => {
+        if (booking.id == queryParam) {
+            booking.from = travelFrom.value;
+            booking.to = travelTo.value;
+            booking.days = [
+                travelMonday.checked ? 'Måndag' : null,
+                travelTuesday.checked ? 'Tisdag' : null,
+                travelWednesday.checked ? 'Onsdag' : null,
+                travelThursday.checked ? 'Torsdag' : null,
+                travelFriday.checked ? 'Fredag' : null,
+                travelSaturday.checked ? 'Lördag' : null,
+                travelSunday.checked ? 'Söndag' : null,
+            ];
+            booking.time = travelTime.value;
+            booking.companions = travelCompanions.value;
+            booking.accompaniers = travelAccompaniers.value;
+            booking.aid = travelAid.value;
+        }
+    });
+
+    localStorage.reoccurring = JSON.stringify(existingBookings);
+    window.location.assign(`bekraftad.html?type=update_reoccurring`)
 };
-
-
-
-/*
-  * "Routes" function of bookBtn
-*/
-const createOrUpdate = (e) => {
-    e.preventDefault();
-
-    if (validInput()) {
-        console.log('validated input')
-        update ? updateBooking() : createBooking();
-    }
-}
 
 
 
@@ -148,7 +158,7 @@ const emptyInputFeedback = () => {
         }
     });
 
-    !minOneChecked() ? travelWeekdays.style.border = "2px solid red" : travelWeekdays.style.border = "none"; 
+    !minOneChecked() ? travelWeekdays.style.border = "2px solid red" : travelWeekdays.style.border = "none";
 }
 
 
@@ -159,11 +169,15 @@ const emptyInputFeedback = () => {
 const fillInputFields = (booking) => {
     travelFrom.value = booking.from;
     travelTo.value = booking.to;
-    // travelDate.value = booking.date;
     travelTime.value = booking.time;
     travelCompanions.value = booking.companions;
     travelAccompaniers.value = booking.accompaniers;
     travelAid.value = booking.aid;
+
+    // Auto-check existing reoccurring days
+    [travelMonday, travelTuesday, travelWednesday, travelThursday, travelFriday, travelSaturday, travelSunday].forEach(day => {
+        booking.days.includes(day.name.replace(/^\w/, (c) => c.toUpperCase())) ? day.checked = true : null;
+    })
 };
 
 

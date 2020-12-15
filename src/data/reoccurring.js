@@ -11,13 +11,7 @@ const sectionBooked = document.querySelector('.booked');
 const existingBookings = JSON.parse(localStorage.getItem("reoccurring"));
 
 const createBookings = (bookings) => {
-    const sortedBookings = bookings.sort((a, b) => {
-        const c = new Date(`${a.date}T${a.time}`);
-        const d = new Date(`${b.date}T${b.time}`);
-        return c - d;
-    });
-
-    sortedBookings.forEach(booking => {
+    bookings.forEach(booking => {
         sectionBooked.innerHTML +=
             `<div class="booked-item reoccurring-item border-reoccurring rounded">
                 <div class="booked-item_ref">Bokningsreferens: #${booking.id}</div>
@@ -26,7 +20,7 @@ const createBookings = (bookings) => {
                         <li class="col-days">
                             <div>
                                 <p class="col-title"><i class="far fa-calendar"></i>Dagar</p>
-                                <p class="col-data">${booking.days}</p>
+                                <p class="col-data">${booking.days.filter(day => day != null).join(', ')}</p>
                             </div>
                         </li>
                         <li class="col-time">
@@ -69,8 +63,8 @@ const createBookings = (bookings) => {
                 </div>
             
                 <div class="booked-item_buttons">
-                    <button class="submit-btn btn rounded col-confirm" onclick="initUpdate(${booking.id})">Ändra</button>
-                    <button class="submit-btn btn rounded col-delete" onclick="confirm(${booking.id})">Avboka</button>
+                    <button class="submit-btn btn rounded col-confirm" onclick="initUpdate(${booking.id}, 'reoccurring')">Ändra</button>
+                    <button class="submit-btn btn rounded col-delete" onclick="confirmIt(${booking.id}, 'reoccurring')">Avboka</button>
                 </div>
             </div>`
     });
@@ -78,20 +72,7 @@ const createBookings = (bookings) => {
     bookings.length == 0 ? sectionBooked.innerHTML = `<div class="feedback"><p>Du har inga återkommande resor.</p></div>` : null;
 }
 
-const confirm = (id) => {
-    window.confirm(`Är du säker på att du vill avboka resan?`) ? deleteBooking(id) : null;
-};
 
-const deleteBooking = (id) => {
-    const updatedBookings = existingBookings.filter(booking => booking.id != id);
-    localStorage.reoccurring = JSON.stringify(updatedBookings);
-    window.location.reload();
-};
-
-const initUpdate = (id) => {
-    console.log(`init update on ${id}`)
-    window.location.assign(`http://localhost:3000/pages/bokaaterkommande.html?update=${id}`)
-};
 
 /*
   * Load bookings on page load

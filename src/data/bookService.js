@@ -1,4 +1,6 @@
-// Input elements
+/*
+  * DOM elements
+*/
 const travelFrom = document.querySelector('#travel-from');
 const travelTo = document.querySelector('#travel-to');
 const travelDate = document.querySelector('#travel-date');
@@ -84,20 +86,8 @@ const updateBooking = () => {
   });
 
   localStorage.booked = JSON.stringify(existingBookings);
-  window.location.assign(`http://localhost:3000/pages/bekraftad.html?type=update`)
+  window.location.assign(`bekraftad.html?type=update`)
 };
-
-
-
-/*
-  * "Routes" function of bookBtn
-*/
-const createOrUpdate = (e) => {
-  e.preventDefault();
-  if (validInput()) {
-    update ? updateBooking() : createBooking();
-  }
-}
 
 
 

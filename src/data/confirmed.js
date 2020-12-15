@@ -15,6 +15,10 @@ switch (queryParam) {
         confirmedGreeting.textContent = "Din resa är nu uppdaterad!"
         confirmedRef.innerHTML = 'Du hittar alla dina aktiva bokningar på <a class="article-link" href="bokaderesor.html">Bokade Resor</a>.';
         break;
+    case 'update_reoccurring':
+        confirmedGreeting.textContent = "Din återkommande resa är nu uppdaterad!"
+        confirmedRef.innerHTML = 'Du hittar alla dina återkommande resor på <a class="article-link" href="aterkommanderesor.html">Återkommande Resor</a>.';
+        break;
 
     default:
         confirmedRef.innerHTML = 'Du hittar alla dina aktiva bokningar på <a class="article-link" href="bokaderesor.html">Bokade Resor</a>.';

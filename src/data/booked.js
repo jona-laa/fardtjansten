@@ -70,28 +70,15 @@ const createBookings = (bookings) => {
 
                 <div class="booked-item_buttons">
                     <button class="submit-btn btn rounded col-confirm" onclick="initUpdate(${booking.id})">Ändra</button>
-                    <button class="submit-btn btn rounded col-delete" onclick="confirm(${booking.id})">Avboka</button>
+                    <button class="submit-btn btn rounded col-delete" onclick="confirmIt(${booking.id})">Avboka</button>
                 </div>
             </div>`
     });
 
-    bookings.length == 0 ? sectionBooked.innerHTML = `<div class="feedback"><p>Du har inga aktiva bokningar</p></div>` : null;
+    bookings.length == 0 ? sectionBooked.innerHTML = `<div class="feedback"><p>Du har inga aktiva bokningar.</p></div>` : null;
 }
 
-const confirm = (id) => {
-    window.confirm(`Är du säker på att du vill avboka resan?`) ? deleteBooking(id) : null;
-};
 
-const deleteBooking = (id) => {
-    const updatedBookings = existingBookings.filter(booking => booking.id != id);
-    localStorage.booked = JSON.stringify(updatedBookings);
-    window.location.reload();
-};
-
-const initUpdate = (id) => {
-    console.log(`init update on ${id}`)
-    window.location.assign(`http://localhost:3000/pages/bokaresa.html?update=${id}`)
-};
 
 /*
   * Load bookings on page load
