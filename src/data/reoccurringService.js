@@ -27,6 +27,7 @@ let update = false;
 */
 const queryParam = location.search.split('=')[1];
 
+console.log(queryParam);
 
 
 /*
@@ -148,4 +149,33 @@ const emptyInputFeedback = () => {
     });
 
     !minOneChecked() ? travelWeekdays.style.border = "2px solid red" : travelWeekdays.style.border = "none"; 
+}
+
+
+
+/*
+  * Fills input fields on "update mode"
+*/
+const fillInputFields = (booking) => {
+    travelFrom.value = booking.from;
+    travelTo.value = booking.to;
+    // travelDate.value = booking.date;
+    travelTime.value = booking.time;
+    travelCompanions.value = booking.companions;
+    travelAccompaniers.value = booking.accompaniers;
+    travelAid.value = booking.aid;
+};
+
+
+
+/*
+  * Checks query params for booking to update -> sets form in "update mode"
+*/
+if (queryParam != null) {
+    update = true;
+    const existingBookings = JSON.parse(localStorage.getItem("reoccurring"));
+    const bookingToUpdate = existingBookings.filter(booking => booking.id == queryParam)[0];
+    bookBtn.value = 'Spara Ändringar';
+
+    fillInputFields(bookingToUpdate);
 }

@@ -1,107 +1,120 @@
 .booked {
-    .section-heading {
-        display: none;
+  .section-heading {
+    display: none;
+  }
+
+  .booked-item {
+    background: $white;
+    max-width: 860px;
+    margin: 50px auto;
+    padding: 20px;
+
+    @include maxWidth(700px) {
+      padding: 30px 10px;
     }
 
-    .booked-item {
-      background: $white;
-      max-width: 860px;
-      margin: 50px auto;
-      padding: 20px;
+    .booked-item_ref {
+      font-size: 16px;
+      margin: auto;
+      max-width: 750px;
+    }
 
-      @include maxWidth(700px) {
-          padding: 30px 10px;
+    ul {
+      @include flex(row, wrap);
+      margin: auto;
+      max-width: 750px;
+
+      .col-date {
+        width: 19.98%;
       }
-    
-      .booked-item_ref {
-        font-size: 16px;
-        margin: auto;
-        max-width: 750px;
+
+      .col-time {
+        width: 13.32%;
       }
-    
-      ul {
-        @include flex(row, wrap);
-        margin: auto;
-        max-width: 750px;
-    
-        .col-date {
-          width: 19.98%;
-        }
-    
-        .col-time {
-          width: 13.32%;
-        }
-    
+
+      .col-from,
+      .col-to,
+      .col-companions,
+      .col-accompaniers,
+      .col-aid  {
+        width: 33.3%;
+      }
+
+      @include maxWidth(830px) {
+        .col-date,
+        .col-time,
         .col-from,
         .col-to,
         .col-companions,
         .col-accompaniers,
         .col-aid  {
-          width: 33.3%;
-        }
-    
-        @include maxWidth(830px) {
-          .col-date,
-          .col-time,
-          .col-from,
-          .col-to,
-          .col-companions,
-          .col-accompaniers,
-          .col-aid  {
-            width: 50%;
-          }
-        }
-
-        @include maxWidth(700px) {
-          .col-from,
-          .col-to,
-          .col-companions,
-          .col-accompaniers,
-          .col-aid  {
-            width: 100%;
-          }
-        }
-    
-        .col-title {
-          background-color: #d9d9d9;
-          border: 1px solid $white;
-          font-size: 20px;
-          font-weight: 600;
-          padding: 10px;
-    
-          i {
-            font-size: 20px;
-            margin-right: 10px;
-          }
-        }
-    
-        .col-data {
-          font-size: 20px;
-          padding: 10px;
+          width: 50%;
         }
       }
-    
-      .booked-item_buttons {
-        margin: 20px auto;
-        @include flex(row);
-        justify-content: center;
-    
-        button {
-          border: none;
-          font-family: 'Poppins', sans-serif;
-          font-size: 18px;
-          margin: 0 7.5px;
-          padding: 10px;
-          width: 167px;
-    
-          &:hover {
-            cursor: pointer;
-          }
-    
-          &:focus {
-            outline-color: red;
-          }
+
+      @include maxWidth(700px) {
+        .col-from,
+        .col-to,
+        .col-companions,
+        .col-accompaniers,
+        .col-aid  {
+          width: 100%;
+        }
+      }
+
+      .col-title {
+        background-color: #d9d9d9;
+        border: 1px solid $white;
+        font-size: 20px;
+        font-weight: 600;
+        padding: 10px;
+
+        i {
+          font-size: 20px;
+          margin-right: 10px;
+        }
+      }
+
+      .col-data {
+        font-size: 20px;
+        padding: 10px;
+      }
+    }
+
+    .booked-item_buttons {
+      margin: 20px auto;
+      @include flex(row);
+      justify-content: center;
+
+      button {
+        border: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 18px;
+        margin: 0 7.5px;
+        padding: 10px;
+        width: 167px;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &:focus {
+          outline-color: red;
         }
       }
     }
+  }
+
+  .reoccurring-item {
+    .reoccurring-item_content {
+      .col-days {
+        width: 100%;
+      }
+
+      .col-from,
+      .col-to {
+        width: 43.34% !important;
+      }
+    }
+  }
 }
