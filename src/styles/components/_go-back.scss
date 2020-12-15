@@ -1,0 +1,35 @@
+.go-back {
+  max-width: 860px;
+  margin: -30px auto 0;
+
+  @include maxWidth(750px) {
+    margin: -20px 10px;
+  }
+
+  .go-back_link {
+    font-size: 20px;
+
+    i {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+
+.go-back-article {
+  max-width: 720px;
+}
+
+.go-back-medium {
+  margin-top: 10px;
+  max-width: 630px;
+}
+
+.go-back-small {
+  max-width: 500px;
+}

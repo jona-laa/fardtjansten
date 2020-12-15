@@ -24,7 +24,8 @@ aboutArticles.forEach(article => {
                 ${article.text}
                 <button class="print-btn" onclick="window.print()"><i class="fas fa-print"></i>Skriv Ut</button>
             </article>
-            <div class="go-back">
+            
+            <div class="go-back go-back-article">
                 <a onclick="window.history.back()" class="go-back_link"><i class="fas fa-arrow-left"></i>Tillbaka</a>
             </div>
     `;
