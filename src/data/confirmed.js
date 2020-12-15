@@ -9,7 +9,7 @@ switch (queryParam) {
         confirmedRef.innerHTML = 'Du hittar alla dina aktiva bokningar på <a class="article-link" href="bokaderesor.html">Bokade Resor</a>.';
         break;
     case 'reoccurring':
-        confirmedRef.innerHTML = 'Du hittar alla dina återkommande resor på <a class="article-link" href="aterkommande.html">Återkommande Resor</a>.';
+        confirmedRef.innerHTML = 'Du hittar alla dina återkommande resor på <a class="article-link" href="aterkommanderesor.html">Återkommande Resor</a>.';
         break;
     case 'update':
         confirmedGreeting.textContent = "Din resa är nu uppdaterad!"

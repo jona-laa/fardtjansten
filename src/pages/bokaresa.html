@@ -84,11 +84,11 @@
                     <label for="book-return">Boka med returresa</label><br>
                     <div class="return">
                         <input type="checkbox" onclick="toggleReturn()" id="book-return" name="book-return"><br>
-                        
+
                         <div class="return-input" aria-hidden="true">
                             <label for="return-date">Datum för returresa</label><br>
                             <input type="date" id="return-date" name="return-date"><br>
-    
+
                             <label for="return-time">Tid för returresa</label><br>
                             <input type="time" id="return-time" name="return-time"><br>
                         </div>
@@ -109,10 +109,10 @@
                         <option value="permobil">Permobil</option>
                     </select>
 
-                    <input type="submit" id="book-btn" onclick="createOrUpdate(event)" value="Boka"
-                        class="submit-btn rounded col-main">
-
                     <div class="feedback"></div>
+
+                    <input type="submit" id="book-btn" onclick="createOrUpdate(event)" value="Boka"
+                        class="submit-btn btn rounded col-main">
                 </fieldset>
             </form>
 

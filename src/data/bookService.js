@@ -132,7 +132,7 @@ const emptyInputFeedback = () => {
       input.placeholder = 'Fyll i fält'
     } else {
       input.style.border = "none";
-      feedback.innerHTML = "<p>Fyll i samtliga fält</p>"
+      feedback.innerHTML = "<p>Fyll i samtliga markerade fält</p>"
     }
   });
 }

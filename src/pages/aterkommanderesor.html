@@ -11,7 +11,7 @@
     <meta name="description" content="Färdtjänsten">
     <meta property="og:image" content="../images/FT_logo.jpg" />
     <link rel="stylesheet" href="../css/style.css">
-    <title>Färdtjänsten - Min Profil</title>
+    <title>Färdtjänsten - Mina Återkommande Resor</title>
 </head>
 
 <body id="home">
@@ -57,59 +57,25 @@
                 </div>
             </div>
         </header>
-        <div class="breadcrumbs"><a href="../index.html">Start</a> > <a href="minasidor.html">Mina Sidor</a> >
-            Min Profil</div>
+        <div class="breadcrumbs"><a href="../index.html">Start</a> > <a href="minasidor.html">Mina Sidor</a> > Mina Återkommande Resor
+            Resor</div>
 
 
         <!-- Page Title "Banner" -->
-        <div class="title-banner col-profile">
-            <h1>Min Profil</h1>
+        <div class="title-banner col-reoccurring">
+            <h1>Mina Återkommande Resor</h1>
+        </div>
+
+        <!-- Page Description -->
+        <div class="page-descr">
+            Här hittar du dina återkommande resor.
         </div>
 
         <main>
-            <!-- Min Profil -->
-            <section class="profile">
-                <h2 class="section-heading">Min Profil</h2>
-                <div class="profile_container border-profile rounded">
-                    <div>
-                        <p class="profile-info_heading">Kundnummer</p>
-                        <p class="profile-info">0123456789</p>
-                    </div>
-
-                    <div>
-                        <p class="profile-info_heading">Namn</p>
-                        <p class="profile-info">Förnamn Efternamn</p>
-                    </div>
-
-                    <div>
-                        <p class="profile-info_heading">E-Post</p>
-                        <p class="profile-info">Min@email.com</p>
-                    </div>
-
-                    <div>
-                        <p class="profile-info_heading">Telefonnummer</p>
-                        <p class="profile-info">01 — 234 56 78</p>
-                    </div>
-
-                    <div>
-                        <p class="profile-info_heading">Gata</p>
-                        <p class="profile-info">Gatan 123</p>
-                    </div>
-
-                    <div>
-                        <p class="profile-info_heading">Ort</p>
-                        <p class="profile-info">Orten</p>
-                    </div>
-
-                    <div>
-                        <p class="profile-info_heading">Postnummer</p>
-                        <p class="profile-info">123 45</p>
-                    </div>
-                </div>
-                <div class="go-back">
-                    <a onclick="window.history.back()" class="go-back_link"><i
-                            class="fas fa-arrow-left"></i>Tillbaka</a>
-                </div>
+            <!-- Bokade Resor -->
+            <section class="booked">
+                <h2 class="section-heading">Bokade Resor</h2>
+                <!-- Bookings will render here -->
             </section>
         </main>
 
@@ -182,6 +148,7 @@
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="../data/reoccurring.js"></script>
     <script src="../js/main.js"></script>
 </body>
 

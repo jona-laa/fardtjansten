@@ -69,8 +69,8 @@ const createBookings = (bookings) => {
                 </div>
 
                 <div class="booked-item_buttons">
-                    <button class="submit-btn rounded col-confirm" onclick="initUpdate(${booking.id})">Ändra</button>
-                    <button class="submit-btn rounded col-delete" onclick="confirm(${booking.id})">Avboka</button>
+                    <button class="submit-btn btn rounded col-confirm" onclick="initUpdate(${booking.id})">Ändra</button>
+                    <button class="submit-btn btn rounded col-delete" onclick="confirm(${booking.id})">Avboka</button>
                 </div>
             </div>`
     });

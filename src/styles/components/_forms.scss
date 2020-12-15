@@ -39,7 +39,8 @@ form {
     box-shadow: 1px 1px 2px lightgray;
   }
 
-  .return {
+  .return,
+  .travel-weekdays {
     max-width: 350px;
     margin: auto;
 
@@ -48,11 +49,33 @@ form {
     }
   }
 
-  #book-return {
+  #book-return,
+  .travel-weekdays input {
     box-shadow: none;
     height: 40px;
     width: 40px;
     margin: 0;
+  }
+
+  .travel-weekdays {
+    @include flex(column, wrap);
+    max-height: 250px;
+    margin-bottom: 20px;
+
+    .travel-weekdays_weekday  {
+      width: 50%;
+      padding: 5px 10px 5px 0;
+
+      input {
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      span {
+        font-size: 20px;
+        margin-left: 10px;
+      }
+    }
   }
 
   select {
@@ -87,5 +110,9 @@ form {
       color: $black;
       font-weight: 300;
     }
+  }
+
+  .feedback {
+    margin: auto;
   }
 }
