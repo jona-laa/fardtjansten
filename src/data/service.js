@@ -3,13 +3,17 @@
 */
 const serviceContainer = document.querySelector('.news');
 
+
+
 /* 
   * Filters articles array for "service" articles
 */
 const serviceArticles = articles.filter(article => article.category == "service");
 
+
+
 /* 
-  * Append articles to the DOM
+  * Append service articles to the DOM
 */
 serviceArticles.forEach(article => {
     serviceContainer.innerHTML += `

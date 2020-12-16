@@ -45,18 +45,8 @@ const createBooking = () => {
     aid: travelAid.value
   }
 
-  if (bookReturn) {
-    const returnBooking = {
-      id: Math.floor(Math.random() * 1e7),
-      from: travelTo.value,
-      to: travelFrom.value,
-      date: returnDate.value,
-      time: returnTime.value,
-      companions: travelCompanions.value,
-      accompaniers: travelAccompaniers.value,
-      aid: travelAid.value
-    }
-    existingBookings.push(returnBooking);
+  if (returnIsChecked) {
+    existingBookings.push(getReturnObject());
   }
 
   existingBookings.push(newBooking);
@@ -64,6 +54,24 @@ const createBooking = () => {
 
   window.location.assign(`http://localhost:3000/pages/bekraftad.html?type=regular`)
 }
+
+
+
+/*
+  * Returns a booking object for return bookings
+*/
+const getReturnObject = () => {
+  return {
+    id: Math.floor(Math.random() * 1e7),
+    from: travelTo.value,
+    to: travelFrom.value,
+    date: returnDate.value,
+    time: returnTime.value,
+    companions: travelCompanions.value,
+    accompaniers: travelAccompaniers.value,
+    aid: travelAid.value
+  }
+};
 
 
 
@@ -84,6 +92,10 @@ const updateBooking = () => {
       booking.aid = travelAid.value;
     }
   });
+
+  if (returnIsChecked) {
+    existingBookings.push(getReturnObject());
+  }
 
   localStorage.booked = JSON.stringify(existingBookings);
   window.location.assign(`bekraftad.html?type=update`)
@@ -131,6 +143,7 @@ const emptyInputFeedback = () => {
 
 /*
   * Fills input fields on "update mode"
+  * @param   {object}   booking     booking object
 */
 const fillInputFields = (booking) => {
   travelFrom.value = booking.from;
@@ -158,18 +171,18 @@ if (queryParam != null) {
 
 
 
-let bookReturn = false;
+let returnIsChecked = false;
 /*
   * Toggles return input fields
 */
 const toggleReturn = () => {
-  if (!bookReturn) {
+  if (!returnIsChecked) {
     elementDisplay(returnInput, 'block');
     returnInput.setAttribute('aria-hidden', 'false');
-    bookReturn = true;
+    returnIsChecked = true;
   } else {
     elementDisplay(returnInput, 'none');
     returnInput.setAttribute('aria-hidden', 'true');
-    bookReturn = false;
+    returnIsChecked = false;
   }
 };

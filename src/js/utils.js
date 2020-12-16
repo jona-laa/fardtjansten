@@ -37,9 +37,10 @@ const isIos = () => /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSSt
 
 /* 
   * Confirm deletions
+   * @param   {string}   id       Booking ID
+   * @param   {string}   type     'reoccurring' or 'regular'
 */
 const confirmIt = (id, type) => {
-  console.log(type);
   window.confirm(`Är du säker på att du vill avboka resan?`) ? deleteBooking(id, type) : null;
 };
 
@@ -47,6 +48,8 @@ const confirmIt = (id, type) => {
 
 /*
   * Delete bookings
+  * @param   {string}   id       Booking ID
+  * @param   {string}   type     'reoccurring' or 'regular'
 */
 const deleteBooking = (id, type) => {
   const updatedBookings = existingBookings.filter(booking => booking.id != id);
@@ -56,6 +59,11 @@ const deleteBooking = (id, type) => {
 
 
 
+/*
+  * Initiates update process by sending user to right form with ID of booking
+  * @param   {string}   id       Booking ID
+  * @param   {string}   type     'reoccurring' or 'regular'
+*/
 const initUpdate = (id, type) => {
   type == 'reoccurring' ? window.location.assign(`bokaaterkommande.html?update=${id}`) : window.location.assign(`bokaresa.html?update=${id}`);
 };

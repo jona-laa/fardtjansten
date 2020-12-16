@@ -5,13 +5,18 @@ const aboutContainer = document.querySelector('.box-menu');
 const filterBar = document.querySelector('#filterbar');
 const filterFeedback = document.querySelector('.feedback');
 
+
+
 /*
   * Filters articles array for "about" articles
 */
 const aboutArticles = articles.filter(article => article.category == "about");
 
+
+
 /*
   * Append articles to the DOM
+  * @param    {array}     articles    a bunch of "abuot" articles
 */
 const createArticles = (articles) => {
   articles.forEach(article => {
@@ -25,12 +30,16 @@ const createArticles = (articles) => {
   });
 };
 
+
+
 /*
   * Listen for filter bar input
 */
 filterBar.addEventListener('input', () => {
   filterContent();
 });
+
+
 
 /*
   * Filter "about" articles with input string
@@ -51,6 +60,8 @@ const filterContent = () => {
     createArticles(filtered);
   }
 };
+
+
 
 /*
   * Load "about" articles on page load

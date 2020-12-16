@@ -98,6 +98,7 @@ $div-padding: 50px;
 
 .col-main {
   background-color: $col-main;
+  color: $white;
 }
 
 .col-booked {
@@ -120,4 +121,8 @@ $div-padding: 50px;
 .col-delete {
   background-color: $col-delete;
   color: $white;
+}
+
+.col-history {
+  background-color: $col-call;
 }

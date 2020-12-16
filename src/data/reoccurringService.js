@@ -165,6 +165,7 @@ const emptyInputFeedback = () => {
 
 /*
   * Fills input fields on "update mode"
+  * @param   {object}   booking     booking object
 */
 const fillInputFields = (booking) => {
     travelFrom.value = booking.from;

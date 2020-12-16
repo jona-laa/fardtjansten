@@ -10,14 +10,24 @@ const sectionBooked = document.querySelector('.booked');
 
 const existingBookings = JSON.parse(localStorage.getItem("booked"));
 
-const createBookings = (bookings) => {
-    const sortedBookings = bookings.sort((a, b) => {
-        const c = new Date(`${a.date}T${a.time}`);
-        const d = new Date(`${b.date}T${b.time}`);
-        return c - d;
-    });
 
-    sortedBookings.forEach(booking => {
+
+/*
+  * Creates upcoming (Date > today) booked DOM-elements
+  * @param   {object}   bookings     booking objects
+*/
+const createBookings = (bookings) => {
+    const today = new Date();
+
+    const upcomingBookings = bookings
+        .sort((a, b) => {
+            const c = new Date(`${a.date}T${a.time}`);
+            const d = new Date(`${b.date}T${b.time}`);
+            return c - d;
+        })
+        .filter(booking => new Date(`${booking.date}T${booking.time}`) > today);
+
+    upcomingBookings.forEach(booking => {
         sectionBooked.innerHTML +=
             `<div class="booked-item border-booked rounded">
                 <div class="booked-item_ref">Bokningsreferens: #${booking.id}</div>
@@ -75,7 +85,7 @@ const createBookings = (bookings) => {
             </div>`
     });
 
-    bookings.length == 0 ? sectionBooked.innerHTML = `<div class="feedback"><p>Du har inga aktiva bokningar.</p></div>` : null;
+    upcomingBookings.length == 0 ? sectionBooked.innerHTML = `<div class="feedback"><p>Du har inga aktiva bokningar.</p></div>` : null;
 }
 
 

@@ -10,6 +10,12 @@ const sectionBooked = document.querySelector('.booked');
 
 const existingBookings = JSON.parse(localStorage.getItem("reoccurring"));
 
+
+
+/*
+  * Creates reoccurring bookings DOM-elements
+  * @param   {object}   bookings     booking objects
+*/
 const createBookings = (bookings) => {
     bookings.forEach(booking => {
         sectionBooked.innerHTML +=

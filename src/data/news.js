@@ -3,10 +3,14 @@
 */
 const newsContainer = document.querySelector('.news');
 
+
+
 /*
   * Filters articles array for "news" articles
 */
 const newsArticles = articles.filter(article => article.category == "news");
+
+
 
 /*
   * Append articles to the DOM

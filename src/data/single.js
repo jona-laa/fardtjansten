@@ -4,15 +4,21 @@
 const articleContainer = document.querySelector('main');
 const breadcrumbs = document.querySelector('.breadcrumbs');
 
+
+
 /*
   * Query Parameter for article id
 */
 const queryParam = location.search.split('=')[1];
 
+
+
 /*
   * Filters articles array for "about" articles
 */
 const aboutArticles = articles.filter(article => article.id == queryParam);
+
+
 
 /*
   * Append articles to the DOM

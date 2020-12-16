@@ -11,7 +11,7 @@
     <meta name="description" content="Färdtjänsten">
     <meta property="og:image" content="../images/FT_logo.jpg" />
     <link rel="stylesheet" href="../css/style.css">
-    <title>Färdtjänsten - Mina Sidor</title>
+    <title>Färdtjänsten - Gamla Resor</title>
 </head>
 
 <body id="home">
@@ -42,7 +42,8 @@
                         <li><a href="./omfardtjanst.html" class="menu-link">Om Färdtjänst</a></li>
                         <li><a href="./kundtjanst.html" class="menu-link">Kundtjänst</a></li>
                         <li><a href="./minasidor.html" class="menu-link current">Mina Sidor</a></li>
-                        <li><a href="../index.html" class="menu-link logout-btn"><i class="fas fa-sign-out-alt"></i>Logga Ut</a></li>
+                        <li><a href="../index.html" class="menu-link logout-btn"><i
+                                    class="fas fa-sign-out-alt"></i>Logga Ut</a></li>
                     </ul>
                 </nav>
 
@@ -56,65 +57,31 @@
                 </div>
             </div>
         </header>
-        <div class="breadcrumbs"><a href="../index.html">Start</a> > Mina Sidor</div>
+        <div class="breadcrumbs"><a href="../index.html">Start</a> > <a href="minasidor.html">Mina Sidor</a> > Gamla
+            Resor</div>
 
 
         <!-- Page Title "Banner" -->
-        <div class="title-banner col-main">
-            <h1>Mina Sidor</h1>
+        <div class="title-banner col-history">
+            <h1>Gamla resor</h1>
         </div>
 
         <!-- Page Description -->
         <div class="page-descr">
-            Här kan du boka, avboka, och ändra färdtjänstresor.
+            Här hittar du dina gamla resor.
         </div>
 
         <main>
-            <!-- Start Menu -->
-            <section class="box-menu">
-                <h2 class="section-heading">Startmeny</h2>
-                <a href="./bokaresa.html">
-                    <div class="box-menu_box border-main rounded">
-                        <i class="fas fa-car-side"></i>
-                        <span>Boka Ny Resa</span>
-                    </div>
-                </a>
-
-                <a href="./bokaderesor.html">
-                    <div class="box-menu_box border-booked rounded">
-                        <i class="fas fa-list-ul"></i>
-                        <span>Bokade Resor</span>
-                    </div>
-                </a>
-
-                <a href="./aterkommande.html">
-                    <div class="box-menu_box border-reoccurring rounded">
-                        <i class="fas fa-history"></i>
-                        <span>Återkommande Resor</span>
-                    </div>
-                </a>
-
-                <a href="./gamlaresor.html">
-                    <div class="box-menu_box border-call rounded">
-                        <i class="fas fa-history"></i>
-                        <span>Gamla Resor</span>
-                    </div>
-                </a>
-
-                <a href="./minprofil.html">
-                    <div class="box-menu_box border-profile rounded">
-                        <i class="fas fa-user"></i>
-                        <span>Min Profil</span>
-                    </div>
-                </a>
-
-                <a href="../index.html">
-                    <div class="box-menu_box border-logout rounded">
-                        <i class="fas fa-sign-out-alt"></i>
-                        <span>Logga Ut</span>
-                    </div>
-                </a>
+            <!-- Gamla Resor -->
+            <section class="booked">
+                <h2 class="section-heading">Gamla Resor</h2>
+                <!-- Bookings will render here -->
             </section>
+
+            <!-- Tillbaka -->
+            <div class="go-back">
+                <a onclick="window.history.back()" class="go-back_link"><i class="fas fa-arrow-left"></i>Tillbaka</a>
+            </div>
         </main>
 
     </div>
@@ -186,6 +153,7 @@
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="../data/history.js"></script>
     <script src="../js/main.js"></script>
 </body>
 
