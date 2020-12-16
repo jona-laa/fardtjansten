@@ -18,6 +18,7 @@ const travelAid = document.querySelector('#travel-aid');
 const bookBtn = document.querySelector('#book-btn');
 const feedback = document.querySelector('.feedback');
 const travelWeekdays = document.querySelector('.travel-weekdays');
+const titleBanner = document.querySelector('.title-banner');
 
 let update = false;
 
@@ -191,6 +192,7 @@ if (queryParam != null) {
     const existingBookings = JSON.parse(localStorage.getItem("reoccurring"));
     const bookingToUpdate = existingBookings.filter(booking => booking.id == queryParam)[0];
     bookBtn.value = 'Spara Ändringar';
+    titleBanner.innerHTML = '<h1>Uppdatera Återkommande Resa</h1>';
 
     fillInputFields(bookingToUpdate);
 }

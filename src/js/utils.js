@@ -83,6 +83,20 @@ const createOrUpdate = (e) => {
 
 
 
+/*
+  * Returs time YYYY-MM-DD
+*/
+const getToday = () => {
+  const today = new Date();
+  const dd = String(today.getDate()).padStart(2, '0');
+  const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  const yyyy = today.getFullYear();
+
+  return `${yyyy}-${mm}-${dd}`;
+};
+
+
+
 //Smooth scrolling
 $('#menu-main-menu a, .btn-top, .arrow-link').on('click', function (e) {
   if (this.hash !== '') {

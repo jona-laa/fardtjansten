@@ -1,9 +1,20 @@
+
+// const getToday = () => {
+//   const today = new Date();
+//   const dd = String(today.getDate()).padStart(2, '0');
+//   const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+//   const yyyy = today.getFullYear();
+
+//   return `${yyyy}-${mm}-${dd}`;
+// };
+
 /*
   * DOM elements
 */
 const travelFrom = document.querySelector('#travel-from');
 const travelTo = document.querySelector('#travel-to');
 const travelDate = document.querySelector('#travel-date');
+travelDate.min = `${getToday()}`;
 const travelTime = document.querySelector('#travel-time');
 const travelCompanions = document.querySelector('#travel-companions');
 const travelAccompaniers = document.querySelector('#travel-accompaniers');
@@ -13,6 +24,7 @@ const returnTime = document.querySelector('#return-time');
 const bookBtn = document.querySelector('#book-btn');
 const feedback = document.querySelector('.feedback');
 const returnInput = document.querySelector('.return-input');
+const titleBanner = document.querySelector('.title-banner');
 
 let update = false;
 
@@ -165,6 +177,7 @@ if (queryParam != null) {
   const existingBookings = JSON.parse(localStorage.getItem("booked"));
   const bookingToUpdate = existingBookings.filter(booking => booking.id == queryParam)[0];
   bookBtn.value = 'Spara Ändringar';
+  titleBanner.innerHTML = '<h1>Uppdatera Resa</h1>';
 
   fillInputFields(bookingToUpdate);
 }
@@ -180,9 +193,19 @@ const toggleReturn = () => {
     elementDisplay(returnInput, 'block');
     returnInput.setAttribute('aria-hidden', 'false');
     returnIsChecked = true;
+    returnDate.min = travelDate.value;
   } else {
     elementDisplay(returnInput, 'none');
     returnInput.setAttribute('aria-hidden', 'true');
     returnIsChecked = false;
   }
 };
+
+
+
+/*
+  * Set return time to min leave time if travel and return date are the same 
+*/
+returnDate.addEventListener('focusout', () => {
+  travelDate.value == returnDate.value ? returnTime.min = travelTime.value : null;
+})
