@@ -1,6 +1,6 @@
 .filter-content {
   justify-content: center;
-  margin: 50px auto -30px;
+  margin: 50px auto -50px;
   max-width: 300px;
   text-align: center;
   @include flex(row);
@@ -26,5 +26,11 @@
       font-size: 25px;
       padding: 12px;
     }
+  }
+}
+
+.service {
+  .filter-content {
+    margin: auto;
   }
 }

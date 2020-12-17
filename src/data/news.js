@@ -18,7 +18,7 @@ const newsArticles = articles.filter(article => article.category == "news");
 newsArticles.forEach(article => {
     newsContainer.innerHTML += `
         <article class="article ${article.status} rounded">
-          <button class="expand-btn article-heading" id="btn_article-${article.id}" aria-expanded="false" aria-controls="article-${article.id}">
+          <button class="expand-btn expandable-heading" id="btn_article-${article.id}" aria-expanded="false" aria-controls="article-${article.id}">
             ${article.status == "important" ? "<i class='fas fa-exclamation-triangle alert-icon'></i>" : null}
             ${article.title}
             <i class="fas fa-plus expand-icon"></i>

@@ -226,10 +226,10 @@ returnDate.addEventListener('focusout', () => {
 /*
   * Disable accompaniers or companions if one of them is chosen
 */
-travelCompanions.addEventListener('focusout', () => {
-  travelCompanions.value == 'Ja' ? travelAccompaniers.disabled = true : travelAccompaniers.disabled = false;
-})
+// travelCompanions.addEventListener('focusout', () => {
+//   travelCompanions.value == 'Ja' ? travelAccompaniers.disabled = true : travelAccompaniers.disabled = false;
+// })
 
-travelAccompaniers.addEventListener('focusout', () => {
-  travelAccompaniers.value == 'Ja' ? travelCompanions.disabled = true : travelCompanions.disabled = false;
-})
+// travelAccompaniers.addEventListener('focusout', () => {
+//   travelAccompaniers.value == 'Ja' ? travelCompanions.disabled = true : travelCompanions.disabled = false;
+// })
