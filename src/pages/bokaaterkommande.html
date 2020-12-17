@@ -104,19 +104,24 @@
                     <label for="travel-time">Tid för avresa</label><br>
                     <input type="time" id="travel-time" name="travel-time" required="required"><br>
 
-                    <label for="travel-companions">Medresenärer</label><br>
-                    <input type="number" value="0" min="0" max="2" id="travel-companions" name="travel-companions"><br>
-
+                    <label for="travel-companions">Medresenär</label><br>
+                    <select name="travel-companions" id="travel-companions">
+                        <option value="Nej">Nej</option>
+                        <option value="Ja">Ja</option>
+                    </select>
+                    
                     <label for="travel-accompaniers">Ledsagare</label><br>
-                    <input type="number" value="0" min="0" max="2" id="travel-accompaniers"
-                        name="travel-accopmaniers"><br>
+                    <select name="travel-accompaniers" id="travel-accompaniers">
+                        <option value="Nej">Nej</option>
+                        <option value="Ja">Ja</option>
+                    </select>
 
                     <label for="travel-aid">Hjälpmedel</label><br>
                     <select name="aid" id="travel-aid">
                         <option value="-">-</option>
-                        <option value="rullstol">Rullstol</option>
-                        <option value="rullator">Rullator</option>
-                        <option value="permobil">Permobil</option>
+                        <option value="Rullstol">Rullstol</option>
+                        <option value="Rullator">Rullator</option>
+                        <option value="Permobil">Permobil</option>
                     </select>
                     <div class="feedback"></div>
 

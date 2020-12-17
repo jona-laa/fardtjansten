@@ -220,3 +220,16 @@ const toggleReturn = () => {
 returnDate.addEventListener('focusout', () => {
   travelDate.value == returnDate.value ? returnTime.min = travelTime.value : null;
 })
+
+
+
+/*
+  * Disable accompaniers or companions if one of them is chosen
+*/
+travelCompanions.addEventListener('focusout', () => {
+  travelCompanions.value == 'Ja' ? travelAccompaniers.disabled = true : travelAccompaniers.disabled = false;
+})
+
+travelAccompaniers.addEventListener('focusout', () => {
+  travelAccompaniers.value == 'Ja' ? travelCompanions.disabled = true : travelCompanions.disabled = false;
+})
