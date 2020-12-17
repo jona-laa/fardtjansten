@@ -43,4 +43,4 @@ filtered.forEach(article => {
 
 
 // In case of no search results, give user feedback
-filtered.length < 1 ? feedback.innerHTML = "<p>Inga träffar</p>" : null;
+filtered.length < 1 ? feedback.innerHTML = `<p>Inga träffar på "${queryParam}"</p>` : null;

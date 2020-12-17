@@ -23,6 +23,25 @@ form {
     max-width: 350px;
   }
 
+  // fieldset {
+  //   max-width: 350px;
+  //   margin: auto;
+  // }
+
+  // .input-feedback {
+  //   display: inline;
+  //   margin: auto;
+  //   text-align: center;
+  //   max-width: 350px;
+  //   float: right;
+    
+  //   p {
+  //     color: $col-alert;
+  //     // float: right;
+  //     font-size: 16px;
+  //   }
+  // }
+
   ::placeholder {
     color: $col-alert;
   }

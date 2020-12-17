@@ -170,15 +170,26 @@ const fillInputFields = (booking) => {
 
 
 /*
+  * Update DOM-element text content accordingly
+  * @param   {object}   bookingToUpdate     booking object
+*/
+const updateTextContent = (bookingToUpdate) => {
+  bookBtn.value = 'Spara Ändringar';
+  titleBanner.innerHTML = '<h1>Uppdatera Resa</h1>';
+  bookingToUpdate.date < getToday() ? titleBanner.innerHTML = '<h1>Boka Om Resa</h1>' : null;
+};
+
+
+
+/*
   * Checks query params for booking to update -> sets form in "update mode"
 */
 if (queryParam != null) {
   update = true;
   const existingBookings = JSON.parse(localStorage.getItem("booked"));
   const bookingToUpdate = existingBookings.filter(booking => booking.id == queryParam)[0];
-  bookBtn.value = 'Spara Ändringar';
-  titleBanner.innerHTML = '<h1>Uppdatera Resa</h1>';
 
+  updateTextContent(bookingToUpdate);
   fillInputFields(bookingToUpdate);
 }
 
