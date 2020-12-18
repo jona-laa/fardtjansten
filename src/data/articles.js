@@ -87,76 +87,166 @@ rullstol, finns det plats för detta i specialfordon.</p>`,
         category: "about",
         status: null
     },
+    {
+        id: 7,
+        title: "Hur många resor får jag göra?",
+        text: `
+        <p class="article-text">Hur många resor du får göra beror på ditt tillstånd. Du kan se hur många resor du har kvar genom att gå in på <a href="minprofil.html" class="article-link">Min Profil</a> som du når genom att logga in på <a href="minasidor.html" class="article-link">Mina Sidor</a>.</p>
+        
+        <h3 class="article-heading-small">Om du har slut på resor</h3>
+        
+        <p class="article-text">Om du har slut på resor kan du ansöka om fler färdtjänstresor för specifika ändamål. Dessa inkluderar resor till och från:</p>
+        <ul class="article-list">
+                <li>Betalt arbete</li>
+                <li>Studier</li>
+                <li>Förtroendeuppdrag</li>
+                <li>Rehabilitering</li>
+        </ul>`,
+        category: "about",
+        status: null
+    },
 
 
 
     // ##### SERVICE #####
     {
-        id: 7,
-        title: "Hur bokar jag en resa?",
-        text: `<p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <ul class="article-list">
-                    <li>Stora svårigheter att förflytta sig.</li>
-                    <li>Har svårt att använda valig kollektivtrafik.</li>
-                    <li>Funktionsnedsättning en längre period, minst 3 månader.</li>
-                    <li>Handikapp är ej tillfälligt.</li>
-            </ul>
-            <p class="article-text">Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
-        category: "service",
-        status: null
-    },
-    {
         id: 8,
-        title: "Hur avbokar jag en resa?",
-        text: `<p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        title: "Hur bokar jag en resa?",
+        text:
+            `
+            <h4 class="article-heading-small">Boka via Mina Sidor</h4>
+
+            <ol class="article-list ordered">
+                    <li>Logga in på <a href="minasidor.html" target="_blank" class="article-link">Mina Sidor</a>.</li>
+                    <li>Gå in på <a href="bokaresa.html" target="_blank" class="article-link">Boka Ny Resa</a></li>
+                    <li>Tryck på Boka.</li>
+                    <li>Fyll i resedetaljerna för din resa.</li>
+                    <li>Du får en bekräftelse på bokad resa.</li>
+            </ol>
+
+            <h4 class="article-heading-small">Ring och boka</h4>
+
+            <p class="article-text">Du kan ringa och boka en resa via våran växel som är öppen dygnet runt på nummer <a href="tel:012345678" class="article-link">01 - 234 56 78</a>.</p>
+        
+            <p class="article-text">Att tänka på inför:</p>
             <ul class="article-list">
-                    <li>Stora svårigheter att förflytta sig.</li>
-                    <li>Har svårt att använda valig kollektivtrafik.</li>
-                    <li>Funktionsnedsättning en längre period, minst 3 månader.</li>
-                    <li>Handikapp är ej tillfälligt.</li>
+                <li>Ha ditt kundnummer tillgängligt.</li>
+                <li>Boka din resa i god tid.</li>
             </ul>
-            <p class="article-text">Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
+
+            <h4 class="article-heading-small">Hur lång tid i förväg måste jag boka?</h4>
+            <p class="article-text">Tänk på att beställa din resa i god tid innan du ska resa, så att det finns tidsmarginal.</p>
+            <p class="article-text">Vi rekommenderar att du bokar din resa minst 30 minuter innan upphämtning.</p>
+            `
+        ,
         category: "service",
         status: null
     },
     {
         id: 9,
-        title: "Hur ändrar jag en bokning?",
-        text: `<p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        title: "Hur avbokar jag en resa?",
+        text:
+            `
+            <h4 class="article-heading-small">Avboka via Mina Sidor</h4>
+
+            <ol class="article-list ordered">
+                    <li>Logga in på <a href="minasidor.html" target="_blank" class="article-link">Mina Sidor</a>.</li>
+                    <li>Gå in på <a href="bokaderesor.html" target="_blank" class="article-link">Bokade Resor</a></li>
+                    <li>Hitta bokningen som du vill avboka.</li>
+                    <li>Tryck på Avboka.</li>
+                    <li>Du får en bekräftelse på avbokad resa.</li>
+            </ol>
+
+            <h4 class="article-heading-small">Ring och avboka</h4>
+
+            <p class="article-text">Du kan ringa och avboka en resa via våran växel som är öppen dygnet runt på nummer <a href="tel:012345678" class="article-link">01 - 234 56 78</a>.</p>
+        
+            <p class="article-text">Att tänka på inför:</p>
             <ul class="article-list">
-                    <li>Stora svårigheter att förflytta sig.</li>
-                    <li>Har svårt att använda valig kollektivtrafik.</li>
-                    <li>Funktionsnedsättning en längre period, minst 3 månader.</li>
-                    <li>Handikapp är ej tillfälligt.</li>
+                <li>Ha ditt kundnummer tillgängligt.</li>
+                <li>Ha din bokningreferens tillgänglig.</li>
+                <li>Avboka din resa i god tid.</li>
             </ul>
-            <p class="article-text">Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
+
+            <h4 class="article-heading-small">Hur lång tid i förväg måste jag avboka?</h4>
+            <p class="article-text">Avboka din resa i god tid, <strong>minst en halvtimme innan upphämtning</strong>.</p>
+
+            <h4 class="article-heading-small">Vad händer om jag inte avbokar en resa?</h4>
+            <p class="article-text">Om du inte avbokar en resa som du inte avser att nyttja, senast en halvtimma innan utsatt upphämtning, dras en resa från ditt resesaldo.</p>
+            `
+        ,
         category: "service",
         status: null
     },
     {
         id: 10,
-        title: "Färdtjänsten har inte kommit",
-        text: `<p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        title: "Hur ändrar jag en resa?",
+        text:
+            `
+            <h4 class="article-heading-small">Ändra resa via Mina Sidor</h4>
+
+            <ol class="article-list ordered">
+                    <li>Logga in på <a href="minasidor.html" target="_blank" class="article-link">Mina Sidor</a>.</li>
+                    <li>Gå in på <a href="bokaderesor.html" target="_blank" class="article-link">Bokade Resor</a></li>
+                    <li>Hitta bokningen som du vill ändra.</li>
+                    <li>Tryck på Ändra.</li>
+                    <li>Gör önskade ändringar i resedetaljerna.</li>
+                    <li>Tryck på Spara Ändringar.</li>
+                    <li>Du får en bekräftelse på ändrad resa.</li>
+            </ol>
+
+            <h4 class="article-heading-small">Ring och ändra resa</h4>
+
+            <p class="article-text">Du kan ringa och ändra en resa via våran växel som är öppen dygnet runt på nummer <a href="tel:012345678" class="article-link">01 - 234 56 78</a>.</p>
+        
+            <p class="article-text">Att tänka på inför:</p>
             <ul class="article-list">
-                    <li>Stora svårigheter att förflytta sig.</li>
-                    <li>Har svårt att använda valig kollektivtrafik.</li>
-                    <li>Funktionsnedsättning en längre period, minst 3 månader.</li>
-                    <li>Handikapp är ej tillfälligt.</li>
+                <li>Ha ditt kundnummer tillgängligt.</li>
+                <li>Ha din bokningreferens tillgänglig.</li>
+                <li>Ändra din resa i god tid.</li>
             </ul>
-            <p class="article-text">Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
+
+            <h4 class="article-heading-small">Hur lång tid i förväg måste jag ändra en resa?</h4>
+            <p class="article-text">Ändra din resa i god tid, <strong>minst en halvtimme innan upphämtning</strong>.</p>
+            `
+        ,
         category: "service",
         status: null
     },
     {
         id: 11,
+        title: "Hur fungerar återkommande resor?",
+        text:
+            `<p class="article-text">Du kan boka resor som du gör regelbundet, på samma dag och tid, genom att boka en Återkommande Resa.</p>
+
+            <p class="article-text">Kraven för att lägga upp återkommande resor är att:</p>
+
+            <ul class="article-list">
+                    <li>resorna gäller under minst 3 månader,</li>
+                    <li>resorna sker minst en gång per vecka,</li>
+                    <li>du har tillräckligt många resor. Tänk på att du kan ha ett begränsat antal resor.</li>
+            </ul>
+
+            <h4 class="article-heading-small">Boka återkommande resa via Mina Sidor</h4>
+
+            <ol class="article-list ordered">
+                    <li>Logga in på <a href="minasidor.html" target="_blank" class="article-link">Mina Sidor</a>.</li>
+                    <li>Gå in på <a href="aterkommande.html" target="_blank" class="article-link">Återkommande Resor</a>.</li>
+                    <li>Välj <a href="bokaaterkommande.html" target="_blank" class="article-link">Boka Återkommande Resa</a>.</li>
+                    <li>Fyll i resedetaljerna för din återkommande resa.</li>
+                    <li>Tryck på Boka.</li>
+                    <li>Du får en bekräftelse på bokad återkommande resa resa.</li>
+            </ol>
+
+            <h4 class="article-heading-small">Ring och boka återkommande resor</h4>
+
+            <p class="article-text">Du kan ringa och boka en återkommande resa via våran växel som är öppen dygnet runt på nummer <a href="tel:012345678" class="article-link">01 - 234 56 78</a>.</p>`
+        ,
+        category: "service",
+        status: null
+    },
+    {
+        id: 12,
         title: "Min färdtjänst är försenad",
         text: `<p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <ul class="article-list">
@@ -172,7 +262,7 @@ rullstol, finns det plats för detta i specialfordon.</p>`,
         status: null
     },
     {
-        id: 12,
+        id: 13,
         title: "Jag kan inte logga in",
         text: `<p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <ul class="article-list">
@@ -184,24 +274,6 @@ rullstol, finns det plats för detta i specialfordon.</p>`,
             <p class="article-text">Duis aute irure dolor in reprehenderit in voluptate velit
     esse cillum dolore eu fugiat nulla pariatur. Excepteur
     sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
-        category: "service",
-        status: null
-    },
-    {
-        id: 13,
-        title: "Hur många resor får jag göra?",
-        text: `
-        <p class="article-text">Hur många resor du får göra beror på ditt tillstånd. Du kan se hur många resor du har kvar genom att gå in på <a href="minprofil.html" class="article-link">Min Profil</a> som du når genom att logga in på <a href="minasidor.html" class="article-link">Mina Sidor</a>.</p>
-        
-        <h4 class="article-heading-small">Om du har slut på resor</h4>
-        
-        <p class="article-text">Om du har slut på resor kan du ansöka om fler färdtjänstresor för specifika ändamål. Dessa inkluderar resor till och från:</p>
-        <ul class="article-list">
-                <li>Betalt arbete</li>
-                <li>Studier</li>
-                <li>Förtroendeuppdrag</li>
-                <li>Rehabilitering</li>
-        </ul>`,
         category: "service",
         status: null
     },
