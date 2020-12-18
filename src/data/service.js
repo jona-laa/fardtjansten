@@ -12,7 +12,14 @@ const filterFeedback = document.querySelector('.feedback');
 */
 const serviceArticles = articles.filter(article => article.category == "service");
 
-
+const printThis = () => {
+  console.log(event.target.parentElement.parentElement)
+  const printContent = event.target.parentElement.parentElement.innerHTML;
+  const origiginalContent = window.document.body.innerHTML;
+  window.document.body.innerHTML = printContent;
+  window.print();
+  window.document.body.innerHTML = origiginalContent;
+};
 
 /* 
   * Append service articles to the DOM
@@ -29,7 +36,7 @@ const createArticles = (articles) => {
                   <div class="article-content" id="${article.id}" aria-hidden="true">
                       <h3 class="article-heading">${article.title}</h3>
                       <div id="article-${article.id}" aria-labelledby="btn_article-${article.id}">${article.text}</div>
-                      <button class="print-btn" id="print-service"><i class="fas fa-print"></i>Skriv Ut</button>
+                      <button class="print-btn" id="print-service" onclick="printThis()"><i class="fas fa-print"></i>Skriv Ut</button>
                   </div>
               </article>
       `;

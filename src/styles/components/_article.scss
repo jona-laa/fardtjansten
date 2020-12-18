@@ -78,8 +78,24 @@
   .article {
     border: none;
 
-    .article-heading {
+    .article-heading, h3, h2, h4 {
       text-align: left;
     }
+  }
+
+  button {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  strong {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 20px;
   }
 }

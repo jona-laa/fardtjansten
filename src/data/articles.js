@@ -3,24 +3,20 @@ const articles = [
     {
         id: 1,
         title: "Vad är färdtjänst?",
-        text: `<p class="article-text">Färdtjänst är en del av kollektivtrafiken för personer 
-med stora svårigheter att förflytta sig på egen hand 
-eller genom att resa med den vanliga kollektivtrafiken.</p>
-            <p class="article-text">Du kan få färdtjänst med personbil eller specialfordon, 
-beroende på ditt behov. Om du till exempel sitter i 
-rullstol, finns det plats för detta i specialfordon.</p>`,
+        text: `<p class="article-text">Färdtjänst är en del av kollektivtrafiken för personer med stora svårigheter att förflytta sig på egen hand och med den vanliga kollektivtrafiken.</p>
+            <p class="article-text">Du kan få färdtjänst med personbil eller specialfordon, beroende på ditt behov. Om du till exempel sitter i rullstol, finns det plats för detta i specialfordon.</p>`,
         category: "about",
         status: null
     },
     {
         id: 2,
         title: "Vem får färdtjänst?",
-        text: `<p class="article-text">En person uppfyller grundkraven för färdtjänst om:</p>
+        text: `<p class="article-text">En person uppfyller grundkraven för färdtjänst om personen:</p>
             <ul class="article-list">
-                    <li> Personen har stora svårigheter att förflytta sig på egen hand.</li>
-                    <li>Personen har svårt att använda sig av vanlig kollektivtrafik.</li>
-                    <li>Personen har en icke-tillfällig funktionsnedsättning som funnits i minst sex månader och som förväntas fortsätta.</li>
-                    <li>Personen är bosatt i kommunen där denne ansöker om färdtjänst.</li>
+                    <li>har stora svårigheter att förflytta sig på egen hand,</li>
+                    <li>har svårt att använda sig av vanlig kollektivtrafik,</li>
+                    <li>har en icke-tillfällig funktionsnedsättning som funnits i minst sex månader och som förväntas fortsätta,</li>
+                    <li>är bosatt i kommunen där denne ansöker om färdtjänst.</li>
             </ul>
             <p class="article-text">Vem som har rätt till färdtjänst regleras av <a href="https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-1997736-om-fardtjanst_sfs-1997-736" class="article-link" target="_blank">färdtjänstlagen</a>.</p>`,
         category: "about",
@@ -62,7 +58,7 @@ rullstol, finns det plats för detta i specialfordon.</p>`,
                     <li>Avgiften tillkommer på din faktura.</li>
             </ul>
             <h3 class="article-heading-small">Om flera ska med på resan</h3>
-            <p class="article-text">Om du vill ta med <strong>fler än en medresenär</strong>, eller om du åker med ledsagare men då också tar med dig en medresenär, betalar du en <strong>särskilt avgift</strong> för redan. Denna är <strong>resans halva taxameterbelopp</strong>, men som lägst 60 kronor.</p>
+            <p class="article-text">Om du vill ta med <strong>fler än en medresenär</strong>, eller om du åker med ledsagare men då också tar med dig en medresenär, betalar du en <strong>särskilt avgift</strong> för resan. Denna är <strong>resans halva taxameterbelopp</strong>, men som lägst 60 kronor.</p>
             <p class="article-text">Du har rätt att ta med upp till <strong>tre egna barn och syskon som är registrerade</strong> på ditt färdtjänsttillstånd <strong>utan extra kostnad</strong>.</p>`,
         category: "about",
         status: null
@@ -97,10 +93,10 @@ rullstol, finns det plats för detta i specialfordon.</p>`,
         
         <p class="article-text">Om du har slut på resor kan du ansöka om fler färdtjänstresor för specifika ändamål. Dessa inkluderar resor till och från:</p>
         <ul class="article-list">
-                <li>Betalt arbete</li>
-                <li>Studier</li>
-                <li>Förtroendeuppdrag</li>
-                <li>Rehabilitering</li>
+                <li>betalt arbete,</li>
+                <li>studier,</li>
+                <li>förtroendeuppdrag,</li>
+                <li>rehabilitering.</li>
         </ul>`,
         category: "about",
         status: null
@@ -119,8 +115,8 @@ rullstol, finns det plats för detta i specialfordon.</p>`,
             <ol class="article-list ordered">
                     <li>Logga in på <a href="minasidor.html" target="_blank" class="article-link">Mina Sidor</a>.</li>
                     <li>Gå in på <a href="bokaresa.html" target="_blank" class="article-link">Boka Ny Resa</a></li>
-                    <li>Tryck på Boka.</li>
                     <li>Fyll i resedetaljerna för din resa.</li>
+                    <li>Tryck på Boka.</li>
                     <li>Du får en bekräftelse på bokad resa.</li>
             </ol>
 
@@ -217,12 +213,12 @@ rullstol, finns det plats för detta i specialfordon.</p>`,
         id: 11,
         title: "Hur fungerar återkommande resor?",
         text:
-            `<p class="article-text">Du kan boka resor som du gör regelbundet, på samma dag och tid, genom att boka en Återkommande Resa.</p>
+            `<p class="article-text">Du kan boka resor som du gör regelbundet på samma veckodag och tid genom att boka en Återkommande Resa.</p>
 
-            <p class="article-text">Kraven för att lägga upp återkommande resor är att:</p>
+            <p class="article-text">Kraven för att lägga upp en återkommande resa är att:</p>
 
             <ul class="article-list">
-                    <li>resorna gäller under minst 3 månader,</li>
+                    <li>resoror gäller under minst 3 månader,</li>
                     <li>resorna sker minst en gång per vecka,</li>
                     <li>du har tillräckligt många resor. Tänk på att du kan ha ett begränsat antal resor.</li>
             </ul>
