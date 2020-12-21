@@ -1,13 +1,21 @@
 .confirmed {
-    .article-heading {
-        font-size: 36px;
-        margin-bottom: 30px;
+  .article-heading {
+    font-size: 36px;
+    margin-bottom: 30px;
+    
+    @include maxWidth(600px) {
+        font-size: 26px;
+        text-align: left;
+      }
 
+    i {
+      color: $col-booked;
+      font-size: 100px;
+      vertical-align: middle;
 
-        i {
-            color: $col-booked;
-            font-size: 100px;
-            vertical-align: middle;
-        }
+      @include maxWidth(600px) {
+        font-size: 50px;
+      }
     }
+  }
 }

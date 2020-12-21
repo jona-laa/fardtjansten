@@ -1,5 +1,11 @@
 .news {
   margin-top: 50px;
+
+  @include maxWidth(600px) {
+    margin-top: 30px;
+    padding: 0 10px;
+  }
+
   article {
     background-color: $white;
     margin: 0 auto 20px;
@@ -15,26 +21,44 @@
       font-size: 45px;
       margin-right: 20px;
       vertical-align: middle;
+
+      @include maxWidth(600px) {
+        font-size: 30px;
+        margin-right: 10px;
+      }
     }
 
     .expand-btn {
       align-items: center;
-      font-family: 'Poppins', sans-serif;
       background-color: transparent;
       border: none;
+      display: flex;
+      justify-content: space-between;
+      font-family: 'Poppins', sans-serif;
+      line-height: 45px;
       text-align: left;
       width: 100%;
-      line-height: 45px;
 
       &:hover {
         cursor: pointer;
         text-decoration: underline;
       }
 
+      @include maxWidth(600px) {
+        font-size: 20px;
+        line-height: 25px;
+      }
+
       .expand-icon {
         font-size: 45px;
         margin-right: 20px;
         float: right;
+        justify-self: flex-end;
+
+        @include maxWidth(600px) {
+          font-size: 30px;
+          margin-left: 10px;
+        }
       }
     }
 

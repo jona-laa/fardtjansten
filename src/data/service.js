@@ -12,14 +12,7 @@ const filterFeedback = document.querySelector('.feedback');
 */
 const serviceArticles = articles.filter(article => article.category == "service");
 
-const printThis = () => {
-  console.log(event.target.parentElement.parentElement)
-  const printContent = event.target.parentElement.parentElement.innerHTML;
-  const origiginalContent = window.document.body.innerHTML;
-  window.document.body.innerHTML = printContent;
-  window.print();
-  window.document.body.innerHTML = origiginalContent;
-};
+
 
 /* 
   * Append service articles to the DOM

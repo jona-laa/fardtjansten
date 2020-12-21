@@ -244,32 +244,16 @@ const articles = [
     {
         id: 12,
         title: "Min färdtjänst är försenad",
-        text: `<p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <ul class="article-list">
-                    <li>Stora svårigheter att förflytta sig.</li>
-                    <li>Har svårt att använda valig kollektivtrafik.</li>
-                    <li>Funktionsnedsättning en längre period, minst 3 månader.</li>
-                    <li>Handikapp är ej tillfälligt.</li>
-            </ul>
-            <p class="article-text">Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
+        text: `<p class="article-text">Om din beställda färdtjänst inte har dykt upp 20 minuter efter beställd tid, gäller resegarantin. </p>
+            <p class="article-text">Du ringer i detta fall till <a href="tel:012345678" class="article-link">01 - 234 56 78</a> och får hjälp med att efterlysa din beställda taxi, eller med att beställa en ny om det skulle behövas.</p>`,
         category: "service",
         status: null
     },
     {
         id: 13,
         title: "Jag kan inte logga in",
-        text: `<p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <ul class="article-list">
-                    <li>Stora svårigheter att förflytta sig.</li>
-                    <li>Har svårt att använda valig kollektivtrafik.</li>
-                    <li>Funktionsnedsättning en längre period, minst 3 månader.</li>
-                    <li>Handikapp är ej tillfälligt.</li>
-            </ul>
-            <p class="article-text">Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
+        text: `<p class="article-text">Om du har glömt ditt lösenord eller av någon anledning har problem med att logga in, kontaktar du färdtjänstens kundtjänst på nummer  <a href="tel:012345678" class="article-link">01 - 234 56 78</a>.</p>`
+        ,
         category: "service",
         status: null
     },
@@ -312,7 +296,7 @@ const articles = [
                     </ul>
                 </div>
             `,
-        category: "call contact",
+        category: "main contact",
         status: null
     }
 ];

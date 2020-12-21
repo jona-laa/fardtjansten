@@ -97,6 +97,19 @@ const getToday = () => {
 
 
 
+/* 
+  * Used to print specific elements
+*/
+const printThis = () => {
+  const printContent = event.target.parentElement.parentElement.innerHTML;
+  const origiginalContent = window.document.body.innerHTML;
+  window.document.body.innerHTML = printContent;
+  window.print();
+  window.document.body.innerHTML = origiginalContent;
+};
+
+
+
 //Smooth scrolling
 $('#menu-main-menu a, .btn-top, .arrow-link').on('click', function (e) {
   if (this.hash !== '') {
