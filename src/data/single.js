@@ -28,7 +28,7 @@ aboutArticles.forEach(article => {
             <article class="article rounded border-${article.category}">
                 <h2 class="article-heading">${article.title}</h2>
                 ${article.text}
-                <button class="print-btn" onclick="window.print()"><i class="fas fa-print"></i>Skriv Ut</button>
+                <div class="print"><button class="print-btn" onclick="window.print()"><i class="fas fa-print"></i>Skriv Ut</button></div>
             </article>
             
             <div class="go-back go-back-article">

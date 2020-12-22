@@ -26,7 +26,7 @@ const articles = [
         id: 3,
         title: "Hur ansöker man om färdtjänst?",
         text: `<p class="article-text">Du ansöker om färdtjänst i kommunen där du bor och är folkbokförd.</p>
-        <p class="article-text">Ansökningsprocessen är följande: </p>
+        <p class="article-text"><strong>Ansökningsprocessen är följande: </strong></p>
             <ol class="article-list ordered" type="A">
                     <li>Du behöver ett läkarintyg som intygar att du har en funktionsnedsättning som gör det svårt att resa med kommunaltrafiken.</li>
                     <li>Läkarintyget skickas in till kommunen där du är folkbokförd.</li>
@@ -58,7 +58,7 @@ const articles = [
                     <li>Avgiften tillkommer på din faktura.</li>
             </ul>
             <h3 class="article-heading-small">Om flera ska med på resan</h3>
-            <p class="article-text">Om du vill ta med <strong>fler än en medresenär</strong>, eller om du åker med ledsagare men då också tar med dig en medresenär, betalar du en <strong>särskilt avgift</strong> för resan. Denna är <strong>resans halva taxameterbelopp</strong>, men som lägst 60 kronor.</p>
+            <p class="article-text">Om du vill ta med fler än en medresenär, eller om du åker med ledsagare men då också tar med dig en medresenär, betalar du en <strong>särskilt avgift</strong> för resan. Denna är <strong>resans halva taxameterbelopp</strong>, men som lägst 60 kronor.</p>
             <p class="article-text">Du har rätt att ta med upp till <strong>tre egna barn och syskon som är registrerade</strong> på ditt färdtjänsttillstånd <strong>utan extra kostnad</strong>.</p>`,
         category: "about",
         status: null
@@ -264,16 +264,8 @@ const articles = [
     {
         id: 14,
         title: "Att tänka på i Corona-tider",
-        text: `<p class="article-text">Res inte med oss om du har förkylningssymptom eller känner dig sjuk. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <ul class="article-list">
-                    <li>Stora svårigheter att förflytta sig.</li>
-                    <li>Har svårt att använda valig kollektivtrafik.</li>
-                    <li>Funktionsnedsättning en längre period, minst 3 månader.</li>
-                    <li>Handikapp är ej tillfälligt.</li>
-            </ul>
-            <p class="article-text">Duis aute irure dolor in reprehenderit in voluptate velit
-    esse cillum dolore eu fugiat nulla pariatur. Excepteur
-    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>`,
+        text: `<p class="article-text">Om du har förkylningssymptom, eller känner dig febrig,
+res inte med färdtjänsten.</p>`,
         category: "news",
         status: "important"
     },

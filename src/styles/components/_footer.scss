@@ -18,7 +18,8 @@ footer {
       @include flex();
     }
 
-    h3 {
+    strong {
+      display: inline-block;
       font-size: 20px;
       font-weight: 600;
       margin-bottom: 5px;

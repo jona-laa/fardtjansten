@@ -34,6 +34,10 @@
     li {
       list-style-type: decimal;
     }
+
+    li::marker {
+      font-weight: bold;
+    }
   }
 
   .supporting-content {
@@ -46,16 +50,24 @@
     }
   }
 
-  .print-btn {
-    margin-top: 10px;
-    float: right;
-    background-color: transparent;
-    border: none;
-    font-size: 16px;
+  .print {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 
-    &:hover {
-      cursor: pointer;
-      text-decoration: underline;
+    .print-btn {
+      margin-top: 10px;
+      // float: right;
+      // text-align: right;
+      // width: 100%;
+      background-color: transparent;
+      border: none;
+      font-size: 16px;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
     }
   }
 
@@ -78,7 +90,10 @@
   .article {
     border: none;
 
-    .article-heading, h3, h2, h4 {
+    .article-heading,
+    h3,
+    h2,
+    h4 {
       text-align: left;
     }
   }

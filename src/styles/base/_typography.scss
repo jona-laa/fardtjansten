@@ -21,6 +21,10 @@ $color-light: $white;
   font-weight: 400;
   text-align: center;
   margin-bottom: 20px;
+
+  @include maxWidth(600px) {
+    font-size: 32px;
+  }
 }
 
 .article-heading {
@@ -28,6 +32,10 @@ $color-light: $white;
   font-weight: 500;
   margin-bottom: 10px;
   text-align: center;
+
+  @include maxWidth(600px) {
+    font-size: 30px;
+  }
 }
 
 .article-heading-small {

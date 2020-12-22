@@ -7,6 +7,10 @@
     color: $black;
     font-size: 24px;
     font-weight: 400;
+
+    @include maxWidth(600px) {
+      font-size: 22px;
+    }
   }
 
   a {

@@ -5,6 +5,11 @@
   text-align: center;
   @include flex(row);
 
+  label {
+    position: absolute;
+    bottom: 10000px;
+  }
+
   input {
     border: none;
     box-shadow: 0px 1px 3px lightgray;
