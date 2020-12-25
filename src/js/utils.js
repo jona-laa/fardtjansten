@@ -14,13 +14,18 @@ const closeSearch = document.querySelector('#search-icon--close');
 */
 const elementDisplay = (element, value) => {
   element.style.display = value;
-  toggleAriaHidden(element);
+  value == 'none' ? toggleAria(element, 'aria-hidden', 'true') : toggleAria(element, 'aria-hidden', 'false');
 };
 
 
 
-const toggleAriaHidden = (element) => {
-  element.style.display == 'none' ? element.setAttribute('aria-hidden', 'true') : element.setAttribute('aria-hidden', 'false');
+/* Toggle aria attribute of element
+ * @param   {DOM element}   element       Target DOM element
+ * @param   {string}        aria          Aria attribute, e.g. 'aria-hidden'
+ * @param   {string}        ariaValue     Aria attribute value, e.g. 'true'
+*/
+const toggleAria = (element, aria, ariaValue) => {
+  element.style.display == 'none' ? element.setAttribute(aria, ariaValue) : element.setAttribute(aria, ariaValue);
 };
 
 
@@ -141,16 +146,14 @@ expandBtn.forEach(btn => {
     const articleText = btn.nextElementSibling;
 
     if (articleText.style.display === "block") {
-      articleText.style.display = "none";
       btn.setAttribute('aria-expanded', 'false');
-      articleText.setAttribute('aria-hidden', 'true');
+      elementDisplay(articleText, 'none');
 
       btn.lastElementChild.classList.remove('fa-minus');
       btn.lastElementChild.classList.add('fa-plus');
     } else {
-      articleText.style.display = "block";
       btn.setAttribute('aria-expanded', 'true');
-      articleText.setAttribute('aria-hidden', 'false');
+      elementDisplay(articleText, 'block');
 
       btn.lastElementChild.classList.remove('fa-plus');
       btn.lastElementChild.classList.add('fa-minus');
