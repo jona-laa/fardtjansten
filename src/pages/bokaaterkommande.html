@@ -47,15 +47,24 @@
 
                 <!-- Search Bar -->
                 <div id="search">
-                    <a href="#" onclick="elementDisplay(searchBar, 'block'), elementFocus(searchBar)" class="menu-link"
-                        aria-label="Toggle Search Box">
+                    <a href="#" id="search-icon"
+                        onclick="elementDisplay(searchBar, 'block'), elementDisplay(closeSearch, 'block'), elementFocus(searchBar)"
+                        class="menu-link" aria-label="Open Search">
                         <i class="fas fa-search"></i>
                     </a>
-                    <input id="searchbar" type="text" autocomplete="on">
+
+                    <a href="#" id="search-icon--close"
+                        onclick="elementDisplay(searchBar, 'none'), elementDisplay(closeSearch, 'none')"
+                        aria-label="Close Search" aria-hidden="true">
+                        <i class="fas fa-times"></i>
+                    </a>
+
+                    <input id="searchbar" type="text" autocomplete="on" aria-hidden="true">
                 </div>
             </div>
         </header>
-        <div class="breadcrumbs"><a href="../index.html">Start</a> > <a href="minasidor.html">Mina Sidor</a> > <a href="aterkommande.html">Återkommande Resor</a> > Boka
+        <div class="breadcrumbs"><a href="../index.html">Start</a> > <a href="minasidor.html">Mina Sidor</a> > <a
+                href="aterkommande.html">Återkommande Resor</a> > Boka
             Återkommande Resa
         </div>
 
@@ -79,25 +88,32 @@
                     <label>Veckodag</label><br>
                     <div class="travel-weekdays">
                         <div class="travel-weekdays_weekday">
-                            <input type="checkbox" id="travel-monday" name="Måndag"><label for="travel-monday">Måndag</label><br>
+                            <input type="checkbox" id="travel-monday" name="Måndag"><label
+                                for="travel-monday">Måndag</label><br>
                         </div>
                         <div class="travel-weekdays_weekday">
-                            <input type="checkbox" id="travel-tuesday" name="Tisdag"><label for="travel-tuesday">Tisdag</label><br>
+                            <input type="checkbox" id="travel-tuesday" name="Tisdag"><label
+                                for="travel-tuesday">Tisdag</label><br>
                         </div>
                         <div class="travel-weekdays_weekday">
-                            <input type="checkbox" id="travel-wednesday" name="Onsdag"><label for="travel-wednesday">Onsdag</label><br>
+                            <input type="checkbox" id="travel-wednesday" name="Onsdag"><label
+                                for="travel-wednesday">Onsdag</label><br>
                         </div>
                         <div class="travel-weekdays_weekday">
-                            <input type="checkbox" id="travel-thursday" name="Torsdag"><label for="travel-thursday">Torsdag</label><br>
+                            <input type="checkbox" id="travel-thursday" name="Torsdag"><label
+                                for="travel-thursday">Torsdag</label><br>
                         </div>
                         <div class="travel-weekdays_weekday">
-                            <input type="checkbox" id="travel-friday" name="Fredag"><label for="travel-friday">Fredag</label><br>
+                            <input type="checkbox" id="travel-friday" name="Fredag"><label
+                                for="travel-friday">Fredag</label><br>
                         </div>
                         <div class="travel-weekdays_weekday">
-                            <input type="checkbox" id="travel-saturday" name="Lördag"><label for="travel-saturday">Lördag</label><br>
+                            <input type="checkbox" id="travel-saturday" name="Lördag"><label
+                                for="travel-saturday">Lördag</label><br>
                         </div>
                         <div class="travel-weekdays_weekday">
-                            <input type="checkbox" id="travel-sunday" name="Söndag"><label for="travel-sunday">Söndag</label><br>
+                            <input type="checkbox" id="travel-sunday" name="Söndag"><label
+                                for="travel-sunday">Söndag</label><br>
                         </div>
                     </div>
 
@@ -111,7 +127,7 @@
                         <option value="Nej">Nej</option>
                         <option value="Ja">Ja</option>
                     </select> -->
-                    
+
                     <label for="travel-accompaniers">Ledsagare</label><br>
                     <select name="travel-accompaniers" id="travel-accompaniers">
                         <option value="Nej">Nej</option>

@@ -49,11 +49,19 @@
 
                 <!-- Search Bar -->
                 <div id="search">
-                    <a href="#" onclick="elementDisplay(searchBar, 'block'), elementFocus(searchBar)" class="menu-link"
-                        aria-label="Toggle Search Box">
+                    <a href="#" id="search-icon"
+                        onclick="elementDisplay(searchBar, 'block'), elementDisplay(closeSearch, 'block'), elementFocus(searchBar)"
+                        class="menu-link" aria-label="Open Search">
                         <i class="fas fa-search"></i>
                     </a>
-                    <input id="searchbar" type="text" autocomplete="on">
+
+                    <a href="#" id="search-icon--close"
+                        onclick="elementDisplay(searchBar, 'none'), elementDisplay(closeSearch, 'none')"
+                        aria-label="Close Search" aria-hidden="true">
+                        <i class="fas fa-times"></i>
+                    </a>
+
+                    <input id="searchbar" type="text" autocomplete="on" aria-hidden="true">
                 </div>
             </div>
         </header>
@@ -73,7 +81,7 @@
 
         <main>
             <!-- Bokade Resor -->
-            <section class="booked">    
+            <section class="booked">
                 <h2 class="section-heading">Bokade Resor</h2>
                 <!-- Bookings will render here -->
             </section>

@@ -42,17 +42,26 @@
                         <li><a href="./omfardtjanst.html" class="menu-link">Om Färdtjänst</a></li>
                         <li><a href="./kundtjanst.html" class="menu-link">Kundtjänst</a></li>
                         <li><a href="./minasidor.html" class="menu-link current">Mina Sidor</a></li>
-                        <li><a href="../index.html" class="menu-link logout-btn"><i class="fas fa-sign-out-alt"></i>Logga Ut</a></li>
+                        <li><a href="../index.html" class="menu-link logout-btn"><i
+                                    class="fas fa-sign-out-alt"></i>Logga Ut</a></li>
                     </ul>
                 </nav>
 
                 <!-- Search Bar -->
                 <div id="search">
-                    <a href="#" onclick="elementDisplay(searchBar, 'block'), elementFocus(searchBar)" class="menu-link"
-                        aria-label="Toggle Search Box">
+                    <a href="#" id="search-icon"
+                        onclick="elementDisplay(searchBar, 'block'), elementDisplay(closeSearch, 'block'), elementFocus(searchBar)"
+                        class="menu-link" aria-label="Open Search">
                         <i class="fas fa-search"></i>
                     </a>
-                    <input id="searchbar" type="text" autocomplete="on">
+
+                    <a href="#" id="search-icon--close"
+                        onclick="elementDisplay(searchBar, 'none'), elementDisplay(closeSearch, 'none')"
+                        aria-label="Close Search" aria-hidden="true">
+                        <i class="fas fa-times"></i>
+                    </a>
+
+                    <input id="searchbar" type="text" autocomplete="on" aria-hidden="true">
                 </div>
             </div>
         </header>

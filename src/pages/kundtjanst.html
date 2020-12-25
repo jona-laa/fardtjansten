@@ -47,11 +47,19 @@
 
                 <!-- Search Bar -->
                 <div id="search">
-                    <a href="#" onclick="elementDisplay(searchBar, 'block'), elementFocus(searchBar)" class="menu-link"
-                        aria-label="Toggle Search Box">
+                    <a href="#" id="search-icon"
+                        onclick="elementDisplay(searchBar, 'block'), elementDisplay(closeSearch, 'block'), elementFocus(searchBar)"
+                        class="menu-link" aria-label="Open Search">
                         <i class="fas fa-search"></i>
                     </a>
-                    <input id="searchbar" type="text" autocomplete="on">
+
+                    <a href="#" id="search-icon--close"
+                        onclick="elementDisplay(searchBar, 'none'), elementDisplay(closeSearch, 'none')"
+                        aria-label="Close Search" aria-hidden="true">
+                        <i class="fas fa-times"></i>
+                    </a>
+
+                    <input id="searchbar" type="text" autocomplete="on" aria-hidden="true">
                 </div>
             </div>
         </header>
@@ -77,7 +85,7 @@
                 <h3><i class="fas fa-envelope"></i>E-Post</h3>
                 <a href="mailto:#">fardtjanst@tyreso.se</a>
             </section>
-            
+
             <!-- Vanliga Frågor -->
             <section class="news service">
                 <h2 class="section-heading">Vanliga frågor</h2>
