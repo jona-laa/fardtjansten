@@ -1,10 +1,14 @@
+const header = document.querySelector('.header-content');
+const mainMenu = document.querySelector('#menu-main-menu');
+
+
 // Hide header & to top on scroll
-// window.onscroll = () => {
-//   hideMenu();
-//   hideToTopBtn();
-//   alterBgColor(300, 'rgba(0, 0, 0, 0.6)', 'transparent', header);
-//   screen.width < 813 ? alterBgColor(300, 'rgba(0, 0, 0, 0.6)', 'transparent', mainMenu) : null;
-// };
+window.onscroll = () => {
+  hideMenu();
+  // hideToTopBtn();
+  // alterBgColor(300, 'rgba(0, 0, 0, 0.6)', 'transparent', header);
+  screen.width < 813 ? alterBgColor(300, 'rgba(0, 0, 0, 0.6)', 'transparent', mainMenu) : null;
+};
 
 
 
@@ -19,7 +23,7 @@ const hideMenu = () => {
       elementToggle(header, 'top', '0');
       elementDisplay(mainMenu, 'none');
     } else {
-      elementToggle(header, 'top', '-80px');
+      elementToggle(header, 'top', '-115px');
       elementDisplay(mainMenu, 'none');
     }
   }
@@ -31,6 +35,4 @@ const hideMenu = () => {
 // Toggle mobile menu
 $('#main-menu-toggle').click(function () {
   $('.menu').toggle(100);
-  // $('.menu').slideToggle(200, function () {
-  // });
 });

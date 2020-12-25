@@ -44,6 +44,8 @@ nav {
   /* Main Menu */
   .menu {
     margin-left: 100px;
+      background-color: $white;
+
     @include flex(row);
 
     @include maxWidth(1400px) {
@@ -55,7 +57,6 @@ nav {
     }
 
     @include maxWidth(960px) {
-      background-color: $white;
       display: none;
       padding: 0px 15px 50px;
       position: absolute;

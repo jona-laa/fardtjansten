@@ -30,6 +30,15 @@ const toggleAria = (element, aria, ariaValue) => {
 
 
 
+/* Toggle element from top or bottom
+ * @param   {DOM element}   element     Target DOM element to toggle
+ * @param   {string}        position    'top' or 'bottom'
+ * @param   {string}        offset      Offset in e.g. pixels, rem, em, etc.
+*/
+const elementToggle = (element, position, offset) => position === 'top' ? element.style.top = offset : element.style.bottom = offset;
+
+
+
 /* Apply focus on element
  * @param   {DOM element}   element     Target DOM element
 */
@@ -39,6 +48,16 @@ const elementFocus = (element) => element.focus();
 
 // Hide "to top button"
 const hideToTopBtn = () => window.pageYOffset > window.screen.height ? elementToggle(toTopBtn, 'bottom', '20px') : elementToggle(toTopBtn, 'bottom', '-50px');
+
+
+
+/* Changes background color of elements depending on window.pageYOffset - Used onscroll
+ * @param   {number}    offset     Negative offset on window.screen.height
+ * @param   {string}    col1       Color if scrolled > (screen height - offset)
+ * @param   {string}    col2       Color if scrolled < (screen height - offset)
+ * @param   {DOM Eleme} elements   Element/elements to alter
+*/
+const alterBgColor = (offset, col1, col2, ...elements) => elements.forEach(element => window.pageYOffset > window.screen.height - offset ? element.style.background = col1 : element.style.background = col2);
 
 
 
