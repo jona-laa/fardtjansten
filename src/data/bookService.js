@@ -202,12 +202,12 @@ let returnIsChecked = false;
 const toggleReturn = () => {
   if (!returnIsChecked) {
     elementDisplay(returnInput, 'block');
-    returnInput.setAttribute('aria-hidden', 'false');
+    // toggleAriaHidden(returnInput);
     returnIsChecked = true;
     returnDate.min = travelDate.value;
   } else {
     elementDisplay(returnInput, 'none');
-    returnInput.setAttribute('aria-hidden', 'true');
+    // toggleAriaHidden(returnInput);
     returnIsChecked = false;
   }
 };

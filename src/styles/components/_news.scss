@@ -23,7 +23,7 @@
       vertical-align: middle;
 
       @include maxWidth(600px) {
-        font-size: 20px;
+        font-size: 30px;
         margin-right: 10px;
       }
     }
@@ -47,6 +47,17 @@
       @include maxWidth(600px) {
         font-size: 22px;
         line-height: 25px;
+      }
+
+      div {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+
+        @include maxWidth(600px) {
+          font-size: 22px;
+          line-height: 25px;
+        }
       }
 
       .expand-icon {

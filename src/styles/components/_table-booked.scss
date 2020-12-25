@@ -1,4 +1,5 @@
 .booked {
+  padding: 0 10px;
   .section-heading {
     display: none;
   }
@@ -114,6 +115,22 @@
       .col-from,
       .col-to {
         width: 43.34% !important;
+      }
+
+      .col-time {
+        width: 13.32%;
+      }
+
+      @include maxWidth(700px) {
+        .col-days,
+        .col-time,
+        .col-from,
+        .col-to,
+        .col-companions,
+        .col-accompaniers,
+        .col-aid  {
+          width: 100% !important;
+        }
       }
     }
   }

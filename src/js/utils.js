@@ -4,7 +4,7 @@ const toTopBtn = document.querySelector('#goTop');
 const mainMenu = document.querySelector('#menu-main-menu');
 const searchBar = document.querySelector('#searchbar');
 const expandBtn = document.querySelectorAll('.expand-btn');
-// const bookReturn = document.querySelector('#book-return');
+const closeSearch = document.querySelector('#search-icon--close');
 
 
 
@@ -12,7 +12,16 @@ const expandBtn = document.querySelectorAll('.expand-btn');
  * @param   {DOM element}   element     Target DOM element
  * @param   {string}        value       Display attribute value, e.g. 'none', 'block', etc.
 */
-const elementDisplay = (element, value) => element.style.display = value;
+const elementDisplay = (element, value) => {
+  element.style.display = value;
+  toggleAriaHidden(element);
+};
+
+
+
+const toggleAriaHidden = (element) => {
+  element.style.display == 'none' ? element.setAttribute('aria-hidden', 'true') : element.setAttribute('aria-hidden', 'false');
+};
 
 
 
@@ -150,9 +159,18 @@ expandBtn.forEach(btn => {
 });
 
 
+
 // Make searchbar listen for enter -> Load search results based on input value
 searchBar.addEventListener('keyup', (event) => {
   if (searchBar.value != "" && event.keyCode === 13) {
     window.location.assign(`http://localhost:3000/pages/sokresultat.html?search=${searchBar.value}`)
   }
 });
+
+
+
+// Hide search bar when not in focus
+searchBar.addEventListener('focusout', () => {
+  elementDisplay(searchBar, 'none');
+  elementDisplay(closeSearch, 'none');
+})

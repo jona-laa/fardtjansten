@@ -8,9 +8,24 @@ header {
     @include flex(row);
 
     @include maxWidth(1400px) {
-      @include flex();
+      @include flex(column);
       align-items: center;
     }
+
+    // @include maxWidth(600px) {
+    //   @include flex(row, wrap);
+    //   align-items: center;
+    //   justify-content: center;
+
+    //   #search {
+    //     position: initial;
+    //     width: 100vw !important;
+    //   }
+
+    //   #searchbar {
+    //     width: 100vw !important;
+    //   }
+    // }
 
     a {
       text-decoration: none;
