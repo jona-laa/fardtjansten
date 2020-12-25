@@ -1,7 +1,3 @@
-const header = document.querySelector('.header-content');
-const mainMenu = document.querySelector('#menu-main-menu');
-
-
 // Hide header & to top on scroll
 window.onscroll = () => {
   hideMenu();

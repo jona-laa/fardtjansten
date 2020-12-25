@@ -1,7 +1,7 @@
 .breadcrumbs {
   font-size: 16px;
   font-weight: 600;
-  margin: auto;
+  margin: 84px auto 0;
   max-width: 1600px;
   padding-left: 10px;
 
@@ -13,6 +13,7 @@
 
   @include maxWidth(600px) {
     font-size: 14px;
+    margin: 58px auto 0;
 
     a {
       font-size: 14px;

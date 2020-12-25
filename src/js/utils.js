@@ -1,5 +1,6 @@
 // DOM element selectors
-const header = document.querySelector('.header-content');
+// const header = document.querySelector('.header-content');
+const header = document.getElementsByTagName('header')[0];
 const toTopBtn = document.querySelector('#goTop');
 const mainMenu = document.querySelector('#menu-main-menu');
 const searchBar = document.querySelector('#searchbar');

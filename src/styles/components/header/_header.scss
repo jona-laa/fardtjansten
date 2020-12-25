@@ -1,20 +1,19 @@
 header {
   background-color: $white;
-  padding-bottom: 115px;
-
-  @include maxWidth(600px) {
-    padding-bottom: 60px;
-  }
+  position: fixed;
+  top: 0px;
+  transition: 0.5s ease-in;
+  width: 100vw !important;
 
   .header-content {
     padding: 10px 20px;
     max-width: 1600px;
     margin: auto;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    transition: 0.5s ease-in;
-    background-color: $white;
+    // position: fixed;
+    // top: 0px;
+    // width: 100vw !important;
+    // transition: 0.5s ease-in;
+    // background-color: $white;
 
     @include flex(row);
 
