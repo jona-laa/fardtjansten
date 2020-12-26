@@ -1,9 +1,6 @@
 // Hide header & to top on scroll
 window.onscroll = () => {
   hideMenu();
-  // hideToTopBtn();
-  // alterBgColor(300, 'rgba(0, 0, 0, 0.6)', 'transparent', header);
-  screen.width < 813 ? alterBgColor(300, 'rgba(0, 0, 0, 0.6)', 'transparent', mainMenu) : null;
 };
 
 

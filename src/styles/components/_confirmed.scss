@@ -1,12 +1,18 @@
 .confirmed {
+  margin-top: 150px;
+
+  @include maxWidth(600px) {
+    margin-top: 100px;
+  }
+
   .article-heading {
     font-size: 36px;
     margin-bottom: 30px;
-    
+
     @include maxWidth(600px) {
-        font-size: 26px;
-        text-align: left;
-      }
+      font-size: 26px;
+      text-align: left;
+    }
 
     i {
       color: $col-booked;

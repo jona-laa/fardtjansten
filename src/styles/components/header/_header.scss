@@ -9,11 +9,6 @@ header {
     padding: 10px 20px;
     max-width: 1600px;
     margin: auto;
-    // position: fixed;
-    // top: 0px;
-    // width: 100vw !important;
-    // transition: 0.5s ease-in;
-    // background-color: $white;
 
     @include flex(row);
 
@@ -21,21 +16,6 @@ header {
       @include flex(column);
       align-items: center;
     }
-
-    // @include maxWidth(600px) {
-    //   @include flex(row, wrap);
-    //   align-items: center;
-    //   justify-content: center;
-
-    //   #search {
-    //     position: initial;
-    //     width: 100vw !important;
-    //   }
-
-    //   #searchbar {
-    //     width: 100vw !important;
-    //   }
-    // }
 
     a {
       text-decoration: none;
