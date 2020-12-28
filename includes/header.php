@@ -25,9 +25,9 @@
             Färdtjänsten
           </div>
         </a>
-        <nav>
+        <nav aria-label="huvudmeny">
           <!-- Mobile meny - Hidden on default -->
-          <a href="" onClick=event.preventDefault() id="main-menu-toggle" aria-label="Toggle Mobile Menu">
+          <a href="" onClick=event.preventDefault() id="main-menu-toggle" aria-controls="menu-main-menu" aria-hidden="true" aria-expanded="false" aria-label="Toggle Mobile Menu">
             <svg viewBox="0 0 100 80" width="40" height="40">
               <rect width="90" height="12" fill="#000"></rect>
               <rect y="30" width="90" height="12" fill="#000"></rect>
