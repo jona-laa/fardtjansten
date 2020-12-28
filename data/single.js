@@ -37,4 +37,18 @@ aboutArticles.forEach(article => {
     `;
 });
 
-aboutArticles[0].category == 'about' ? breadcrumbs.innerHTML += ` > <a href="omfardtjanst.php">Om Färdtjänst</a> > ${aboutArticles[0].title}` : breadcrumbs.innerHTML += ` > ${aboutArticles[0].title}`;
+
+
+// Create breadcrumbs based on article category
+switch (aboutArticles[0].category) {
+  case 'about':
+    breadcrumbs.innerHTML += ` > <a href="omfardtjanst.php">Om Färdtjänst</a> > ${aboutArticles[0].title}`;
+    break;
+
+  case 'service':
+    breadcrumbs.innerHTML += ` > <a href="kundtjanst.php">Kundtjänst</a> > ${aboutArticles[0].title}`;
+    break;
+
+  default:
+    breadcrumbs.innerHTML += ` > ${aboutArticles[0].title}`;
+}
