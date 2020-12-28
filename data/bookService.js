@@ -1,3 +1,13 @@
+
+// const getToday = () => {
+//   const today = new Date();
+//   const dd = String(today.getDate()).padStart(2, '0');
+//   const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+//   const yyyy = today.getFullYear();
+
+//   return `${yyyy}-${mm}-${dd}`;
+// };
+
 /*
   * DOM elements
 */
@@ -9,6 +19,7 @@ const travelTime = document.querySelector('#travel-time');
 const travelCompanions = document.querySelector('#travel-companions');
 const travelAccompaniers = document.querySelector('#travel-accompaniers');
 const travelAid = document.querySelector('#travel-aid');
+const travelMessage = document.querySelector('#travel-message');
 const returnDate = document.querySelector('#return-date');
 const returnTime = document.querySelector('#return-time');
 const bookBtn = document.querySelector('#book-btn');
@@ -44,7 +55,8 @@ const createBooking = () => {
     time: travelTime.value,
     companions: travelCompanions.value,
     accompaniers: travelAccompaniers.value,
-    aid: travelAid.value
+    aid: travelAid.value,
+    message: travelMessage.value
   }
 
   if (returnIsChecked) {
@@ -71,7 +83,8 @@ const getReturnObject = () => {
     time: returnTime.value,
     companions: travelCompanions.value,
     accompaniers: travelAccompaniers.value,
-    aid: travelAid.value
+    aid: travelAid.value,
+    message: travelMessage.value
   }
 };
 
@@ -92,6 +105,7 @@ const updateBooking = () => {
       booking.companions = travelCompanions.value;
       booking.accompaniers = travelAccompaniers.value;
       booking.aid = travelAid.value;
+      booking.message = travelMessage.value;
     }
   });
 
@@ -155,6 +169,7 @@ const fillInputFields = (booking) => {
   travelCompanions.value = booking.companions;
   travelAccompaniers.value = booking.accompaniers;
   travelAid.value = booking.aid;
+  travelMessage.value = booking.message;
 };
 
 

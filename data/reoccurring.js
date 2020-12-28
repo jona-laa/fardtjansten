@@ -65,6 +65,12 @@ const createBookings = (bookings) => {
                                     <p class="col-data">${booking.aid}</p>
                                 </div>
                             </li>
+                            <li class="col-message">
+                                <div>
+                                    <p class="col-title"><i class="fas fa-envelope"></i>Meddelande</p>
+                                    <p class="col-data">${booking.message}</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 

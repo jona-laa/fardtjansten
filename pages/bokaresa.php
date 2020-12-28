@@ -68,6 +68,9 @@ include '../includes/header.php'
                 <option value="Permobil">Permobil</option>
             </select>
 
+            <label for="travel-message">Meddelande till Färdtjänsten</label><br>
+                    <input type="text" id="travel-message" name="travel-message" required autocomplete="on"><br>
+
             <div class="feedback"></div>
 
             <input type="submit" id="book-btn" onclick="createOrUpdate(event)" value="Boka"
