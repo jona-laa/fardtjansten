@@ -6,7 +6,7 @@ include '../includes/header.php'
 ?>
 
 <!-- Bread Crumbs -->
-<div class="breadcrumbs"><a href="../index.php">Start</a> > <a href="omfardtjanst.php">Om Färdtjänst</a></div>
+<div class="breadcrumbs"><a href="../index.php">Start</a></div>
 
 <main>
     <!-- Article will print here -->

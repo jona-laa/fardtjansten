@@ -6,7 +6,8 @@ const articles = [
         text: `<p class="article-text">Färdtjänst är en del av kollektivtrafiken för personer med stora svårigheter att förflytta sig på egen hand och med den vanliga kollektivtrafiken.</p>
             <p class="article-text">Du kan få färdtjänst med personbil eller specialfordon, beroende på ditt behov. Om du till exempel sitter i rullstol, finns det plats för detta i specialfordon.</p>`,
         category: "about",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 2,
@@ -20,7 +21,8 @@ const articles = [
             </ul>
             <p class="article-text">Vem som har rätt till färdtjänst regleras av <a href="https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-1997736-om-fardtjanst_sfs-1997-736" class="article-link" target="_blank">färdtjänstlagen</a>.</p>`,
         category: "about",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 3,
@@ -35,7 +37,8 @@ const articles = [
                     <li>Kommunen skickar samtliga handlingar till Färdtjänsten på Trafikförvaltningen som fattar beslut om färdtjänst beviljas.</li>
             </ol>`,
         category: "about",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 4,
@@ -47,7 +50,8 @@ const articles = [
             </ul>
             <p class="article-text">Om du behöver en ledsagare nämner du detta när du ansöker om färdtjänst.</p>`,
         category: "about",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 5,
@@ -61,7 +65,8 @@ const articles = [
             <p class="article-text">Om du vill ta med fler än en medresenär, eller om du åker med ledsagare men då också tar med dig en medresenär, betalar du en <strong>särskilt avgift</strong> för resan. Denna är <strong>resans halva taxameterbelopp</strong>, men som lägst 60 kronor.</p>
             <p class="article-text">Du har rätt att ta med upp till <strong>tre egna barn och syskon som är registrerade</strong> på ditt färdtjänsttillstånd <strong>utan extra kostnad</strong>.</p>`,
         category: "about",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 6,
@@ -81,13 +86,14 @@ const articles = [
                 <li>Din underskrift.</li>
             </ul>`,
         category: "about",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 7,
         title: "Hur många resor får jag göra?",
         text: `
-        <p class="article-text">Hur många resor du får göra beror på ditt tillstånd. Du kan se hur många resor du har kvar genom att gå in på <a href="minprofil.php" class="article-link">Min Profil</a> som du når genom att logga in på <a href="minasidor.php" class="article-link">Mina Sidor</a>.</p>
+        <p class="article-text">Hur många resor du får göra beror på ditt tillstånd. Du kan se hur många resor du har kvar genom att gå in på <a href="minprofil.html" class="article-link">Min Profil</a> som du når genom att logga in på <a href="minasidor.html" class="article-link">Mina Sidor</a>.</p>
         
         <h3 class="article-heading-small">Om du har slut på resor</h3>
         
@@ -99,7 +105,8 @@ const articles = [
                 <li>rehabilitering.</li>
         </ul>`,
         category: "about",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
 
 
@@ -113,8 +120,8 @@ const articles = [
             <h4 class="article-heading-small">Boka via Mina Sidor</h4>
 
             <ol class="article-list ordered">
-                    <li>Logga in på <a href="minasidor.php" target="_blank" class="article-link">Mina Sidor</a>.</li>
-                    <li>Gå in på <a href="bokaresa.php" target="_blank" class="article-link">Boka Ny Resa</a></li>
+                    <li>Logga in på <a href="minasidor.html" target="_blank" class="article-link">Mina Sidor</a>.</li>
+                    <li>Gå in på <a href="bokaresa.html" target="_blank" class="article-link">Boka Ny Resa</a></li>
                     <li>Fyll i resedetaljerna för din resa.</li>
                     <li>Tryck på Boka.</li>
                     <li>Du får en bekräftelse på bokad resa.</li>
@@ -136,7 +143,8 @@ const articles = [
             `
         ,
         category: "service",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 9,
@@ -146,8 +154,8 @@ const articles = [
             <h4 class="article-heading-small">Avboka via Mina Sidor</h4>
 
             <ol class="article-list ordered">
-                    <li>Logga in på <a href="minasidor.php" target="_blank" class="article-link">Mina Sidor</a>.</li>
-                    <li>Gå in på <a href="bokaderesor.php" target="_blank" class="article-link">Bokade Resor</a></li>
+                    <li>Logga in på <a href="minasidor.html" target="_blank" class="article-link">Mina Sidor</a>.</li>
+                    <li>Gå in på <a href="bokaderesor.html" target="_blank" class="article-link">Bokade Resor</a></li>
                     <li>Hitta bokningen som du vill avboka.</li>
                     <li>Tryck på Avboka.</li>
                     <li>Du får en bekräftelse på avbokad resa.</li>
@@ -172,7 +180,8 @@ const articles = [
             `
         ,
         category: "service",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 10,
@@ -182,8 +191,8 @@ const articles = [
             <h4 class="article-heading-small">Ändra resa via Mina Sidor</h4>
 
             <ol class="article-list ordered">
-                    <li>Logga in på <a href="minasidor.php" target="_blank" class="article-link">Mina Sidor</a>.</li>
-                    <li>Gå in på <a href="bokaderesor.php" target="_blank" class="article-link">Bokade Resor</a></li>
+                    <li>Logga in på <a href="minasidor.html" target="_blank" class="article-link">Mina Sidor</a>.</li>
+                    <li>Gå in på <a href="bokaderesor.html" target="_blank" class="article-link">Bokade Resor</a></li>
                     <li>Hitta bokningen som du vill ändra.</li>
                     <li>Tryck på Ändra.</li>
                     <li>Gör önskade ändringar i resedetaljerna.</li>
@@ -207,7 +216,8 @@ const articles = [
             `
         ,
         category: "service",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 11,
@@ -226,9 +236,9 @@ const articles = [
             <h4 class="article-heading-small">Boka återkommande resa via Mina Sidor</h4>
 
             <ol class="article-list ordered">
-                    <li>Logga in på <a href="minasidor.php" target="_blank" class="article-link">Mina Sidor</a>.</li>
-                    <li>Gå in på <a href="aterkommande.php" target="_blank" class="article-link">Återkommande Resor</a>.</li>
-                    <li>Välj <a href="bokaaterkommande.php" target="_blank" class="article-link">Boka Återkommande Resa</a>.</li>
+                    <li>Logga in på <a href="minasidor.html" target="_blank" class="article-link">Mina Sidor</a>.</li>
+                    <li>Gå in på <a href="aterkommande.html" target="_blank" class="article-link">Återkommande Resor</a>.</li>
+                    <li>Välj <a href="bokaaterkommande.html" target="_blank" class="article-link">Boka Återkommande Resa</a>.</li>
                     <li>Fyll i resedetaljerna för din återkommande resa.</li>
                     <li>Tryck på Boka.</li>
                     <li>Du får en bekräftelse på bokad återkommande resa resa.</li>
@@ -239,7 +249,8 @@ const articles = [
             <p class="article-text">Du kan ringa och boka en återkommande resa via våran växel som är öppen dygnet runt på nummer <a href="tel:012345678" class="article-link">01 - 234 56 78</a>.</p>`
         ,
         category: "service",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 12,
@@ -247,7 +258,8 @@ const articles = [
         text: `<p class="article-text">Om din beställda färdtjänst inte har dykt upp 20 minuter efter beställd tid, gäller resegarantin. </p>
             <p class="article-text">Du ringer i detta fall till <a href="tel:012345678" class="article-link">01 - 234 56 78</a> och får hjälp med att efterlysa din beställda taxi, eller med att beställa en ny om det skulle behövas.</p>`,
         category: "service",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 13,
@@ -255,7 +267,8 @@ const articles = [
         text: `<p class="article-text">Om du har glömt ditt lösenord eller av någon anledning har problem med att logga in, kontaktar du färdtjänstens kundtjänst på nummer  <a href="tel:012345678" class="article-link">01 - 234 56 78</a>.</p>`
         ,
         category: "service",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
 
 
@@ -267,7 +280,8 @@ const articles = [
         text: `<p class="article-text">Om du har förkylningssymptom, eller känner dig febrig,
 res inte med färdtjänsten.</p>`,
         category: "news",
-        status: "important"
+        status: "important",
+        pub_date: '2020-12-24'
     },
 
 
@@ -289,6 +303,39 @@ res inte med färdtjänsten.</p>`,
                 </div>
             `,
         category: "main contact",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
+    },
+
+
+
+    // ##### Tillgänglighetsredogörelse #####
+    {
+        id: 16,
+        title: "Tillgänglighetsredogörelse",
+        text: `
+                <p class="article-text">Här hittar du information kring Färdtjänstens webbplats tillgänglighet.</p>
+
+                <p class="article-text">Målet är att alla ska kunna ta del av webbplatsens information och tjänster. Brister kan dock dessvärre förekomma.</p>
+
+                <p class="article-text">Här redovisas de brister som vi känner till, tillsammans med tidsplaner på när dessa är planerade att åtgärdas. </p>
+
+                <h3 class="article-heading-medium">Kända brister för fardtjansten.domain</h3>
+    
+                <h4 class="article-heading-small">Bristområde 1</h4>
+                <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc</p>
+
+                <h4 class="article-heading-small">Bristområde 2</h4>
+                <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc</p>
+
+                <h4 class="article-heading-small">Bristområde 3</h4>
+                <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc</p>
+
+                <h4 class="article-heading-small">Bristområde 4</h4>
+                <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc</p>
+            `,
+        category: "accessibility",
+        status: null,
+        pub_date: '2020-12-24'
     }
 ];
