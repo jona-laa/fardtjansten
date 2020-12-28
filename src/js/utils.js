@@ -3,6 +3,7 @@
 const header = document.getElementsByTagName('header')[0];
 const toTopBtn = document.querySelector('#goTop');
 const mainMenu = document.querySelector('#menu-main-menu');
+const mainMenuToggle = document.querySelector('#main-menu-toggle');
 const searchBar = document.querySelector('#searchbar');
 const expandBtn = document.querySelectorAll('.expand-btn');
 const closeSearch = document.querySelector('#search-icon--close');

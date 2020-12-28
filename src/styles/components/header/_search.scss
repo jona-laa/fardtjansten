@@ -13,27 +13,9 @@
     right: 170px;
   }
 
-  @include maxWidth(600px) {
+  @include maxWidth(960px) {
     position: initial;
     width: 100vw;
-
-    #search-icon {
-      position: absolute;
-      top: 12px;
-      left: 10px;
-    }
-
-    #searchbar {
-      width: 100vw;
-      top: 60px;
-      padding: 10px;
-    }
-
-    .fa-times {
-      font-size: 20px;
-      top: 60px;
-      right: 10px;
-    }
   }
 
   /* Search Icons */
@@ -56,16 +38,33 @@
         border: 3px solid $col-main;
       }
     }
+
+    @include maxWidth(960px) {
+      position: absolute;
+      top: 17px;
+      left: 10px;
+    }
+
+    @include maxWidth(600px) {
+      top: 12px;
+    }
   }
 
   #search-icon--close {
     display: none;
-  }
 
-  @include minWidth(600px) {
     .fa-times {
-      font-size: 20px;
-      left: 120px;
+      left: 115px;
+      @include maxWidth(960px) {
+        font-size: 20px;
+        top: 17.5px;
+        left: 125px;
+      }
+
+      @include maxWidth(600px) {
+        top: 60px;
+        left: calc(100vw - 35px);
+      }
     }
   }
 
@@ -81,10 +80,15 @@
     @include maxWidth(960px) {
       padding: 10px;
       padding-left: 35px;
+      width: 100vw;
+      top: 17.5px;
+      left: 10px;
     }
 
     @include maxWidth(600px) {
       padding: 10px;
+      top: 60px;
+      left: 0;
     }
 
     @include minWidth(600px) {

@@ -5,6 +5,30 @@ window.onscroll = () => {
 
 
 
+// Give menu correct aria attributes if mobile menu
+window.onload = () => {
+  if (window.innerWidth < 960) {
+    mainMenu.setAttribute('aria-hidden', 'true');
+    mainMenuToggle.setAttribute('aria-hidden', 'false');
+  }
+}
+
+
+
+// Make sure aria attributes are still correct on resize
+window.onresize = () => {
+  if (window.innerWidth < 960) {
+    mainMenu.setAttribute('aria-hidden', 'true');
+    mainMenuToggle.setAttribute('aria-hidden', 'false');
+  } else {
+    mainMenu.setAttribute('aria-hidden', 'false');
+    mainMenuToggle.setAttribute('aria-hidden', 'true');
+  }
+}
+
+
+
+
 // Hide Header
 let prevScrollpos = window.pageYOffset;
 
@@ -28,4 +52,12 @@ const hideMenu = () => {
 // Toggle mobile menu
 $('#main-menu-toggle').click(function () {
   $('.menu').toggle(100);
+
+  if (mainMenu.getAttribute('aria-hidden') == 'false') {
+    mainMenu.setAttribute('aria-hidden', 'true');
+    mainMenuToggle.setAttribute('aria-expanded', 'false');
+  } else {
+    mainMenu.setAttribute('aria-hidden', 'false');
+    mainMenuToggle.setAttribute('aria-expanded', 'true');
+  }
 });
