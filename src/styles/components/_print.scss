@@ -1,22 +1,30 @@
 .print {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
+  @include flex(column);
+  align-items: flex-end;
+  margin-top: 20px;
+  max-width: 550px;
+  width: 100%;
 
-    .print-btn {
-      margin-top: 10px;
-      background-color: transparent;
-      border: none;
-      font-size: 18px;
+  .updated {
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+  }
 
-      &:hover {
-        cursor: pointer;
-        text-decoration: underline;
-      }
-    }
+  .print-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    margin-top: 10px;
 
-    i {
-      font-size: 18px;
-      margin-right: 5px;
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
     }
   }
+
+  i {
+    font-size: 18px;
+    margin-right: 5px;
+  }
+}

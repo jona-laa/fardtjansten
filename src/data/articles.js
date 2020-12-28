@@ -6,7 +6,8 @@ const articles = [
         text: `<p class="article-text">Färdtjänst är en del av kollektivtrafiken för personer med stora svårigheter att förflytta sig på egen hand och med den vanliga kollektivtrafiken.</p>
             <p class="article-text">Du kan få färdtjänst med personbil eller specialfordon, beroende på ditt behov. Om du till exempel sitter i rullstol, finns det plats för detta i specialfordon.</p>`,
         category: "about",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 2,
@@ -20,7 +21,8 @@ const articles = [
             </ul>
             <p class="article-text">Vem som har rätt till färdtjänst regleras av <a href="https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-1997736-om-fardtjanst_sfs-1997-736" class="article-link" target="_blank">färdtjänstlagen</a>.</p>`,
         category: "about",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 3,
@@ -35,7 +37,8 @@ const articles = [
                     <li>Kommunen skickar samtliga handlingar till Färdtjänsten på Trafikförvaltningen som fattar beslut om färdtjänst beviljas.</li>
             </ol>`,
         category: "about",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 4,
@@ -47,7 +50,8 @@ const articles = [
             </ul>
             <p class="article-text">Om du behöver en ledsagare nämner du detta när du ansöker om färdtjänst.</p>`,
         category: "about",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 5,
@@ -61,7 +65,8 @@ const articles = [
             <p class="article-text">Om du vill ta med fler än en medresenär, eller om du åker med ledsagare men då också tar med dig en medresenär, betalar du en <strong>särskilt avgift</strong> för resan. Denna är <strong>resans halva taxameterbelopp</strong>, men som lägst 60 kronor.</p>
             <p class="article-text">Du har rätt att ta med upp till <strong>tre egna barn och syskon som är registrerade</strong> på ditt färdtjänsttillstånd <strong>utan extra kostnad</strong>.</p>`,
         category: "about",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 6,
@@ -81,7 +86,8 @@ const articles = [
                 <li>Din underskrift.</li>
             </ul>`,
         category: "about",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 7,
@@ -99,7 +105,8 @@ const articles = [
                 <li>rehabilitering.</li>
         </ul>`,
         category: "about",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
 
 
@@ -136,7 +143,8 @@ const articles = [
             `
         ,
         category: "service",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 9,
@@ -172,7 +180,8 @@ const articles = [
             `
         ,
         category: "service",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 10,
@@ -207,7 +216,8 @@ const articles = [
             `
         ,
         category: "service",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 11,
@@ -239,7 +249,8 @@ const articles = [
             <p class="article-text">Du kan ringa och boka en återkommande resa via våran växel som är öppen dygnet runt på nummer <a href="tel:012345678" class="article-link">01 - 234 56 78</a>.</p>`
         ,
         category: "service",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 12,
@@ -247,7 +258,8 @@ const articles = [
         text: `<p class="article-text">Om din beställda färdtjänst inte har dykt upp 20 minuter efter beställd tid, gäller resegarantin. </p>
             <p class="article-text">Du ringer i detta fall till <a href="tel:012345678" class="article-link">01 - 234 56 78</a> och får hjälp med att efterlysa din beställda taxi, eller med att beställa en ny om det skulle behövas.</p>`,
         category: "service",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
     {
         id: 13,
@@ -255,7 +267,8 @@ const articles = [
         text: `<p class="article-text">Om du har glömt ditt lösenord eller av någon anledning har problem med att logga in, kontaktar du färdtjänstens kundtjänst på nummer  <a href="tel:012345678" class="article-link">01 - 234 56 78</a>.</p>`
         ,
         category: "service",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     },
 
 
@@ -267,7 +280,8 @@ const articles = [
         text: `<p class="article-text">Om du har förkylningssymptom, eller känner dig febrig,
 res inte med färdtjänsten.</p>`,
         category: "news",
-        status: "important"
+        status: "important",
+        pub_date: '2020-12-24'
     },
 
 
@@ -289,6 +303,7 @@ res inte med färdtjänsten.</p>`,
                 </div>
             `,
         category: "main contact",
-        status: null
+        status: null,
+        pub_date: '2020-12-24'
     }
 ];
