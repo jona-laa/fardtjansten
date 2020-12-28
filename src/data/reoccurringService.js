@@ -15,6 +15,7 @@ const travelTime = document.querySelector('#travel-time');
 const travelCompanions = document.querySelector('#travel-companions');
 const travelAccompaniers = document.querySelector('#travel-accompaniers');
 const travelAid = document.querySelector('#travel-aid');
+const travelMessage = document.querySelector('#travel-message');
 const bookBtn = document.querySelector('#book-btn');
 const feedback = document.querySelector('.feedback');
 const travelWeekdays = document.querySelector('.travel-weekdays');
@@ -56,10 +57,9 @@ const createBooking = () => {
         time: travelTime.value,
         companions: travelCompanions.value,
         accompaniers: travelAccompaniers.value,
-        aid: travelAid.value
+        aid: travelAid.value,
+        message: travelMessage.value
     }
-
-    console.log(newBooking);
 
     existingBookings.push(newBooking);
     localStorage.reoccurring = JSON.stringify(existingBookings);
@@ -93,6 +93,7 @@ const updateBooking = () => {
             booking.companions = travelCompanions.value;
             booking.accompaniers = travelAccompaniers.value;
             booking.aid = travelAid.value;
+            booking.message = travelMessage.value;
         }
     });
 
@@ -175,6 +176,7 @@ const fillInputFields = (booking) => {
     travelCompanions.value = booking.companions;
     travelAccompaniers.value = booking.accompaniers;
     travelAid.value = booking.aid;
+    travelMessage.value = booking.message;
 
     // Auto-check existing reoccurring days
     [travelMonday, travelTuesday, travelWednesday, travelThursday, travelFriday, travelSaturday, travelSunday].forEach(day => {

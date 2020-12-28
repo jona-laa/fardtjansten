@@ -41,6 +41,10 @@
         width: 33.3%;
       }
 
+      .col-message {
+        width: 100%;
+      }
+
       @include maxWidth(830px) {
         .col-date,
         .col-time,

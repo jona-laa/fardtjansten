@@ -26,9 +26,9 @@ const createBookings = (bookings) => {
                 return c - d;
             })
             .filter(booking => new Date(`${booking.date}T${booking.time}`) < today);
-    
-    
-    
+
+
+
         oldBookings.forEach(booking => {
             sectionBooked.innerHTML +=
                 `<div class="booked-item border-call rounded">
@@ -77,6 +77,12 @@ const createBookings = (bookings) => {
                                         <p class="col-data">${booking.aid}</p>
                                     </div>
                                 </li>
+                                <li class="col-message">
+                                <div>
+                                    <p class="col-title"><i class="fas fa-envelope"></i>Meddelande</p>
+                                    <p class="col-data">${booking.message}</p>
+                                </div>
+                            </li>
                             </ul>
                         </div>
         
@@ -85,7 +91,7 @@ const createBookings = (bookings) => {
                         </div>
                     </div>`
         });
-    
+
         if (oldBookings.length == 0) {
             zeroOrNullBookingsStyles('Du har inga gamla bokningar.');
         }

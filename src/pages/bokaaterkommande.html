@@ -122,11 +122,6 @@
 
                     <label for="travel-companions">Medresenär</label><br>
                     <input type="number" value="0" min="0" max="3" id="travel-companions" name="travel-companions"><br>
-                    <!-- <label for="travel-companions">Medresenär</label><br>
-                    <select name="travel-companions" id="travel-companions">
-                        <option value="Nej">Nej</option>
-                        <option value="Ja">Ja</option>
-                    </select> -->
 
                     <label for="travel-accompaniers">Ledsagare</label><br>
                     <select name="travel-accompaniers" id="travel-accompaniers">
@@ -141,6 +136,10 @@
                         <option value="Rullator">Rullator</option>
                         <option value="Permobil">Permobil</option>
                     </select>
+
+                    <label for="travel-message">Meddelande till Färdtjänsten</label><br>
+                    <input type="text" id="travel-message" name="travel-message" autocomplete="on"><br>
+
                     <div class="feedback"></div>
 
                     <input type="submit" id="book-btn" onclick="createOrUpdate(event)" value="Boka"

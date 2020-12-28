@@ -19,6 +19,7 @@ const travelTime = document.querySelector('#travel-time');
 const travelCompanions = document.querySelector('#travel-companions');
 const travelAccompaniers = document.querySelector('#travel-accompaniers');
 const travelAid = document.querySelector('#travel-aid');
+const travelMessage = document.querySelector('#travel-message');
 const returnDate = document.querySelector('#return-date');
 const returnTime = document.querySelector('#return-time');
 const bookBtn = document.querySelector('#book-btn');
@@ -54,7 +55,8 @@ const createBooking = () => {
     time: travelTime.value,
     companions: travelCompanions.value,
     accompaniers: travelAccompaniers.value,
-    aid: travelAid.value
+    aid: travelAid.value,
+    message: travelMessage.value
   }
 
   if (returnIsChecked) {
@@ -64,7 +66,7 @@ const createBooking = () => {
   existingBookings.push(newBooking);
   localStorage.booked = JSON.stringify(existingBookings);
 
-  window.location.assign(`http://localhost:3000/pages/bekraftad.html?type=regular`)
+  window.location.assign(`bekraftad.html?type=regular`)
 }
 
 
@@ -81,7 +83,8 @@ const getReturnObject = () => {
     time: returnTime.value,
     companions: travelCompanions.value,
     accompaniers: travelAccompaniers.value,
-    aid: travelAid.value
+    aid: travelAid.value,
+    message: travelMessage.value
   }
 };
 
@@ -102,6 +105,7 @@ const updateBooking = () => {
       booking.companions = travelCompanions.value;
       booking.accompaniers = travelAccompaniers.value;
       booking.aid = travelAid.value;
+      booking.message = travelMessage.value;
     }
   });
 
@@ -165,6 +169,7 @@ const fillInputFields = (booking) => {
   travelCompanions.value = booking.companions;
   travelAccompaniers.value = booking.accompaniers;
   travelAid.value = booking.aid;
+  travelMessage.value = booking.message;
 };
 
 
@@ -220,16 +225,3 @@ const toggleReturn = () => {
 returnDate.addEventListener('focusout', () => {
   travelDate.value == returnDate.value ? returnTime.min = travelTime.value : null;
 })
-
-
-
-/*
-  * Disable accompaniers or companions if one of them is chosen
-*/
-// travelCompanions.addEventListener('focusout', () => {
-//   travelCompanions.value == 'Ja' ? travelAccompaniers.disabled = true : travelAccompaniers.disabled = false;
-// })
-
-// travelAccompaniers.addEventListener('focusout', () => {
-//   travelAccompaniers.value == 'Ja' ? travelCompanions.disabled = true : travelCompanions.disabled = false;
-// })
