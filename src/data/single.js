@@ -24,7 +24,7 @@ const aboutArticles = articles.filter(article => article.id == queryParam);
   * Append articles to the DOM
 */
 aboutArticles.forEach(article => {
-    articleContainer.innerHTML += `
+  articleContainer.innerHTML += `
             <article class="article rounded border-${article.category}">
                 <h2 class="article-heading">${article.title}</h2>
                 ${article.text}
@@ -37,4 +37,18 @@ aboutArticles.forEach(article => {
     `;
 });
 
-aboutArticles[0].category == 'about' ? breadcrumbs.innerHTML += ` > <a href="omfardtjanst.html">Om Färdtjänst</a> > ${aboutArticles[0].title}` : breadcrumbs.innerHTML += ` > ${aboutArticles[0].title}`;
+
+
+// Create breadcrumbs based on article category
+switch (aboutArticles[0].category) {
+  case 'about':
+    breadcrumbs.innerHTML += ` > <a href="omfardtjanst.html">Om Färdtjänst</a> > ${aboutArticles[0].title}`;
+    break;
+
+  case 'service':
+    breadcrumbs.innerHTML += ` > <a href="kundtjanst.html">Kundtjänst</a> > ${aboutArticles[0].title}`;
+    break;
+
+  default:
+    breadcrumbs.innerHTML += ` > ${aboutArticles[0].title}`;
+}
