@@ -1,7 +1,7 @@
 $div-padding: 50px;
 
 .container {
-  min-height: calc(100vh - 350px);
+  min-height: calc(100vh - 420px);
   padding-bottom: 100px;
 
   @include maxWidth(600px) {
@@ -48,22 +48,6 @@ $div-padding: 50px;
 .important {
   border-left: 20px solid $col-alert;
 }
-// $border-colors: (
-//   about: $col-about,
-//   main: $col-main,
-//   call: $col-call,
-//   service: $col-service,
-//   reoccurring: $col-reoccurring,
-//   profile: $col-profile,
-//   logout: $col-logout,
-//   booked: $col-booked
-// );
-
-// @each $key, $value in $border-colors {
-//   .border-#{key} {
-//     border-left: 20px solid $value;
-//   }
-// }
 
 .col-about {
   background-color: $col-about;

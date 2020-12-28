@@ -6,8 +6,6 @@ const tableTo = document.querySelector('#table-to');
 const tableCompanions = document.querySelector('#table-companions');
 const tableAccompaniers = document.querySelector('#table-accompaniers');
 const tableAid = document.querySelector('#table-aid');
-const sectionBooked = document.querySelector('.booked');
-const goBackBtn = document.querySelectorAll('.go-back')[0];
 
 const existingBookings = JSON.parse(localStorage.getItem("reoccurring"));
 
@@ -77,18 +75,12 @@ const createBookings = (bookings) => {
                 </div>`
         });
 
-        bookings.length == 0 ? sectionBooked.innerHTML = zeroOrNullBookingsStyles() : null;
+        if (bookings.length == 0) {
+            sectionBooked.innerHTML = zeroOrNullBookingsStyles('Du har inga återkommande resor.');
+        }
     } else {
-        zeroOrNullBookingsStyles();
+        zeroOrNullBookingsStyles('Du har inga återkommande resor.');
     }
-}
-
-
-
-// Give user feedback on 0 / null bookings
-const zeroOrNullBookingsStyles = () => {
-    sectionBooked.innerHTML = `<div class="feedback"><p>Du har inga återkommande resor.</p></div>`;
-    goBackBtn.style.marginTop = '50px'
 }
 
 

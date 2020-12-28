@@ -6,8 +6,6 @@ const tableTo = document.querySelector('#table-to');
 const tableCompanions = document.querySelector('#table-companions');
 const tableAccompaniers = document.querySelector('#table-accompaniers');
 const tableAid = document.querySelector('#table-aid');
-const sectionBooked = document.querySelector('.booked');
-const goBackBtn = document.querySelectorAll('.go-back')[0];
 
 
 
@@ -91,19 +89,11 @@ const createBookings = (bookings) => {
         });
     
         if (upcomingBookings.length == 0) {
-            zeroOrNullBookingsStyles();
+            zeroOrNullBookingsStyles('Du har inga aktiva bokningar.');
         }
     } else {
-        zeroOrNullBookingsStyles();
+        zeroOrNullBookingsStyles('Du har inga aktiva boknignar.');
     }
-}
-
-
-
-// Give user feedback on 0 / null bookings
-const zeroOrNullBookingsStyles = () => {
-    sectionBooked.innerHTML = `<div class="feedback"><p>Du har inga aktiva bokningar.</p></div>`;
-    goBackBtn.style.marginTop = '50px'
 }
 
 

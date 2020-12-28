@@ -6,6 +6,8 @@ const mainMenu = document.querySelector('#menu-main-menu');
 const searchBar = document.querySelector('#searchbar');
 const expandBtn = document.querySelectorAll('.expand-btn');
 const closeSearch = document.querySelector('#search-icon--close');
+const sectionBooked = document.querySelector('.booked');
+const goBackBtn = document.querySelectorAll('.go-back')[0];
 
 
 
@@ -141,6 +143,16 @@ const printThis = () => {
   window.print();
   window.document.body.innerHTML = origiginalContent;
 };
+
+
+
+/* Give user feedback on 0 / null bookings
+  * @param  {string}    message     feedback message
+*/
+const zeroOrNullBookingsStyles = (message) => {
+  sectionBooked.innerHTML = `<div class="feedback"><p>${message}</p></div>`;
+  goBackBtn.style.marginTop = '50px'
+}
 
 
 

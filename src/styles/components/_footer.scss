@@ -20,25 +20,33 @@ footer {
 
     strong {
       display: inline-block;
-      font-size: 20px;
-      font-weight: 600;
+      font-size: 22px;
+      font-weight: 500;
       margin-bottom: 5px;
 
       @include maxWidth(960px) {
         margin-top: 20px;
       }
+
+      @include maxWidth(600px) {
+        font-size: 20px;
+      }
     }
 
     i {
-      font-size: 16px;
+      font-size: 18px;
     }
 
     li,
     a {
       color: $black;
-      font-size: 18px;
-      line-height: 35px;
+      font-size: 20px;
+      margin-bottom: 10px;
       text-decoration: none;
+
+      @include maxWidth(600px) {
+        font-size: 18px;
+      }
     }
 
     a {

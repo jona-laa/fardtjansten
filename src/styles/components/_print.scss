@@ -1,0 +1,22 @@
+.print {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+    .print-btn {
+      margin-top: 10px;
+      background-color: transparent;
+      border: none;
+      font-size: 18px;
+
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+    i {
+      font-size: 18px;
+      margin-right: 5px;
+    }
+  }
