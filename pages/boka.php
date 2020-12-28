@@ -6,7 +6,7 @@ include '../includes/header.php'
 ?>
 
 <!-- Bread Crumbs -->
-<div class="breadcrumbs"><a href="../index.html">Start</a> > Boka färdtjänst</div>
+<div class="breadcrumbs"><a href="../index.php">Start</a> > Boka färdtjänst</div>
 
 <!-- Page Title "Banner" -->
 <div class="title-banner col-main">

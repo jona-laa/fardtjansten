@@ -12,7 +12,7 @@ include '../includes/header.php'
 ?>
 
 <!-- Bread Crumbs -->
-<div class="breadcrumbs"><a href="../index.html">Start</a> > <a href="minasidor.html">Mina Sidor</a> > Bokade Resor</div>
+<div class="breadcrumbs"><a href="../index.php">Start</a> > <a href="minasidor.php">Mina Sidor</a> > Bokade Resor</div>
 
 
 <!-- Page Title "Banner" -->
@@ -39,8 +39,8 @@ include '../includes/header.php'
 </main>
 
 <?php include '../includes/footer.php' ?>
-<script src="../data/booked.js"></script>
 <script src="../js/main.js"></script>
+<script src="../data/booked.js"></script>
 </body>
 
 </html>

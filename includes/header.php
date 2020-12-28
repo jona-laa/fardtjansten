@@ -19,7 +19,7 @@
     <header>
       <div class="header-content">
         <!-- Logotype -->
-        <a href="">
+        <a href="<?php echo STARTSIDAN ?>">
           <div class="brand">
             <img src="<?php echo LOGO ?>" alt="Färdtjänsten Logotyp">
             Färdtjänsten

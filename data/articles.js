@@ -87,7 +87,7 @@ const articles = [
         id: 7,
         title: "Hur många resor får jag göra?",
         text: `
-        <p class="article-text">Hur många resor du får göra beror på ditt tillstånd. Du kan se hur många resor du har kvar genom att gå in på <a href="minprofil.html" class="article-link">Min Profil</a> som du når genom att logga in på <a href="minasidor.html" class="article-link">Mina Sidor</a>.</p>
+        <p class="article-text">Hur många resor du får göra beror på ditt tillstånd. Du kan se hur många resor du har kvar genom att gå in på <a href="minprofil.php" class="article-link">Min Profil</a> som du når genom att logga in på <a href="minasidor.php" class="article-link">Mina Sidor</a>.</p>
         
         <h3 class="article-heading-small">Om du har slut på resor</h3>
         
@@ -113,8 +113,8 @@ const articles = [
             <h4 class="article-heading-small">Boka via Mina Sidor</h4>
 
             <ol class="article-list ordered">
-                    <li>Logga in på <a href="minasidor.html" target="_blank" class="article-link">Mina Sidor</a>.</li>
-                    <li>Gå in på <a href="bokaresa.html" target="_blank" class="article-link">Boka Ny Resa</a></li>
+                    <li>Logga in på <a href="minasidor.php" target="_blank" class="article-link">Mina Sidor</a>.</li>
+                    <li>Gå in på <a href="bokaresa.php" target="_blank" class="article-link">Boka Ny Resa</a></li>
                     <li>Fyll i resedetaljerna för din resa.</li>
                     <li>Tryck på Boka.</li>
                     <li>Du får en bekräftelse på bokad resa.</li>
@@ -146,8 +146,8 @@ const articles = [
             <h4 class="article-heading-small">Avboka via Mina Sidor</h4>
 
             <ol class="article-list ordered">
-                    <li>Logga in på <a href="minasidor.html" target="_blank" class="article-link">Mina Sidor</a>.</li>
-                    <li>Gå in på <a href="bokaderesor.html" target="_blank" class="article-link">Bokade Resor</a></li>
+                    <li>Logga in på <a href="minasidor.php" target="_blank" class="article-link">Mina Sidor</a>.</li>
+                    <li>Gå in på <a href="bokaderesor.php" target="_blank" class="article-link">Bokade Resor</a></li>
                     <li>Hitta bokningen som du vill avboka.</li>
                     <li>Tryck på Avboka.</li>
                     <li>Du får en bekräftelse på avbokad resa.</li>
@@ -182,8 +182,8 @@ const articles = [
             <h4 class="article-heading-small">Ändra resa via Mina Sidor</h4>
 
             <ol class="article-list ordered">
-                    <li>Logga in på <a href="minasidor.html" target="_blank" class="article-link">Mina Sidor</a>.</li>
-                    <li>Gå in på <a href="bokaderesor.html" target="_blank" class="article-link">Bokade Resor</a></li>
+                    <li>Logga in på <a href="minasidor.php" target="_blank" class="article-link">Mina Sidor</a>.</li>
+                    <li>Gå in på <a href="bokaderesor.php" target="_blank" class="article-link">Bokade Resor</a></li>
                     <li>Hitta bokningen som du vill ändra.</li>
                     <li>Tryck på Ändra.</li>
                     <li>Gör önskade ändringar i resedetaljerna.</li>
@@ -226,9 +226,9 @@ const articles = [
             <h4 class="article-heading-small">Boka återkommande resa via Mina Sidor</h4>
 
             <ol class="article-list ordered">
-                    <li>Logga in på <a href="minasidor.html" target="_blank" class="article-link">Mina Sidor</a>.</li>
-                    <li>Gå in på <a href="aterkommande.html" target="_blank" class="article-link">Återkommande Resor</a>.</li>
-                    <li>Välj <a href="bokaaterkommande.html" target="_blank" class="article-link">Boka Återkommande Resa</a>.</li>
+                    <li>Logga in på <a href="minasidor.php" target="_blank" class="article-link">Mina Sidor</a>.</li>
+                    <li>Gå in på <a href="aterkommande.php" target="_blank" class="article-link">Återkommande Resor</a>.</li>
+                    <li>Välj <a href="bokaaterkommande.php" target="_blank" class="article-link">Boka Återkommande Resa</a>.</li>
                     <li>Fyll i resedetaljerna för din återkommande resa.</li>
                     <li>Tryck på Boka.</li>
                     <li>Du får en bekräftelse på bokad återkommande resa resa.</li>

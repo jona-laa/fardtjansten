@@ -12,7 +12,7 @@ include '../includes/header.php'
 ?>
 
 <!-- Bread Crumbs -->
-<div class="breadcrumbs"><a href="../index.html">Start</a> > Mina Sidor</div>
+<div class="breadcrumbs"><a href="../index.php">Start</a> > Mina Sidor</div>
 
 
 <!-- Page Title "Banner" -->

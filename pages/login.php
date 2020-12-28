@@ -18,7 +18,7 @@ include '../includes/header.php'
 ?>
 
 <!-- Bread Crumbs -->
-<div class="breadcrumbs"><a href="../index.html">Start</a> > Logga In</div>
+<div class="breadcrumbs"><a href="../index.php">Start</a> > Logga In</div>
 
 <!-- Page Title "Banner" -->
 <div class="title-banner col-main">
@@ -38,9 +38,9 @@ include '../includes/header.php'
         </fieldset>
 
         <div class="login-help">
-            <h3>Har du problem med inloggningen?</h3>
+            <span>Har du problem med inloggningen?</span>
             <p>Om du har glömt ditt lösenord, eller av någon anledning har problem med att logga in, kontaktar
-                du färdtjänstens <a href="kundtjanst.html">kundtjänst</a>.</p>
+                du färdtjänstens <a href="kundtjanst.php">kundtjänst</a>.</p>
         </div>
     </form>
 

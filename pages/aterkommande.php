@@ -12,7 +12,7 @@ include '../includes/header.php'
 ?>
 
 <!-- Bread Crumbs -->
-<div class="breadcrumbs"><a href="../index.html">Start</a> > <a href="minasidor.html">Mina Sidor</a> > Återkommande Resor</div>
+<div class="breadcrumbs"><a href="../index.php">Start</a> > <a href="minasidor.php">Mina Sidor</a> > Återkommande Resor</div>
 
 <!-- Page Title "Banner" -->
 <div class="title-banner col-reoccurring">

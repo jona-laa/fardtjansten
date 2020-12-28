@@ -12,7 +12,7 @@ include '../includes/header.php'
 ?>
 
 <!-- Bread Crumbs -->
-<div class="breadcrumbs"><a href="../index.html">Start</a> > <a href="minasidor.html">Mina Sidor</a> > Gamla Resor</div>
+<div class="breadcrumbs"><a href="../index.php">Start</a> > <a href="minasidor.php">Mina Sidor</a> > Gamla Resor</div>
 
 <!-- Page Title "Banner" -->
 <div class="title-banner col-history">
@@ -38,8 +38,8 @@ include '../includes/header.php'
 </main>
 
 <?php include '../includes/footer.php' ?>
-<script src="../data/history.js"></script>
 <script src="../js/main.js"></script>
+<script src="../data/history.js"></script>
 </body>
 
 </html>

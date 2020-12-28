@@ -12,8 +12,8 @@ include '../includes/header.php'
 ?>
 
 <!-- Bread Crumbs -->
-<div class="breadcrumbs"><a href="../index.html">Start</a> > <a href="minasidor.html">Mina Sidor</a> > <a
-        href="aterkommande.html">Återkommande Resor</a> > Boka
+<div class="breadcrumbs"><a href="../index.php">Start</a> > <a href="minasidor.php">Mina Sidor</a> > <a
+        href="aterkommande.php">Återkommande Resor</a> > Boka
     Återkommande Resa
 </div>
 
