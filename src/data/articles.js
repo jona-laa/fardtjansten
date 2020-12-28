@@ -305,5 +305,37 @@ res inte med färdtjänsten.</p>`,
         category: "main contact",
         status: null,
         pub_date: '2020-12-24'
+    },
+
+
+
+    // ##### Tillgänglighetsredogörelse #####
+    {
+        id: 16,
+        title: "Tillgänglighetsredogörelse",
+        text: `
+                <p class="article-text">Här hittar du information kring Färdtjänstens webbplats tillgänglighet.</p>
+
+                <p class="article-text">Målet är att alla ska kunna ta del av webbplatsens information och tjänster. Brister kan dock dessvärre förekomma.</p>
+
+                <p class="article-text">Här redovisas de brister som vi känner till, tillsammans med tidsplaner på när dessa är planerade att åtgärdas. </p>
+
+                <h3 class="article-heading-medium">Kända brister för fardtjansten.domain</h3>
+    
+                <h4 class="article-heading-small">Bristområde 1</h4>
+                <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc</p>
+
+                <h4 class="article-heading-small">Bristområde 2</h4>
+                <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc</p>
+
+                <h4 class="article-heading-small">Bristområde 3</h4>
+                <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc</p>
+
+                <h4 class="article-heading-small">Bristområde 4</h4>
+                <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc</p>
+            `,
+        category: "accessibility",
+        status: null,
+        pub_date: '2020-12-24'
     }
 ];

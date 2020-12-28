@@ -37,4 +37,4 @@ aboutArticles.forEach(article => {
     `;
 });
 
-breadcrumbs.innerHTML += ` > ${aboutArticles[0].title}`;
+aboutArticles[0].category == 'about' ? breadcrumbs.innerHTML += ` > <a href="omfardtjanst.html">Om Färdtjänst</a> > ${aboutArticles[0].title}` : breadcrumbs.innerHTML += ` > ${aboutArticles[0].title}`;
