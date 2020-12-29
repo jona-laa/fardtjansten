@@ -26,9 +26,10 @@ switch (bookingType) {
     case 'regular':
         confirmedBooking.innerHTML =
             `
-                Från <strong>${regular.from}</strong> till <strong>${regular.to}</strong><br> 
-                Datum <strong>${regular.date}</strong><br> 
-                Tid <strong>${regular.time}</strong>
+                Från <strong>${regular.from}</strong><br> 
+                till <strong>${regular.to}</strong><br> 
+                Klockan <strong>${regular.time}</strong>,<br>
+                <strong>${regular.date}</strong>
         `;
 
         confirmedRef.innerHTML = 'Du hittar alla dina aktiva bokningar på <a class="article-link" href="bokaderesor.html">Bokade Resor</a>.';
@@ -37,9 +38,10 @@ switch (bookingType) {
     case 'reoccurring':
         confirmedBooking.innerHTML =
             `
-                Från <strong>${reoccurring.from}</strong> till <strong>${reoccurring.to}</strong><br> 
-                Dagar: <strong>${reoccurring.days.filter(day => day != null).join(', ')}</strong><br> 
-                Tid <strong>${reoccurring.time}</strong>
+                Från <strong>${reoccurring.from}</strong><br> 
+                till <strong>${reoccurring.to}</strong><br> 
+                Klockan <strong>${reoccurring.time}</strong><br>
+                varje <strong>${reoccurring.days.filter(day => day != null).join(', ')}</strong>
         `;
 
         confirmedRef.innerHTML = 'Du hittar alla dina återkommande resor på <a class="article-link" href="aterkommanderesor.html">Återkommande Resor</a>.';
@@ -48,9 +50,10 @@ switch (bookingType) {
     case 'update':
         confirmedBooking.innerHTML =
             `
-                Från <strong>${regular.from}</strong> till <strong>${regular.to}</strong><br> 
-                Datum <strong>${regular.date}</strong><br> 
-                Tid <strong>${regular.time}</strong>
+                Från <strong>${regular.from}</strong><br> 
+                till <strong>${regular.to}</strong><br> 
+                Klockan <strong>${regular.time}</strong>,<br>
+                <strong>${regular.date}</strong>
         `;
 
         confirmedGreeting.textContent = "Din resa är nu uppdaterad!"
@@ -60,9 +63,10 @@ switch (bookingType) {
     case 'update_reoccurring':
         confirmedBooking.innerHTML =
             `
-                Från <strong>${reoccurring.from}</strong> till <strong>${reoccurring.to}</strong><br> 
-                Dagar <strong>${reoccurring.days.filter(day => day != null).join(', ')}</strong><br> 
-                Tid <strong>${reoccurring.time}</strong>
+                Från <strong>${reoccurring.from}</strong><br> 
+                till <strong>${reoccurring.to}</strong><br> 
+                Klockan <strong>${reoccurring.time}</strong><br> 
+                varje <strong>${reoccurring.days.filter(day => day != null).join(', ')}</strong> 
         `;
 
         confirmedGreeting.textContent = "Din återkommande resa är nu uppdaterad!"
