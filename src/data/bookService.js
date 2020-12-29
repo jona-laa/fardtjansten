@@ -66,7 +66,7 @@ const createBooking = () => {
   existingBookings.push(newBooking);
   localStorage.booked = JSON.stringify(existingBookings);
 
-  window.location.assign(`bekraftad.html?type=regular`)
+  window.location.assign(`bekraftad.html?type=regular&id=${newBooking.id}`)
 }
 
 
@@ -114,7 +114,7 @@ const updateBooking = () => {
   }
 
   localStorage.booked = JSON.stringify(existingBookings);
-  window.location.assign(`bekraftad.html?type=update`)
+  window.location.assign(`bekraftad.html?type=update&id=${queryParam}`)
 };
 
 
