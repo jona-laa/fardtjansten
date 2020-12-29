@@ -1,5 +1,5 @@
 .breadcrumbs {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   margin: 84px auto 0;
   max-width: 1600px;
@@ -7,7 +7,7 @@
 
   a {
     color: $black;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
   }
 
@@ -20,11 +20,11 @@
   }
 
   @include maxWidth(600px) {
-    font-size: 14px;
+    font-size: 16px;
     margin: 58px auto 0;
 
     a {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
 }

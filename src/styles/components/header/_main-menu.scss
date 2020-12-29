@@ -86,7 +86,7 @@ nav {
       a {
         color: $black;
         font-size: 22px;
-        text-decoration: none;
+        text-decoration: underline;
 
         @include maxWidth(1400px) {
           font-size: 20px;
@@ -99,7 +99,7 @@ nav {
 
       .current {
         font-weight: 600;
-        text-decoration: underline;
+        text-decoration: none;
       }
 
       .logout-btn {
