@@ -64,7 +64,7 @@ const createBooking = () => {
     existingBookings.push(newBooking);
     localStorage.reoccurring = JSON.stringify(existingBookings);
 
-    window.location.assign(`bekraftad.php?type=reoccurring`);
+    window.location.assign(`bekraftad.php?type=reoccurring&id=${newBooking.id}`);
 };
 
 
@@ -98,7 +98,7 @@ const updateBooking = () => {
     });
 
     localStorage.reoccurring = JSON.stringify(existingBookings);
-    window.location.assign(`bekraftad.php?type=update_reoccurring`)
+    window.location.assign(`bekraftad.php?type=update_reoccurring&id=${queryParam}`)
 };
 
 

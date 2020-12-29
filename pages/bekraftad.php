@@ -15,8 +15,9 @@ include '../includes/header.php'
     <!-- Bokning Bekräftad -->
     <article class="article confirmed rounded border-booked">
         <h2 class="article-heading"><i class="far fa-check-circle"></i>Bokning Bekräftad</h2>
-        <p class="article-text" id="confirmed-greeting">Tack för din bokning!</p>
-        <p class="article-text" id="confirmed-ref"></p>
+        <p class="article-text centered" id="confirmed-greeting">Tack för din bokning!</p>
+        <p class="article-text centered" id="confirmed-booking"></p>
+        <p class="article-text centered" id="confirmed-ref"></p>
         <br>
         <a href="minasidor.php" class="article-link centered">Tillbaka till Mina Sidor <i
                 class="fas fa-angle-double-right"></i></a>
