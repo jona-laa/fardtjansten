@@ -21,7 +21,7 @@ include './includes/header.php'
     <h2 class="section-heading">Startmeny</h2>
     <a href="./pages/boka.php">
       <div class="box-menu_box border-main rounded">
-        <i class="fas fa-car-side"></i>
+        <i class="fas fa-car"></i>
         <span>Boka färdtjänst</span>
       </div>
     </a>

@@ -31,7 +31,7 @@ include '../includes/header.php'
         <h2 class="section-heading">Startmeny</h2>
         <a href="./bokaresa.php">
             <div class="box-menu_box border-main rounded">
-                <i class="fas fa-car-side"></i>
+                <i class="fas fa-car"></i>
                 <span>Boka Ny Resa</span>
             </div>
         </a>
@@ -45,7 +45,7 @@ include '../includes/header.php'
 
         <a href="./aterkommande.php">
             <div class="box-menu_box border-reoccurring rounded">
-                <i class="fas fa-history"></i>
+                <i class="fas fa-redo"></i>
                 <span>Återkommande Resor</span>
             </div>
         </a>

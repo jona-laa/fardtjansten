@@ -29,10 +29,10 @@ include '../includes/header.php'
             <legend>Resedetaljer</legend>
 
             <label for="travel-from">Från</label><br>
-            <input type="text" id="travel-from" name="fravel-from" required autocomplete="on"><br>
+            <input type="text" id="travel-from" name="fravel-from" required aria-required="true" autocomplete="on"><br>
 
             <label for="travel-to">Till</label><br>
-            <input type="text" id="travel-to" name="travel-to" required autocomplete="on"><br>
+            <input type="text" id="travel-to" name="travel-to" required aria-required="true" autocomplete="on"><br>
 
             <label>Veckodag</label><br>
             <div class="travel-weekdays">
@@ -67,7 +67,7 @@ include '../includes/header.php'
             </div>
 
             <label for="travel-time">Tid för avresa</label><br>
-            <input type="time" id="travel-time" name="travel-time" required="required"><br>
+            <input type="time" id="travel-time" name="travel-time" required aria-required="true"><br>
 
             <label for="travel-companions">Medresenär</label><br>
             <input type="number" value="0" min="0" max="3" id="travel-companions" name="travel-companions"><br>
