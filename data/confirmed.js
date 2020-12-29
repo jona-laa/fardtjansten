@@ -17,9 +17,8 @@ const existingReoccurring = JSON.parse(localStorage.getItem("reoccurring"));
 
 
 // Filter out relecant booking
-const regular = existingBookings.filter(booking => booking.id == bookingId)[0];
-const reoccurring = existingReoccurring.filter(booking => booking.id == bookingId)[0];
-
+const regular = existingBookings ? existingBookings.filter(booking => booking.id == bookingId)[0] : null;
+const reoccurring = existingReoccurring ? existingReoccurring.filter(booking => booking.id == bookingId)[0] : null;
 
 
 // Give feedback based on booking type
