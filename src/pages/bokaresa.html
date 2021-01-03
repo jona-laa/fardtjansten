@@ -78,10 +78,15 @@
                     <legend>Resedetaljer</legend>
 
                     <label for="travel-from">Från</label><br>
-                    <input type="text" id="travel-from" name="fravel-from" aria-required="true" required autocomplete="on"><br>
+                    <input type="text" id="travel-from" name="fravel-from" aria-required="true" required
+                        autocomplete="on">
+
+                    <button class="travel-switch" onclick="travelSwitch()" aria-label="Byt plats på från och till"><i class="fas fa-arrow-down"></i><i
+                            class="fas fa-arrow-up"></i></button><br>
 
                     <label for="travel-to">Till</label><br>
-                    <input type="text" id="travel-to" name="travel-to" aria-required="true" required autocomplete="on"><br>
+                    <input type="text" id="travel-to" name="travel-to" aria-required="true" required
+                        autocomplete="on"><br>
 
                     <label for="travel-date">Datum för avresa</label><br>
                     <input type="date" id="travel-date" name="travel-date" required aria-required="true"><br>
@@ -120,7 +125,7 @@
                     </select>
 
                     <label for="travel-message">Meddelande till Färdtjänsten</label><br>
-                    <input type="text" id="travel-message" name="travel-message" required autocomplete="on"><br>
+                    <input type="text" id="travel-message" name="travel-message" autocomplete="on"><br>
 
                     <div class="feedback"></div>
 

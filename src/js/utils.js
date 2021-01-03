@@ -157,6 +157,15 @@ const zeroOrNullBookingsStyles = (message) => {
 
 
 
+// Switches travel to, to travel from and vice versa
+const travelSwitch = () => {
+  let temp = travelFrom.value;
+  travelFrom.value = travelTo.value;
+  travelTo.value = temp;
+};
+
+
+
 //Smooth scrolling
 $('#menu-main-menu a, .btn-top, .arrow-link').on('click', function (e) {
   if (this.hash !== '') {

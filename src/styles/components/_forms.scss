@@ -47,6 +47,33 @@ form {
     margin-bottom: -10px;
   }
 
+  .travel-switch {
+    float: right;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    top: 5px;
+    right: 80px;
+
+    @include maxWidth(600px) {
+      right: 0;
+    }
+
+    i {
+      font-size: 20px;
+      position: relative;
+      margin: -3px;
+    }
+
+    .fa-arrow-up {
+      bottom: 7px;
+    }
+
+    .fa-arrow-down {
+      top: 7px;
+    }
+  }
+
   .return,
   .travel-weekdays {
     max-width: 350px;
@@ -126,6 +153,7 @@ form {
   }
 }
 
+// For accessibility page
 .accessibility-form {
   background-color: #eaeaea;
 
