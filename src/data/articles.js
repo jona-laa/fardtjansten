@@ -333,6 +333,23 @@ res inte med färdtjänsten.</p>`,
 
                 <h4 class="article-heading-small">Bristområde 4</h4>
                 <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc</p>
+
+                <form class="rounded accessibility-form">
+                <fieldset>
+                    <legend>Påpeka Brister</legend>
+
+                    <label for="email">Din E-Post</label><br>
+                    <input type="text" id="email" name="email" aria-required="true" required autocomplete="on"><br>
+
+                    <label class="message-label" for="message">Meddelande</label><br>
+                    <textarea id="message" name="message" required></textarea><br>
+
+                    <div class="feedback"></div>
+
+                    <input type="submit" id="book-btn" onclick="alert(':)')" value="Skicka"
+                        class="submit-btn btn rounded col-main">
+                </fieldset>
+            </form>
             `,
         category: "accessibility",
         status: null,

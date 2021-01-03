@@ -1,8 +1,8 @@
 .print {
   @include flex(column);
   align-items: flex-end;
-  margin-top: 20px;
-  max-width: 550px;
+  margin: 20px auto;
+  max-width: 600px;
   width: 100%;
 
   .updated {
@@ -14,7 +14,7 @@
   .print-btn {
     background-color: transparent;
     border: none;
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 10px;
 
     &:hover {
@@ -24,7 +24,7 @@
   }
 
   i {
-    font-size: 18px;
+    font-size: 20px;
     margin-right: 5px;
   }
 }

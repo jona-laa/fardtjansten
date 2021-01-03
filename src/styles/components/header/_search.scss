@@ -28,6 +28,7 @@
     z-index: 1;
 
     @include maxWidth(960px) {
+      font-size: 26px;
       padding: 10px;
     }
   }
@@ -41,12 +42,12 @@
 
     @include maxWidth(960px) {
       position: absolute;
-      top: 17px;
+      top: 12px;
       left: 10px;
     }
 
     @include maxWidth(600px) {
-      top: 12px;
+      top: 7px;
     }
   }
 

@@ -1,139 +1,143 @@
-/* Brand Logotype */
-.brand {
-  color: $black;
-  user-select: none;
-  text-decoration: none;
-  font-size: 32px;
-  @include flex(row);
-  align-items: center;
-
-  @include maxWidth(1400px) {
-    font-size: 28px;
-  }
-
-  img {
-    margin-right: 10px;
-    max-width: 50px;
-    vertical-align: middle;
-
-    @include maxWidth(1400px) {
-      max-width: 40px;
-    }
-  }
-
-  @include maxWidth(600px) {
-    font-size: 24px;
-
-    img {
-      max-width: 30px;
-    }
-  }
-}
-
-nav {
-  @include flex(row);
-  align-items: center;
-  max-width: 1600px;
-  margin: auto;
-  width: 100%;
-
-  @include maxWidth(1400px) {
-    @include flex();
-  }
-
-  /* Main Menu */
-  .menu {
-    margin-left: 100px;
-
+.header-content {
+  /* Brand Logotype */
+  .brand {
+    color: $black;
+    user-select: none;
+    text-decoration: none;
+    font-size: 32px;
     @include flex(row);
-
+    align-items: center;
+  
     @include maxWidth(1400px) {
-      margin: 10px auto 0;
+      font-size: 28px;
     }
-
-    @include minWidth(961px) {
-      display: flex !important;
-    }
-
-    @include maxWidth(960px) {
-      background-color: $white;
-      display: none;
-      padding: 0 0 50px 15px;
-      position: absolute;
-      top: 60px;
-      right: 0;
-      height: 100vh;
-      opacity: 0.97;
-      text-align: right;
-    }
-
-    @include maxWidth(600px) {
-      top: 50px;
-    }
-
-    li {
-      margin-right: 50px;
-
+  
+    img {
+      margin-right: 10px;
+      max-width: 50px;
+      vertical-align: middle;
+  
       @include maxWidth(1400px) {
-        margin-right: 25px;
+        max-width: 40px;
       }
-
+    }
+  
+    @include maxWidth(600px) {
+      font-size: 24px;
+  
+      img {
+        max-width: 30px;
+      }
+    }
+  }
+  
+  nav {
+    @include flex(row);
+    align-items: center;
+    max-width: 1600px;
+    margin: auto;
+    width: 100%;
+  
+    @include maxWidth(1400px) {
+      @include flex();
+    }
+  
+    /* Main Menu */
+    .menu {
+      margin-left: 100px;
+  
+      @include flex(row);
+  
+      @include maxWidth(1400px) {
+        margin: 10px auto 0;
+      }
+  
+      @include minWidth(961px) {
+        display: flex !important;
+      }
+  
       @include maxWidth(960px) {
-        margin-top: 10px;
-        line-height: 30px;
-      }
-
-      a {
-        color: $black;
-        font-size: 22px;
-        text-decoration: underline;
-
-        @include maxWidth(1400px) {
-          font-size: 20px;
-        }
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-
-      .current {
-        font-weight: 600;
-        text-decoration: none;
-      }
-
-      .logout-btn {
-        font-size: 16px;
+        background-color: $white;
+        display: none;
+        padding: 0 0 50px 15px;
         position: absolute;
-        top: 2px;
-        right: 20px;
-
-        @include maxWidth(960px) {
-          font-size: 20px;
-          position: initial;
+        top: 60px;
+        right: 0;
+        height: 100vh;
+        opacity: 0.97;
+        text-align: right;
+      }
+  
+      @include maxWidth(600px) {
+        top: 50px;
+      }
+  
+      li {
+        margin-right: 50px;
+  
+        @include maxWidth(1400px) {
+          margin-right: 25px;
         }
-
-        i {
+  
+        @include maxWidth(960px) {
+          margin-top: 20px;
+          line-height: 30px;
+        }
+  
+        a {
+          color: $black;
+          font-size: 22px;
+          text-decoration: underline;
+  
+          @include maxWidth(1400px) {
+            font-size: 20px;
+          }
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+  
+        .current {
+          font-weight: 600;
+          text-decoration: none;
+        }
+  
+        .logout-btn {
           font-size: 16px;
-          margin-right: 5px;
+          position: absolute;
+          top: 2px;
+          right: 20px;
+  
+          @include maxWidth(960px) {
+            font-size: 20px;
+            position: initial;
+          }
+  
+          i {
+            font-size: 20px;
+            margin-right: 5px;
+            vertical-align: middle;
+          }
         }
       }
     }
   }
+  
+  /* Mobile Menu Icon */
+  #main-menu-toggle {
+    display: none;
+  
+    @include maxWidth(960px) {
+      display: block;
+      position: absolute;
+      right: 15px;
+      top: 17px;
+    }
+  
+    @include maxWidth(600px) {
+      top: 12px;
+    }
+  }
 }
 
-/* Mobile Menu Icon */
-#main-menu-toggle {
-  display: none;
-
-  @include maxWidth(960px) {
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 17px;
-  }
-
-  @include maxWidth(600px) {
-    top: 12px;
-  }
-}

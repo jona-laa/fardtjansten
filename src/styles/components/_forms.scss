@@ -28,7 +28,8 @@ form {
   }
 
   input,
-  select {
+  select,
+  textarea {
     font-size: 18px;
     padding: 10px;
     display: block;
@@ -37,6 +38,13 @@ form {
     max-width: 350px;
     border: 1px solid gray;
     box-shadow: 1px 1px 2px lightgray;
+  }
+
+  textarea {
+    height: 300px;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: -10px;
   }
 
   .return,
@@ -115,5 +123,14 @@ form {
 
   .feedback {
     margin: 0 auto;
+  }
+}
+
+.accessibility-form {
+  background-color: #eaeaea;
+
+  .message-label,
+  textarea {
+    max-width: 500px;
   }
 }

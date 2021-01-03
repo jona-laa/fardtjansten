@@ -5,6 +5,12 @@ footer {
   padding: 50px;
   width: 100%;
 
+  .divider {
+    border: 1px solid #c4c4c4;
+    margin-bottom: 10px;
+    width: 200px;
+  }
+
   @include maxWidth(960px) {
     padding-top: 30px;
   }

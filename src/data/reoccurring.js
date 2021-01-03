@@ -73,6 +73,8 @@ const createBookings = (bookings) => {
                             </li>
                         </ul>
                     </div>
+
+                    <div class="print"><button class="print-btn" id="print-service" onclick="printThis()"><i class="fas fa-print"></i>Skriv Ut</button></div>
                 
                     <div class="booked-item_buttons">
                         <button class="submit-btn btn rounded col-confirm" onclick="initUpdate(${booking.id}, 'reoccurring')">Ändra</button>
