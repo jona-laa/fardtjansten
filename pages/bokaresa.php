@@ -27,7 +27,9 @@ include '../includes/header.php'
             <legend>Resedetaljer</legend>
 
             <label for="travel-from">Från</label><br>
-            <input type="text" id="travel-from" name="fravel-from" required aria-required="true" autocomplete="on"><br>
+            <input type="text" id="travel-from" name="fravel-from" required aria-required="true" autocomplete="on">
+
+            <button class="travel-switch" onclick="travelSwitch()" aria-label="Byt plats på från och till"><i class="fas fa-arrow-down"></i><i class="fas fa-arrow-up"></i></button><br>
 
             <label for="travel-to">Till</label><br>
             <input type="text" id="travel-to" name="travel-to" required aria-required="true" autocomplete="on"><br>

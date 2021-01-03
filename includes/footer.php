@@ -5,17 +5,19 @@
       <div class="footer-group">
         <div>
           <strong>Genvägar</strong>
-          <ul>
-            
-            <li><a href="<?php echo STARTSIDAN?>">Start <i class="fas fa-angle-double-right"></i></a></li>
-            <li><a href="<?php echo BOKA?>">Boka färdtjänst <i class="fas fa-angle-double-right"></i></a></li>
-            <li><a href="<?php echo OMFARDTJANST?>">Om Färdtjänst <i class="fas fa-angle-double-right"></i></a></li>
-            <li><a href="<?php echo KUNDTJANST?>">Kundtjänst <i class="fas fa-angle-double-right"></i></a></li>
-            <li><a href="<?php echo MINASIDOR?>">Mina Sidor <i class="fas fa-angle-double-right"></i></a></li>
-            <li><a href="<?php echo TILLGANGLIGHET?>">Tillgänglighetsredogörelse <i
-                  class="fas fa-angle-double-right"></i></a>
-            </li>
-          </ul>
+          <div class="divider"></div>
+          <nav aria-label="Meny sidfot">
+            <ul>
+              <li><a href="<?php echo STARTSIDAN?>">Start <i class="fas fa-angle-double-right"></i></a></li>
+              <li><a href="<?php echo BOKA?>">Boka färdtjänst <i class="fas fa-angle-double-right"></i></a></li>
+              <li><a href="<?php echo OMFARDTJANST?>">Om Färdtjänst <i class="fas fa-angle-double-right"></i></a></li>
+              <li><a href="<?php echo KUNDTJANST?>">Kundtjänst <i class="fas fa-angle-double-right"></i></a></li>
+              <li><a href="<?php echo MINASIDOR?>">Mina Sidor <i class="fas fa-angle-double-right"></i></a></li>
+              <li><a href="<?php echo TILLGANGLIGHET?>">Tillgänglighetsredogörelse <i
+                    class="fas fa-angle-double-right"></i></a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
 
@@ -23,6 +25,7 @@
       <div class="footer-group">
         <div>
           <strong>Externa Länkar</strong>
+          <div class="divider"></div>
           <ul>
             <li><i class="fas fa-external-link-alt"></i> <a href="http://www.sl.se" target="_blank">SL.se</a></li>
             <li><i class="fas fa-external-link-alt"></i> <a href="http://www.funkaportalen.se/guide/Stod-service/Resor/"
@@ -41,6 +44,7 @@
       <div class="footer-group">
         <div>
           <strong>Kundtjänst</strong>
+          <div class="divider"></div>
           <ul>
             <li>Helgfri vardag klockan 7—20</li>
             <li><i class="fas fa-phone"></i> <a class="underline" href="tel:01-2345678">01 — 234 56 78</a></li>
@@ -49,6 +53,7 @@
         <!-- Bokning -->
         <div class="margin-top">
           <strong>Bokning</strong>
+          <div class="divider"></div>
           <ul>
             <li>Växeln öppen dygnet runt</li>
             <li><i class="fas fa-phone"></i> <a class="underline" href="tel:01-2345679">01 — 234 56 79</a></li>

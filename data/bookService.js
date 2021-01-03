@@ -219,6 +219,15 @@ const toggleReturn = () => {
 
 
 
+// Switches travel to to travel from, and vice versa, knowhatimsayin
+const travelSwitch = () => {
+  let temp = travelFrom.value;
+  travelFrom.value = travelTo.value;
+  travelTo.value = temp;
+};
+
+
+
 /*
   * Set return time to min leave time if travel and return date are the same 
 */

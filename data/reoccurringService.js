@@ -186,6 +186,15 @@ const fillInputFields = (booking) => {
 
 
 
+// Switches travel to to travel from, and vice versa, knowhatimsayin
+const travelSwitch = () => {
+    let temp = travelFrom.value;
+    travelFrom.value = travelTo.value;
+    travelTo.value = temp;
+};
+
+
+
 /*
   * Checks query params for booking to update -> sets form in "update mode"
 */
