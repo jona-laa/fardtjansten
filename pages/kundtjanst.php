@@ -15,7 +15,7 @@ include '../includes/header.php'
 
 <!-- Page Description -->
 <div class="page-descr">
-    Här hittar du information om färdtjänst.
+   Här hittar du kontaktuppgifter till kundtjänsten samt svar på frekvent ställda frågor
 </div>
 
 <main>

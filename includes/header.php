@@ -64,7 +64,7 @@
             <i class="fas fa-times"></i>
           </a>
           
-          <input id="searchbar" type="text" aria-label="Sökfält" role="search" autocomplete="on" aria-hidden="true">
+          <input id="searchbar" type="text" aria-label="Sökfält" placeholder="Sök" role="search" autocomplete="on" aria-hidden="true">
         </div>
       </div>
     </header>

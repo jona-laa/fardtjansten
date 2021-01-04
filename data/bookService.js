@@ -1,13 +1,3 @@
-
-// const getToday = () => {
-//   const today = new Date();
-//   const dd = String(today.getDate()).padStart(2, '0');
-//   const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-//   const yyyy = today.getFullYear();
-
-//   return `${yyyy}-${mm}-${dd}`;
-// };
-
 /*
   * DOM elements
 */
@@ -215,16 +205,6 @@ const toggleReturn = () => {
     // toggleAriaHidden(returnInput);
     returnIsChecked = false;
   }
-};
-
-
-
-// Switches travel to to travel from, and vice versa, knowhatimsayin
-const travelSwitch = () => {
-  event.preventDefault();
-  let temp = travelFrom.value;
-  travelFrom.value = travelTo.value;
-  travelTo.value = temp;
 };
 
 
