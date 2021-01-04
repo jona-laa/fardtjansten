@@ -188,6 +188,7 @@ const fillInputFields = (booking) => {
 
 // Switches travel to to travel from, and vice versa, knowhatimsayin
 const travelSwitch = () => {
+    event.preventDefault();
     let temp = travelFrom.value;
     travelFrom.value = travelTo.value;
     travelTo.value = temp;

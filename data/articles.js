@@ -77,13 +77,13 @@ const articles = [
                     <li>Box 30103</li>
                     <li>104 25 Stockholm</li>
             </ul>
-            <p class="article-text">Brevet måste komma in inom tre veckor från den dag du tog del av beslutet, och ska innehålla information om vad du vill överklaga. Inkludera följande:</p>
+            <p class="article-text">Brevet måste komma in inom tre veckor från den dag du tog del av beslutet, och ska innehålla information om vad du vill överklaga. Inkludera</p>
             <ul class="article-list">
-                <li>Vilket beslut du vill överklaga.</li>
-                <li>Hur du vill att beslutet ska ändras.</li>
-                <li>Varför du vill att beslutet ska ändras.</li>
-                <li>Ditt namn och personnummer.</li>
-                <li>Din underskrift.</li>
+                <li>vilket beslut du vill överklaga,</li>
+                <li>hur du vill att beslutet ska ändras,</li>
+                <li>varför du vill att beslutet ska ändras,</li>
+                <li>ditt namn och personnummer,</li>
+                <li>din underskrift.</li>
             </ul>`,
         category: "about",
         status: null,
@@ -97,7 +97,7 @@ const articles = [
         
         <h3 class="article-heading-small">Om du har slut på resor</h3>
         
-        <p class="article-text">Om du har slut på resor kan du ansöka om fler färdtjänstresor för specifika ändamål. Dessa inkluderar resor till och från:</p>
+        <p class="article-text">Om du har slut på resor kan du ansöka om fler färdtjänstresor för specifika ändamål. Dessa inkluderar resor till och från</p>
         <ul class="article-list">
                 <li>betalt arbete,</li>
                 <li>studier,</li>
@@ -278,7 +278,7 @@ const articles = [
         id: 14,
         title: "Att tänka på i Corona-tider",
         text: `<p class="article-text">Om du har förkylningssymptom, eller känner dig febrig,
-res inte med färdtjänsten.</p>`,
+GE FA-AN i att resa med färdtjänsten.</p>`,
         category: "news",
         status: "important",
         pub_date: '2020-12-24'
@@ -312,7 +312,7 @@ res inte med färdtjänsten.</p>`,
     // ##### Tillgänglighetsredogörelse #####
     {
         id: 16,
-        title: "Tillgänglighetsredogörelse",
+        title: "Tillgänglighet",
         text: `
                 <p class="article-text">Här hittar du information kring Färdtjänstens webbplats tillgänglighet.</p>
 

@@ -13,7 +13,7 @@ include './includes/header.php'
 </div>
 
 <!-- Page Description -->
-<div class="page-descr">Här kan du boka och hitta information om färdtjänsten i Tyresö</div>
+<div class="page-descr">Här kan du boka och hitta information om färdtjänsten i Region Stockholm</div>
 
 <main>
 <!-- Start Menu -->
