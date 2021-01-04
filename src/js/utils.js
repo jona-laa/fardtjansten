@@ -159,6 +159,7 @@ const zeroOrNullBookingsStyles = (message) => {
 
 // Switches travel to, to travel from and vice versa
 const travelSwitch = () => {
+  event.preventDefault();
   let temp = travelFrom.value;
   travelFrom.value = travelTo.value;
   travelTo.value = temp;
@@ -216,6 +217,8 @@ searchBar.addEventListener('keyup', (event) => {
 
 // Hide search bar when not in focus
 searchBar.addEventListener('focusout', () => {
-  elementDisplay(searchBar, 'none');
-  elementDisplay(closeSearch, 'none');
+  if (window.innerWidth < 960) {
+    elementDisplay(searchBar, 'none');
+    elementDisplay(closeSearch, 'none');
+  }
 })

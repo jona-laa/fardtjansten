@@ -3,6 +3,7 @@
   top: 25px;
   right: 200px;
 
+
   @include maxWidth(1400px) {
     top: 67.5px;
     right: 160px;
@@ -58,7 +59,7 @@
       left: 115px;
       @include maxWidth(960px) {
         font-size: 20px;
-        top: 17.5px;
+        top: 16px;
         left: 125px;
       }
 
@@ -72,17 +73,17 @@
   #searchbar {
     border: none;
     box-shadow: 0px 1px 3px lightgray;
-    display: none;
     padding: 10px;
     padding-left: 35px;
     position: absolute;
     font-size: 16px;
-
+    
     @include maxWidth(960px) {
+      display: none;
       padding: 10px;
-      padding-left: 35px;
+      padding-left: 37px;
       width: 100vw;
-      top: 17.5px;
+      top: 16px;
       left: 10px;
     }
 

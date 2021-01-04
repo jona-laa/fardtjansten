@@ -10,6 +10,8 @@ window.onload = () => {
   if (window.innerWidth < 960) {
     mainMenu.setAttribute('aria-hidden', 'true');
     mainMenuToggle.setAttribute('aria-hidden', 'false');
+  } else {
+    searchBar.setAttribute('aria-hidden', 'false')
   }
 }
 
@@ -20,9 +22,13 @@ window.onresize = () => {
   if (window.innerWidth < 960) {
     mainMenu.setAttribute('aria-hidden', 'true');
     mainMenuToggle.setAttribute('aria-hidden', 'false');
+    // searchBar.setAttribute('aria-hidden', 'true')
+    elementDisplay(searchBar, 'none')
+
   } else {
     mainMenu.setAttribute('aria-hidden', 'false');
     mainMenuToggle.setAttribute('aria-hidden', 'true');
+    elementDisplay(searchBar, 'block')
   }
 }
 

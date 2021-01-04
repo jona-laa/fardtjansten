@@ -55,6 +55,10 @@ form {
     top: 5px;
     right: 80px;
 
+    &:hover {
+      cursor: pointer;
+    }
+
     @include maxWidth(600px) {
       right: 0;
     }
@@ -63,6 +67,7 @@ form {
       font-size: 20px;
       position: relative;
       margin: -3px;
+      z-index: 0;
     }
 
     .fa-arrow-up {
