@@ -33,7 +33,7 @@ const articles = [
                     <li>Du behöver ett läkarintyg som intygar att du har en funktionsnedsättning som gör det svårt att resa med kommunaltrafiken.</li>
                     <li>Läkarintyget skickas in till kommunen där du är folkbokförd.</li>
                     <li>En utredare på kommunen kontaktar dig för att boka ett möte.</li>
-                    <li>Du beskriver dina svårigheter i en ansökningsblankett som du får av utredaren. Ta med ett nytaget fotografi på dig själv till besöket.</li>
+                    <li>Du beskriver dina svårigheter i en ansökningsblankett som du kan hitta via <a href="https://fardtjansten.sll.se/globalassets/formular/ansokan-om-fardtjanst.pdf" class="article-link" target="_blank">denna länk</a>, eller få av utredaren. Ta med ett nytaget fotografi på dig själv till besöket.</li>
                     <li>Kommunen skickar samtliga handlingar till Färdtjänsten på Trafikförvaltningen som fattar beslut om färdtjänst beviljas.</li>
             </ol>`,
         category: "about",

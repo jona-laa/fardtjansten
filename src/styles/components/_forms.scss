@@ -24,7 +24,7 @@ form {
   }
 
   ::placeholder {
-    color: $col-alert;
+    color: $black;
   }
 
   input,
@@ -45,6 +45,44 @@ form {
     font-family: sans-serif;
     font-size: 18px;
     margin-bottom: -10px;
+  }
+
+  .show-info {
+    background-color: transparent;
+    border: none;
+  }
+
+  .fa-info-circle {
+    font-size: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .info-box {
+    position: absolute;
+    display: none;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+
+    ul {
+      list-style-type: disc;
+      list-style-position: inside;
+
+      li, a {
+        font-size: 16px;
+        color: white;
+      }
+
+      .info-box_read-more {
+        list-style-type: none;
+        float: right;
+      }
+    }
   }
 
   .travel-switch {

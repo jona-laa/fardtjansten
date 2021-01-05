@@ -4,6 +4,7 @@ header {
   top: 0px;
   transition: 0.5s ease-in;
   width: 100vw !important;
+  z-index: 1;
 
   .header-content {
     padding: 10px 20px;

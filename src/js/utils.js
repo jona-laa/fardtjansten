@@ -222,3 +222,4 @@ searchBar.addEventListener('focusout', () => {
     elementDisplay(closeSearch, 'none');
   }
 })
+
