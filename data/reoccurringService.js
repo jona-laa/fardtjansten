@@ -232,18 +232,32 @@ $(document).ready(function () {
 
 // Show small info box above Medresenärer and Ledsagare
 document.querySelectorAll('.show-info').forEach(element => {
+
+    // For mouse/click
     element.addEventListener('click', (event) => {
         event.preventDefault();
 
-        event.target.parentNode.nextElementSibling.style.display == 'block' ? elementDisplay(event.target.parentNode.nextElementSibling, 'none') : elementDisplay(event.target.parentNode.nextElementSibling, 'block');
+        if (event.target.parentNode.nextElementSibling.style.display == 'block') {
+            elementDisplay(event.target.parentNode.nextElementSibling, 'none');
+            toggleAria(event.target.parentNode, 'aria-expanded', 'false');
+        } else {
+            elementDisplay(event.target.parentNode.nextElementSibling, 'block');
+            toggleAria(event.target.parentNode, 'aria-expanded', 'true');
+        }
     })
 
+    // For keyboard
     element.addEventListener('keydown', (event) => {
         event.preventDefault();
-        console.log(event.keyCode)
 
         if (event.keyCode === 13) {
-            event.target.nextElementSibling.style.display == 'block' ? elementDisplay(event.target.nextElementSibling, 'none') : elementDisplay(event.target.nextElementSibling, 'block');
+            if (event.target.nextElementSibling.style.display == 'block') {
+                elementDisplay(event.target.nextElementSibling, 'none');
+                toggleAria(event.target, 'aria-expanded', 'false');
+            } else {
+                elementDisplay(event.target.nextElementSibling, 'block');
+                toggleAria(event.target, 'aria-expanded', 'true');
+            }
         }
 
         if (event.keyCode === 9) {
@@ -256,9 +270,10 @@ document.querySelectorAll('.show-info').forEach(element => {
 
 
 
-// Hide info-boxes
-window.onscroll = () => {
-    document.querySelectorAll('.info-box').forEach(element => {
-        elementDisplay(element, 'none');
-    })
-};
+window.addEventListener('scroll', () => {
+    // Hide info-boxes on scroll
+    document.querySelectorAll('.info-box').forEach(element => elementDisplay(element, 'none'));
+
+    // .show-info aria-expanded to none
+    document.querySelectorAll('.show-info').forEach(element => toggleAria(element, 'aria-expanded', 'false'));
+})

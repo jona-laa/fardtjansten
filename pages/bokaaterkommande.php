@@ -71,31 +71,29 @@ include '../includes/header.php'
             <label for="travel-time">Tid för avresa</label><br>
             <input type="time" id="travel-time" name="travel-time" class="time-pick" required aria-required="true"><br>
 
-            <label for="travel-companions">Medresenär
-                <button class="show-info" aria-label="Öppna och stäng information">
+            <label for="travel-companions">Medresenärer
+                <button class="show-info" aria-expanded="false" aria-controls="info-companions" aria-label="Öppna och stäng information">
                     <i class="fas fa-info-circle"></i>
                 </button>
-                <div class="info-box" aria-hidden="true">
+                <div class="info-box" id="info-companions" aria-hidden="true">
                     <ul>
                         <li>Extra person som du tar med på resan, till exempel en vän.</li>
                         <li>Kostar 20 kronor extra per resa.</li>
-                        <li class="info-box_read-more"><a href="artikel.php?id=5" target="_blank">Läs mer</a>
-                        </li>
+                        <li class="info-box_read-more"><a href="artikel.php?id=5" target="_blank">Läs mer</a></li>
                     </ul>
                 </div>
             </label><br>
             <input type="number" value="0" min="0" max="3" id="travel-companions" name="travel-companions"><br>
 
             <label for="travel-accompaniers">Ledsagare
-                <button class="show-info" aria-label="Öppna och stäng information">
+                <button class="show-info" aria-expanded="false" aria-controls="info-accompaniers"  aria-label="Öppna och stäng information">
                     <i class="fas fa-info-circle"></i>
                 </button>
-                <div class="info-box" aria-hidden="true">
+                <div class="info-box" id="info-accompaniers" aria-hidden="true">
                     <ul>
                         <li>Person som hjälper till under resan, till exempel en assistent.</li>
                         <li>Åker med utan extra kostnad.</li>
-                        <li class="info-box_read-more"><a href="artikel.php?id=4" target="_blank">Läs mer</a>
-                        </li>
+                        <li class="info-box_read-more"><a href="artikel.php?id=4" target="_blank">Läs mer</a></li>
                     </ul>
                 </div>
             </label><br>
