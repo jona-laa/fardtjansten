@@ -278,7 +278,7 @@ const articles = [
         id: 14,
         title: "Att tänka på i Corona-tider",
         text: `<p class="article-text">Om du har förkylningssymptom, eller känner dig febrig,
-GE FA-AN i att resa med färdtjänsten.</p>`,
+undvik att resa med färdtjänsten.</p>`,
         category: "news",
         status: "important",
         pub_date: '2020-12-24'
