@@ -299,3 +299,12 @@ document.querySelectorAll('.show-info').forEach(element => {
   })
 }
 );
+
+
+
+// Hide info-boxes
+window.onscroll = () => {
+  document.querySelectorAll('.info-box').forEach(element => {
+    elementDisplay(element, 'none');
+  })
+};
