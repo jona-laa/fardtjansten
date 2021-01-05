@@ -36,6 +36,9 @@
             <li><i class="fas fa-external-link-alt"></i> <a
                 href="https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-1997736-om-fardtjanst_sfs-1997-736"
                 target="_blank">Lagen om färdtjänst</a></li>
+            <li><i class="fas fa-external-link-alt"></i> <a
+                href="https://fardtjansten.sll.se/globalassets/formular/ansokan-om-fardtjanst.pdf"
+                target="_blank">Ansökningsblankett</a></li>
           </ul>
         </div>
       </div>

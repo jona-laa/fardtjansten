@@ -35,10 +35,10 @@ include '../includes/header.php'
             <input type="text" id="travel-to" name="travel-to" required aria-required="true" autocomplete="on"><br>
 
             <label for="travel-date">Datum för avresa</label><br>
-            <input type="date" id="travel-date" name="travel-date" required aria-required="true"><br>
+            <input type="date" id="travel-date" class="date-pick" name="travel-date" required aria-required="true"><br>
 
             <label for="travel-time">Tid för avresa</label><br>
-            <input type="time" id="travel-time" name="travel-time" required aria-required="true"><br>
+            <input type="time" id="travel-time" class="time-pick" name="travel-time" required aria-required="true"><br>
 
             <label for="book-return">Boka med returresa</label><br>
             <div class="return">
@@ -53,10 +53,32 @@ include '../includes/header.php'
                 </div>
             </div>
 
-            <label for="travel-companions">Medresenär</label><br>
+            <label for="travel-companions">Medresenär
+                <button class="show-info" aria-label="Öppna och stäng information">
+                    <i class="fas fa-info-circle"></i>
+                </button>
+                <div class="info-box" aria-hidden="true">
+                    <ul>
+                        <li>Extra person som du tar med på resan, till exempel en vän.</li>
+                        <li>Kostar 20 kronor extra per resa.</li>
+                        <li class="info-box_read-more"><a href="artikel.php?id=5" target="_blank">Läs mer</a></li>
+                    </ul>
+                </div>
+            </label><br>
             <input type="number" value="0" min="0" max="3" id="travel-companions" name="travel-companions"><br>
 
-            <label for="travel-accompaniers">Ledsagare</label><br>
+            <label for="travel-accompaniers">Ledsagare
+                <button class="show-info" aria-label="Öppna och stäng information">
+                    <i class="fas fa-info-circle"></i>
+                </button>
+                <div class="info-box" aria-hidden="true">
+                    <ul>
+                        <li>Person som hjälper till under resan, till exempel en assistent.</li>
+                        <li>Åker med utan extra kostnad.</li>
+                        <li class="info-box_read-more"><a href="artikel.php?id=4" target="_blank">Läs mer</a></li>
+                    </ul>
+                </div>
+            </label><br>
             <select name="travel-accompaniers" id="travel-accompaniers">
                 <option value="Nej">Nej</option>
                 <option value="Ja">Ja</option>

@@ -215,3 +215,79 @@ const toggleReturn = () => {
 returnDate.addEventListener('focusout', () => {
   travelDate.value == returnDate.value ? returnTime.min = travelTime.value : null;
 })
+
+
+
+// Date picker if not supported by browser
+$(document).ready(function () {
+  if (document.querySelector('.date-pick').type !== 'date') {
+    var oCSS = document.createElement('link');
+    oCSS.type = 'text/css'; oCSS.rel = 'stylesheet';
+    oCSS.href = '//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.css';
+    oCSS.onload = function () {
+      var oJS = document.createElement('script');
+      oJS.type = 'text/javascript';
+      oJS.src = '//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js';
+      oJS.onload = function () {
+        $('.date-pick').datepicker();
+      }
+      document.body.appendChild(oJS);
+    }
+    document.body.appendChild(oCSS);
+  }
+});
+
+
+
+// // Date picker if not supported by browser
+$(document).ready(function () {
+  if (document.querySelector('.time-pick').type !== 'time') {
+    var oCSS = document.createElement('link');
+    oCSS.type = 'text/css'; oCSS.rel = 'stylesheet';
+    oCSS.href = '//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css';
+    oCSS.onload = function () {
+      var oJS = document.createElement('script');
+      oJS.type = 'text/javascript';
+      oJS.src = '//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js';
+      oJS.onload = function () {
+        $('.time-pick').timepicker({
+          timeFormat: 'h:mm p',
+          interval: 5,
+          defaultTime: '12',
+          startTime: '00:00',
+          dynamic: false,
+          dropdown: true,
+          scrollbar: true
+        });
+      }
+      document.body.appendChild(oJS);
+    }
+    document.body.appendChild(oCSS);
+  }
+});
+
+
+
+// Show small info box above Medresenärer and Ledsagare
+document.querySelectorAll('.show-info').forEach(element => {
+  element.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    event.target.parentNode.nextElementSibling.style.display == 'block' ? elementDisplay(event.target.parentNode.nextElementSibling, 'none') : elementDisplay(event.target.parentNode.nextElementSibling, 'block');
+  })
+
+  element.addEventListener('keydown', (event) => {
+    event.preventDefault();
+    console.log(event.keyCode)
+
+    if (event.keyCode === 13) {
+      event.target.nextElementSibling.style.display == 'block' ? elementDisplay(event.target.nextElementSibling, 'none') : elementDisplay(event.target.nextElementSibling, 'block');
+    }
+
+    if (event.keyCode === 9) {
+      event.target.parentNode.nextElementSibling.nextElementSibling.focus();
+    }
+
+  })
+}
+);
