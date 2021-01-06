@@ -38,9 +38,9 @@
                     <!-- Main Menu -->
                     <ul id="menu-main-menu" class="menu">
                         <li><a href="../index.html" class="menu-link">Start</a></li>
-                        <li><a href="#" class="menu-link current">Boka Färdtjänst</a></li>
+                        <li><a href="./boka.html" class="menu-link">Boka Färdtjänst</a></li>
                         <li><a href="./omfardtjanst.html" class="menu-link">Om Färdtjänst</a></li>
-                        <li><a href="./kundtjanst.html" class="menu-link">Kundtjänst</a></li>
+                        <li><a href="#" class="menu-link current">Kundtjänst</a></li>
                         <li><a href="./minasidor.html" class="menu-link">Mina Sidor</a></li>
                     </ul>
                 </nav>
@@ -63,41 +63,37 @@
                 </div>
             </div>
         </header>
-        <div class="breadcrumbs"><a href="../index.html">Start</a> > Boka färdtjänst</div>
+        <!-- Bread Crumbs -->
+        <div class="breadcrumbs"><a href="../index.php">Start</a> > <a href="../index.php">Kundtjänst</a> > Vanliga
+            Frågor</div>
 
         <!-- Page Title "Banner" -->
-        <div class="title-banner col-main">
-            <h1>Boka Färdtjänst</h1>
+        <div class="title-banner col-service">
+            <h1>Vanliga Frågor</h1>
         </div>
 
         <!-- Page Description -->
         <div class="page-descr">
-            Här väljer du om du vill boka via Mina Sidor eller om du vill ringa och boka din resa.
+            Här hittar du svar på vanliga frågor.
         </div>
 
         <main>
-            <!-- Book Menu -->
-            <section class="box-menu">
-                <h2 class="section-heading">Boka färdtjänst</h2>
-                <a href="./minasidor.html">
-                    <div class="box-menu_box border-main rounded">
-                        <i class="fas fa-user"></i>
-                        <span>Boka via Mina Sidor</span>
-                    </div>
-                </a>
+            <!-- Vanliga Frågor -->
+            <section class="news service">
+                <h2 class="section-heading">Vanliga frågor</h2>
 
-                <a href="./artikel.html?id=15">
-                    <div class="box-menu_box border-main rounded">
-                        <i class="fas fa-phone"></i>
-                        <span>Ring och boka</span>
-                    </div>
-                </a>
+                <!-- Filter Articles Input -->
+                <div class="filter-content">
+                    <label for="filterbar">Filtrera artiklar</label>
+                    <input id="filterbar" type="text" role="search" aria-label="Filtrera artiklar"
+                        placeholder="Filtrera artiklar">
+                    <div class="filter-icon"><i class="fas fa-filter"></i></div>
+                </div>
+                <div class="feedback"></div>
+
+                <!-- Service Articles will print here -->
+                <div class="service_articles"></div>
             </section>
-
-            <!-- Tillbaka -->
-            <div class="go-back go-back-medium">
-                <a onclick="window.history.back()" class="go-back_link"><i class="fas fa-arrow-left"></i>Tillbaka</a>
-            </div>
         </main>
 
     </div>
@@ -136,8 +132,7 @@
                                 Funka - Resor</a></li>
                         <li><i class="fas fa-external-link-alt"></i> <a
                                 href="https://www.sll.se/verksamhet/kollektivtrafik/fardtjansten/"
-                                target="_blank">Region Stockholm
-                                -
+                                target="_blank">Region Stockholm -
                                 Färdtjänsten</a></li>
                         <li><i class="fas fa-external-link-alt"></i> <a
                                 href="https://www.riksdagen.se/sv/dokument-lagar/dokument/svensk-forfattningssamling/lag-1997736-om-fardtjanst_sfs-1997-736"
@@ -172,6 +167,8 @@
         </div>
     </footer>
     <script src="//code.jquery.com/jquery-latest.js"></script>
+    <script src="../data/articles.js"></script>
+    <script src="../data/service.js"></script>
     <script src="../js/main.js"></script>
 </body>
 
