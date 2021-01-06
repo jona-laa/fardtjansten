@@ -13,7 +13,8 @@
               <li><a href="<?php echo OMFARDTJANST?>">Om Färdtjänst <i class="fas fa-angle-double-right"></i></a></li>
               <li><a href="<?php echo KUNDTJANST?>">Kundtjänst <i class="fas fa-angle-double-right"></i></a></li>
               <li><a href="<?php echo MINASIDOR?>">Mina Sidor <i class="fas fa-angle-double-right"></i></a></li>
-              <li><a href="<?php echo TILLGANGLIGHET?>">Tillgänglighet <i
+              <li><a href="<?php echo VANLIGAFRAGOR?>">Vanliga Frågor <i class="fas fa-angle-double-right"></i></a></li>
+              <li><a href="<?php echo TILLGANGLIGHET?>">Tillgänglighetsredogörelse <i
                     class="fas fa-angle-double-right"></i></a>
               </li>
             </ul>
