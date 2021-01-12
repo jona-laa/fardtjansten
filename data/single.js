@@ -32,7 +32,7 @@ aboutArticles.forEach(article => {
             </article>
             
             <div class="go-back go-back-article">
-                <a onclick="window.history.back()" class="go-back_link"><i class="fas fa-arrow-left"></i>Tillbaka</a>
+                <a href="#" onclick="window.history.back()" class="go-back_link"><i class="fas fa-arrow-left"></i>Tillbaka</a>
             </div>
     `;
 });

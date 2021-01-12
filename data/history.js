@@ -86,7 +86,7 @@ const createBookings = (bookings) => {
                             </ul>
                         </div>
 
-                         <div class="print"><button class="print-btn" id="print-service" onclick="printThis()"><i class="fas fa-print"></i>Skriv Ut</button></div>
+                         <div class="print"><button class="print-btn" onclick="printThis()"><i class="fas fa-print"></i>Skriv Ut</button></div>
         
                         <div class="booked-item_buttons">
                             <button class="submit-btn btn rounded col-main" onclick="initUpdate(${booking.id})">Boka Om Resa</button>

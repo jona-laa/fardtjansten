@@ -62,7 +62,7 @@ include '../includes/header.php'
 
         <!-- Tillbaka -->
         <div class="go-back go-back-small">
-            <a onclick="window.history.back()" class="go-back_link"><i
+            <a href="#" onclick="window.history.back()" class="go-back_link"><i
                     class="fas fa-arrow-left"></i>Tillbaka</a>
         </div>
     </section>

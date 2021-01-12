@@ -27,7 +27,7 @@
         </a>
         <nav aria-label="huvudmeny">
           <!-- Mobile meny - Hidden on default -->
-          <a href="" onClick=event.preventDefault() id="main-menu-toggle" aria-controls="menu-main-menu" role="button" aria-hidden="true" aria-expanded="false" aria-label="Toggle Mobile Menu">
+          <a href=""  onClick=event.preventDefault() id="main-menu-toggle" aria-controls="menu-main-menu" role="button" aria-hidden="true" aria-expanded="false" aria-label="Visa eller göm meny">
             <svg viewBox="0 0 100 80" width="40" height="40">
               <rect width="90" height="12" fill="#000"></rect>
               <rect y="30" width="90" height="12" fill="#000"></rect>
@@ -56,15 +56,15 @@
         <!-- Search Bar -->
         <div id="search">
           <a href="#" id="search-icon" role="button" onclick="elementDisplay(searchBar, 'block'), elementDisplay(closeSearch, 'block'), elementFocus(searchBar)" class="menu-link"
-            aria-label="Open Search">
+            aria-label="Öppna sökfält">
             <i class="fas fa-search"></i>
           </a>
 
-          <a href="#" id="search-icon--close" role="button" onclick="elementDisplay(searchBar, 'none'), elementDisplay(closeSearch, 'none')" aria-label="Close Search" aria-hidden="true">
+          <a href="#" id="search-icon--close" role="button" onclick="elementDisplay(searchBar, 'none'), elementDisplay(closeSearch, 'none')" aria-label="Stäng sökfält" aria-hidden="true">
             <i class="fas fa-times"></i>
           </a>
           
-          <input id="searchbar" type="text" aria-label="Sökfält" placeholder="Sök" role="search" autocomplete="on" aria-hidden="true">
+          <input id="searchbar" type="text" aria-label="Sökfält" placeholder="Sök" autocomplete="on" aria-hidden="true">
         </div>
       </div>
     </header>

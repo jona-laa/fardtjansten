@@ -36,7 +36,7 @@ include '../includes/header.php'
         <!-- Filter Articles Input -->
         <div class="filter-content">
             <label for="filterbar">Filtrera artiklar</label>
-            <input id="filterbar" type="text" role="search" aria-label="Filtrera artiklar" placeholder="Filtrera artiklar">
+            <input id="filterbar" type="text" aria-label="Filtrera artiklar" placeholder="Filtrera artiklar">
             <div class="filter-icon"><i class="fas fa-filter"></i></div>
         </div>
         <div class="feedback"></div>

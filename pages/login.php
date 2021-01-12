@@ -31,7 +31,7 @@ include '../includes/header.php'
         <fieldset>
             <legend>Logga In</legend>
             <label for="custNo">Kundnummer</label><br>
-            <input type="text" id="custNo" name="custNo" value="123456789" autocomplete="true"><br>
+            <input type="text" id="custNo" name="custNo" value="123456789" autocomplete="on"><br>
             <label for="password">Lösenord</label><br>
             <input type="password" id="password" value="password" name="password"><br>
             <input type="submit" value="Logga In" class="submit-btn col-main">
@@ -46,7 +46,7 @@ include '../includes/header.php'
 
     <!-- Tillbaka -->
     <div class="go-back go-back-article">
-        <a onclick="window.history.back()" class="go-back_link"><i class="fas fa-arrow-left"></i>Tillbaka</a>
+        <a href="#" onclick="window.history.back()" class="go-back_link"><i class="fas fa-arrow-left"></i>Tillbaka</a>
     </div>
 </main>
 

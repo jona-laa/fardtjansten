@@ -34,7 +34,7 @@ include '../includes/header.php'
 
     <!-- Tillbaka -->
     <div class="go-back">
-        <a onclick="window.history.back()" class="go-back_link"><i class="fas fa-arrow-left"></i>Tillbaka</a>
+        <a href="#" onclick="window.history.back()" class="go-back_link"><i class="fas fa-arrow-left"></i>Tillbaka</a>
     </div>
 </main>
 
