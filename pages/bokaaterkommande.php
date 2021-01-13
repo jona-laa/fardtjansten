@@ -69,7 +69,7 @@ include '../includes/header.php'
             </div>
 
             <label for="travel-time">Tid för avresa</label><br>
-            <input type="time" id="travel-time" name="travel-time" class="time-pick" required aria-required="true"><br>
+            <input type="time" id="travel-time" name="travel-time" class="time-pick" required><br>
 
             <div class="label-extrainfo">
                 <label for="travel-companions">Medresenärer</label>

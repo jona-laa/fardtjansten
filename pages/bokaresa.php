@@ -35,10 +35,10 @@ include '../includes/header.php'
             <input type="text" id="travel-to" name="travel-to" required aria-required="true" autocomplete="on"><br>
 
             <label for="travel-date">Datum för avresa</label><br>
-            <input type="date" id="travel-date" class="date-pick" name="travel-date" required aria-required="true"><br>
+            <input type="date" id="travel-date" class="date-pick" name="travel-date" required><br>
 
             <label for="travel-time">Tid för avresa</label><br>
-            <input type="time" id="travel-time" class="time-pick" name="travel-time" required aria-required="true"><br>
+            <input type="time" id="travel-time" class="time-pick" name="travel-time" required><br>
 
             <label for="book-return">Boka med returresa</label><br>
             <div class="return">

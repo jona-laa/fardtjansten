@@ -314,29 +314,68 @@ undvik att resa med färdtjänsten.</p>`,
         id: 16,
         title: "Tillgänglighet",
         text: `
-                <p class="article-text">Här hittar du information kring Färdtjänstens webbplats tillgänglighet.</p>
+                <p class="article-text">Färdtjänsten står bakom den här webbplatsen. Vi vill att så många som möjligt ska kunna använda webbplatsen. Det här dokumentet beskriver hur Färdtjänst uppfyller lagen om tillgänglighet till digital offentlig service, eventuella kända tillgänglighetsproblem och hur du kan rapportera brister till oss så att vi kan åtgärda dem.</p>
 
-                <p class="article-text">Målet är att alla ska kunna ta del av webbplatsens information och tjänster. Brister kan dock dessvärre förekomma.</p>
+                <h3 class="article-heading-small">Hur tillgänglig är webbplatsen?</h3>
 
-                <p class="article-text">Här redovisas de brister som vi känner till, tillsammans med tidsplaner på när dessa är planerade att åtgärdas. </p>
+                <p class="article-text">Vi är medvetna om att delar av webbplatsen inte är helt tillgängliga.</p>
 
-                <h3 class="article-heading-medium">Kända brister för fardtjansten.domain</h3>
-    
-                <h4 class="article-heading-small">Bristområde 1</h4>
-                <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc</p>
+                <p class="article-text">Länkarna nedan leder till detaljerad information om vilka tillgänglighetsproblem du kan möta i olika användningssituationer.</p>
 
-                <h4 class="article-heading-small">Bristområde 2</h4>
-                <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc</p>
+                <ul class="article-list">
+                    <li><a href="#brister" class="article-link">Användning utan synförmåga</a></li>
+                </ul>
 
-                <h4 class="article-heading-small">Bristområde 3</h4>
-                <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc</p>
+                <h3 class="article-heading-small">Vad kan du göra om du inte kan använda delar av webbplatsen?</h3>
 
-                <h4 class="article-heading-small">Bristområde 4</h4>
-                <p class="article-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exerc</p>
+                <p class="article-text">Om du behöver innehåll från Färdtjänst som inte är tillgängligt för dig, men som är undantaget från lagens tillämpningsområde enligt beskrivning nedan, kan du <a href="#contact" class="article-link">meddela oss</a>.</p>
 
-                <form class="rounded accessibility-form">
+                <p class="article-text">Svarstiden är normalt 3 arbetsdagar.</p>
+
+                <p class="article-text">Du kan också kontakta oss på följande sätt:</p>
+
+                <ul class="article-list">
+                    <li>skicka e-post till <a href="#" class="article-link">fardtjansten@sll.se</a></li>
+                    <li>ring <a href="tel:012345678" class="article-link">01 - 234 56 78</a></li>
+                </ul>
+
+                <h3 class="article-heading-small">Rapportera brister i webbplatsens tillgänglighet</h3>
+                <p class="article-text">Vi strävar hela tiden efter att förbättra webbplatsens tillgänglighet. Om du upptäcker problem som inte är beskrivna på den här sidan, eller om du anser att vi inte uppfyller lagens krav, <a href="#contact" class="article-link">meddela oss</a> så att vi får veta att problemet finns.</p>
+
+                <h3 class="article-heading-small">Tillsyn</h3>
+                <p class="article-text">Myndigheten för digital förvaltning har ansvaret för tillsyn över lagen om tillgänglighet till digital offentlig service. Om du inte är nöjd med hur vi hanterar ditt påpekande om bristande webbtillgänglighet eller din begäran om tillgängliggörande av innehåll kan du <a href="https://www.digg.se/tdosanmalan" class="article-link">anmäla till Myndigheten för digital förvaltning</a>.</p>
+
+                <h3 class="article-heading-small">Teknisk information om webbplatsens tillgänglighet</h3>
+                <p class="article-text">Den här webbplatsen är inte förenlig med lagen om tillgänglighet till digital offentlig service. Otillgängliga delar beskrivs nedan.</p>
+
+                <h3 class="article-heading-small">Innehåll som inte är tillgängligt</h3>
+                
+                <p class="article-text">Det innehåll som beskrivs nedan är på ett eller annat sätt inte helt tillgängligt.</p>
+
+                <h4 class="article-heading-small">Bristande förenlighet med lagkraven</h4>
+                
+                <p class="article-text">Problem vid användning utan synförmåga</p>
+                
+                <ul class="article-list">
+                    <li>Läs Mer länken i informationsrutan på bokningsformulär går inte att tabba till. Det går däremot att genom att använda skärmläsarspecifika kommandon.</li>
+                    <li>Headern saknar funktionalitet för att hoppa till sidans huvudinnehåll.</li>
+                    <li>Inmatningsfält för tid och datum markeras endast med färg.</li>
+                    <li>Indikatorer på obligatoriska inmatningsfält saknas. Dessa markeras först när användaren försöker skicka formuläret.</li>
+                    <li>Ingen funktionalitet för automatisk korrigering av felinmatad inmatning är implementerad.</li>
+                </ul>
+
+                <p class="article-text">Vår ambition är att ha åtgärdat alla kända tillgänglighetsproblem senast den 23 juni 2021.</p>
+
+                <h3 class="article-heading-small">Hur vi testat webbplatsen</h3>
+                <p class="article-text">Vi har gjort en självskattning (intern testning) av Färdtjänst.</p>
+                
+                <p class="article-text">Senaste bedömningen gjordes den 13 januari 2021.</p>
+                
+                <p class="article-text">Redogörelsen uppdaterades senast den 13 januari 2021.</p>
+
+                <form class="rounded accessibility-form" id="contact">
                 <fieldset>
-                    <legend>Påpeka Brister</legend>
+                    <legend>Kontakta Färdtjänsten</legend>
 
                     <label for="email">Din E-Post</label><br>
                     <input type="text" id="email" name="email" aria-required="true" required autocomplete="on"><br>
