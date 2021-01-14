@@ -64,7 +64,7 @@ include '../includes/header.php'
                 <ul>
                     <li>Extra person som du tar med på resan, till exempel en vän.</li>
                     <li>Kostar 20 kronor extra per resa.</li>
-                    <li class="info-box_read-more"><a href="artikel.html?id=5" target="_blank">Läs mer</a>
+                    <li class="info-box_read-more"><a href="artikel.php?id=5" target="_blank">Läs mer</a>
                     </li>
                 </ul>
             </div><br>
@@ -81,7 +81,7 @@ include '../includes/header.php'
                 <ul>
                     <li>Person som hjälper till under resan, till exempel en assistent.</li>
                     <li>Åker med utan extra kostnad.</li>
-                    <li class="info-box_read-more"><a href="artikel.html?id=4" target="_blank">Läs mer</a>
+                    <li class="info-box_read-more"><a href="artikel.php?id=4" target="_blank">Läs mer</a>
                     </li>
                 </ul>
             </div><br>
