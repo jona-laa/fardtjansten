@@ -283,11 +283,13 @@ document.querySelectorAll('.show-info').forEach(element => {
   element.addEventListener('click', (event) => {
     event.preventDefault();
 
-    if (event.target.parentNode.nextElementSibling.style.display == 'block') {
-      elementDisplay(event.target.parentNode.nextElementSibling, 'none');
+    const infoBox = event.target.parentNode.parentNode.nextElementSibling;
+
+    if (infoBox.style.display == 'block') {
+      elementDisplay(infoBox, 'none');
       toggleAria(event.target.parentNode, 'aria-expanded', 'false');
     } else {
-      elementDisplay(event.target.parentNode.nextElementSibling, 'block');
+      elementDisplay(infoBox, 'block');
       toggleAria(event.target.parentNode, 'aria-expanded', 'true');
     }
   })
@@ -296,18 +298,20 @@ document.querySelectorAll('.show-info').forEach(element => {
   element.addEventListener('keydown', (event) => {
     event.preventDefault();
 
+    const infoBox = event.target.parentNode.nextElementSibling; 
+
     if (event.keyCode === 13) {
-      if (event.target.nextElementSibling.style.display == 'block') {
-        elementDisplay(event.target.nextElementSibling, 'none');
+      if (infoBox.style.display == 'block') {
+        elementDisplay(infoBox, 'none');
         toggleAria(event.target, 'aria-expanded', 'false');
       } else {
-        elementDisplay(event.target.nextElementSibling, 'block');
+        elementDisplay(infoBox, 'block');
         toggleAria(event.target, 'aria-expanded', 'true');
       }
     }
 
     if (event.keyCode === 9) {
-      event.target.parentNode.nextElementSibling.nextElementSibling.focus();
+      event.target.parentNode.nextElementSibling.nextElementSibling.nextElementSibling.focus();
     }
 
   })
