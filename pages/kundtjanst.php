@@ -26,7 +26,7 @@ include '../includes/header.php'
         <h3><i class="fas fa-phone"></i>Telefon</h3>
         <a href="tel:012345678">01 - 234 56 78</a>
         <h3><i class="fas fa-envelope"></i>E-Post</h3>
-        <a href="mailto:#">fardtjanst@tyreso.se</a>
+        <a href="mailto:#">fardtjanst@ssl.se</a>
     </section>
 
     <!-- Vanliga Frågor -->
